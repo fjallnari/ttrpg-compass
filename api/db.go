@@ -34,7 +34,10 @@ func setupDBClient() (*redis.Client, context.Context) {
 	return client, ctx
 }
 
-func feedDB(client *redis.Client, ctx context.Context) int {
+// Rebuilds the database from the data directory
+// Might want to add selective rebuild
+func rebuildDB(client *redis.Client, ctx context.Context) {
+	fmt.Printf("Building DB...\n")
 	var system TTRPGSystem
 	entries, err := os.ReadDir("../data")
 
@@ -56,7 +59,7 @@ func feedDB(client *redis.Client, ctx context.Context) int {
 				panic(err)
 			}
 
-			systemId := strings.ToLower(system.Title)
+			systemId := strings.ReplaceAll(strings.ToLower(system.Title), " ", "")
 
 			if _, err := client.Pipelined(ctx, func(rdb redis.Pipeliner) error {
 				rdb.HSet(ctx, systemId, "title", system.Title)
@@ -75,8 +78,7 @@ func feedDB(client *redis.Client, ctx context.Context) int {
 			// if err != nil {
 			// 	panic(err)
 			// }
+			fmt.Printf("%s		\033[32mOK\033[0m\n", system.Title)
 		}
 	}
-
-	return len(entries)
 }

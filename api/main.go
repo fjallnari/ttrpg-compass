@@ -7,10 +7,6 @@ import (
 	"github.com/redis/go-redis/v9"
 )
 
-// func feedDB() {
-
-// }
-
 var dbClient *redis.Client
 var dbCtx context.Context
 
@@ -30,7 +26,7 @@ func main() {
 
 	dbClient, dbCtx = setupDBClient()
 
-	feedDB(dbClient, dbCtx)
+	rebuildDB(dbClient, dbCtx)
 
 	app.Get("/api/systems", func(c *fiber.Ctx) error {
 		return c.SendString("All systems")
@@ -43,6 +39,8 @@ func main() {
 
 		return c.JSON(system) //c.SendString(fmt.Sprintf("%v", system))
 	})
+
+	app.Static("/", "../client/dist")
 
 	app.Listen(":5000")
 }
