@@ -2,7 +2,6 @@ package main
 
 import (
 	"context"
-	"fmt"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/redis/go-redis/v9"
@@ -42,7 +41,7 @@ func main() {
 		go getSystem(responseChannel, c.Params("system"))
 		system := <-responseChannel
 
-		return c.SendString(fmt.Sprintf("%v", system))
+		return c.JSON(system) //c.SendString(fmt.Sprintf("%v", system))
 	})
 
 	app.Listen(":5000")

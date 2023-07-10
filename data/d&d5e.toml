@@ -1,0 +1,9 @@
+title = "D&D 5E"
+desc = "Gather your friends to vanquish mighty monsters, embark on epic quests, and tell legendary stories filled with fantasy and fun."
+url = "https://www.dndbeyond.com/"
+complexity = "medium"
+genre = "heroic fantasy"
+system = "d&d"
+dice = "d20o"
+gm = "dungeon master"
+tags = []

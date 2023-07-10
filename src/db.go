@@ -2,7 +2,9 @@ package main
 
 import (
 	"context"
+	"fmt"
 	"os"
+	"path/filepath"
 	"strings"
 
 	"github.com/pelletier/go-toml/v2"
@@ -32,39 +34,49 @@ func setupDBClient() (*redis.Client, context.Context) {
 	return client, ctx
 }
 
-func feedDB(client *redis.Client, ctx context.Context) TTRPGSystem {
+func feedDB(client *redis.Client, ctx context.Context) int {
 	var system TTRPGSystem
-	doc, err := os.ReadFile("../data/cairn.toml")
+	entries, err := os.ReadDir("../data")
 
 	if err != nil {
 		panic(err)
 	}
 
-	err = toml.Unmarshal([]byte(doc), &system)
+	for _, entry := range entries {
+		if filepath.Ext(entry.Name()) == ".toml" {
+			doc, err := os.ReadFile(fmt.Sprintf("../data/%s", entry.Name()))
 
-	if err != nil {
-		panic(err)
+			if err != nil {
+				panic(err)
+			}
+
+			err = toml.Unmarshal([]byte(doc), &system)
+
+			if err != nil {
+				panic(err)
+			}
+
+			systemId := strings.ToLower(system.Title)
+
+			if _, err := client.Pipelined(ctx, func(rdb redis.Pipeliner) error {
+				rdb.HSet(ctx, systemId, "title", system.Title)
+				rdb.HSet(ctx, systemId, "desc", system.Desc)
+				rdb.HSet(ctx, systemId, "url", system.Url)
+				rdb.HSet(ctx, systemId, "cmpx", system.Complexity)
+				rdb.HSet(ctx, systemId, "genre", system.Genre)
+				rdb.HSet(ctx, systemId, "system", system.System)
+				rdb.HSet(ctx, systemId, "dice", system.Dice)
+				rdb.HSet(ctx, systemId, "gm", system.Gm)
+				return nil
+			}); err != nil {
+				panic(err)
+			}
+
+			// if err != nil {
+			// 	panic(err)
+			// }
+		}
 	}
 
-	systemId := strings.ToLower(system.Title)
-
-	if _, err := client.Pipelined(ctx, func(rdb redis.Pipeliner) error {
-		rdb.HSet(ctx, systemId, "title", system.Title)
-		rdb.HSet(ctx, systemId, "desc", system.Desc)
-		rdb.HSet(ctx, systemId, "url", system.Url)
-		rdb.HSet(ctx, systemId, "cmpx", system.Complexity)
-		rdb.HSet(ctx, systemId, "genre", system.Genre)
-		rdb.HSet(ctx, systemId, "system", system.System)
-		rdb.HSet(ctx, systemId, "dice", system.Dice)
-		rdb.HSet(ctx, systemId, "gm", system.Gm)
-		return nil
-	}); err != nil {
-		panic(err)
-	}
-
-	// if err != nil {
-	// 	panic(err)
-	// }
-
-	return system
+	return len(entries)
 }
