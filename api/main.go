@@ -4,6 +4,7 @@ import (
 	"context"
 
 	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/redis/go-redis/v9"
 )
 
@@ -27,6 +28,11 @@ func main() {
 	dbClient, dbCtx = setupDBClient()
 
 	rebuildDB(dbClient, dbCtx)
+
+	app.Use(cors.New(cors.Config{
+		AllowOrigins: "http://localhost:3000",
+		AllowHeaders: "Origin, Content-Type, Accept",
+	}))
 
 	app.Get("/api/systems", func(c *fiber.Ctx) error {
 		return c.SendString("All systems")

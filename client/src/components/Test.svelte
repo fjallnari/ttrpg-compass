@@ -12,13 +12,13 @@
 	}
 
 </script>
-
-<button
-	class="flex justify-center items-center w-full cursor-pointer transition ease-in duration-100 active:text-sky-300"
-	on:click={() => clickButton()}
-	on:keyup={() => {}}
->Get Cairn data</button>
-
-<div>
-	<p>{JSON.stringify(lala)}</p>
+<div class="flex flex-col justify-center items-center w-full">
+	<button
+		class="cursor-pointer transition ease-in duration-100 active:text-amber-500 text-amber-50 bg-sky-950 rounded-md drop-shadow-lg py-6 px-2 box-content"
+		on:click={() => clickButton()}
+		on:keyup={() => {}}
+	>Get Cairn data</button>
+	<div>
+		<p>{JSON.stringify(lala)}</p>
+	</div>
 </div>
