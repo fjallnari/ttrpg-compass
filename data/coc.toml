@@ -1,0 +1,9 @@
+title = "Call of Cthulhu"
+desc = "Uncover the eldritch mysteries and face your darkest fears in Call of Cthulhu, where sanity is fragile and the true horrors lie beyond human comprehension."
+url = "https://www.chaosium.com/call-of-cthulhu-rpg/"
+complexity = "medium"
+genre = "cosmic horror"
+system = "coc"
+dice = "d100"
+gm = "keeper"
+tags = []

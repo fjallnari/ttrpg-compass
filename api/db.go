@@ -78,7 +78,7 @@ func rebuildDB(client *redis.Client, ctx context.Context) {
 			// if err != nil {
 			// 	panic(err)
 			// }
-			fmt.Printf("%s		\033[32mOK\033[0m\n", system.Title)
+			fmt.Printf("%s	\033[32mOK\033[0m\n", system.Title)
 		}
 	}
 }

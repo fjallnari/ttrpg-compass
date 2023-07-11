@@ -35,7 +35,23 @@ func main() {
 	}))
 
 	app.Get("/api/systems", func(c *fiber.Ctx) error {
-		return c.SendString("All systems")
+		var system TTRPGSystem
+		systems := make([]TTRPGSystem, 0)
+		iter := dbClient.Scan(dbCtx, 0, "*", 0).Iterator()
+
+		for iter.Next(dbCtx) {
+			if err := dbClient.HGetAll(dbCtx, iter.Val()).Scan(&system); err != nil {
+				panic(err)
+			}
+
+			systems = append(systems, system)
+		}
+
+		if err := iter.Err(); err != nil {
+			panic(err)
+		}
+
+		return c.JSON(systems)
 	})
 
 	app.Get("/api/system/:system", func(c *fiber.Ctx) error {
