@@ -1,9 +1,18 @@
 title = "Shadowdark"
-desc = "The game is fast, familiar, intuitive, and deadly. It’s built for sword-and-sorcery adventures where fell monsters slither in darkness and frosty gems glint upon forgotten thrones, waiting to be discovered."
+edition = ""
+description = "The game is fast, familiar, intuitive, and deadly. It’s built for sword-and-sorcery adventures where fell monsters slither in darkness and frosty gems glint upon forgotten thrones, waiting to be discovered."
 url = "https://www.thearcanelibrary.com/pages/shadowdark"
-complexity = "rules-light"
-genre = "dark fantasy"
-system = "osr"
-dice = "d20u"
-gm = "game master"
-tags = []
+
+# metrics 1(low) to 5(high)
+complexity = 1
+progression = 1
+narrative = 1
+combat = 1
+exploration = 1
+balance = 1
+versatility = 1
+customization = 1 # (incl. 3rd party)
+
+genre = "dark fantasy" # fantasy, sci-fi, horror, etc. (can be specific)
+type = "osr" # group of similar systems (e.g. d20, pbta, osr etc.)
+gm = "game master" # either the name of the gm (e.g. warden), or gm-less or solo

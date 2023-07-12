@@ -1,9 +1,18 @@
-title = "D&D 5E"
-desc = "Gather your friends to vanquish mighty monsters, embark on epic quests, and tell legendary stories filled with fantasy and fun."
+title = "Dungeons and Dragons"
+edition = "5e"
+description = "Gather your friends to vanquish mighty monsters, embark on epic quests, and tell legendary stories filled with fantasy and fun."
 url = "https://www.dndbeyond.com/"
-complexity = "medium"
-genre = "heroic fantasy"
-system = "d&d"
-dice = "d20o"
-gm = "dungeon master"
-tags = []
+
+# metrics 1(low) to 5(high)
+complexity = 1
+progression = 1
+narrative = 1
+combat = 1
+exploration = 1
+balance = 1
+versatility = 1
+customization = 1 # (incl. 3rd party)
+
+genre = "heroic fantasy" # fantasy, sci-fi, horror, etc. (can be specific)
+type = "d20" # group of similar systems (e.g. d20, pbta, osr etc.)
+gm = "dungeon master" # either the name of the gm (e.g. warden), or gm-less or solo
