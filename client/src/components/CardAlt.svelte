@@ -4,6 +4,8 @@
 
     export let system: TTRPGSystem;
 
+    export let navPage = 0;
+
 </script>
 
 <div class="card shadow-lg overflow-hidden bg-abyss-900 bg-opacity-95 bg-blend-color-burn bg-auto-100% bg-repeat-round bg-[url('../src/assets/marble_texture.jpg')] h-96 w-72">
@@ -12,15 +14,22 @@
             {system.Title}
         </h1>
     </div>
+    <div class="delim flex justify-center items-center ">
+        <img src="../src/assets/delim_deco.svg" class="w-4/5" alt="line">
+    </div>
     <div class="content flex justify-center items-center text-center">
-        <p class="font-poiret-one text-lg px-4">
-            {system.Description}
-        </p>
+        {#if navPage === 0}
+            <p class="font-poiret-one text-lg px-4 py-2">
+                {system.Description}
+            </p>
+        {/if}
     </div>
     <div class="nav flex justify-center items-center gap-4 text-opacity-90 text-xl">
-        <Icon icon="mdi:rhombus" class="text-goldenrod cursor-pointer"/>
-        <Icon icon="mdi:rhombus" class="cursor-pointer"/>
-        <Icon icon="mdi:rhombus" class="cursor-pointer"/>
+        {#each Array(3) as _, index}
+            <button class="{navPage === index ? 'text-goldenrod': ''} cursor-pointer" on:click={() => {navPage = index}}>
+                <Icon icon="mdi:rhombus" />
+            </button>
+        {/each}
     </div>
     <div class="genre bg-abyss-800 shadow-inner bg-opacity-60 flex justify-center items-center">
         <h1 class="font-poiret-one text-xl text-opacity-90 font-bold">
@@ -33,11 +42,12 @@
     .card {  display: grid;
         background-image: stretch;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1.5fr 4fr 1fr 1fr;
+        grid-template-rows: 1.25fr 0.25fr 4fr 1fr 1fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
             "title title title title"
+            "delim delim delim delim"
             "content content content content"
             "nav nav nav nav"
             "genre genre genre genre";
@@ -50,5 +60,7 @@
     .nav { grid-area: nav; }
 
     .genre { grid-area: genre; }
+
+    .delim { grid-area: delim; }
 
 </style>

@@ -18,6 +18,7 @@ module.exports = {
 				space: '#28293D',
 				'off-gray': '#222227',
 				goldenrod: '#B69047',
+				gold: '#865903',
 				eggshell: '#F4F1DE',
 				'off-white': '#E5E7EB',
 			},
