@@ -16,6 +16,9 @@ dependencies:
   '@fontsource/italiana':
     specifier: ^5.0.5
     version: 5.0.5
+  '@fontsource/poiret-one':
+    specifier: ^5.0.5
+    version: 5.0.5
   '@fontsource/raleway':
     specifier: ^5.0.5
     version: 5.0.5
@@ -812,6 +815,10 @@ packages:
 
   /@fontsource/italiana@5.0.5:
     resolution: {integrity: sha512-Ch4sbscmHE2NS7UuWzuob+ZsMhcUXE2I1+m2afYCftqxfjn54UQBroUD7+pZ4w9aqXuVtBWsFJf51qRb3bPFxQ==}
+    dev: false
+
+  /@fontsource/poiret-one@5.0.5:
+    resolution: {integrity: sha512-21sOzCSIszzSSedYONZ4IQCZRI4HzAW4YdS2uOOp+iG35KPP/xHgbOrAddlh5vi0tkoB8eOpoETEtTZGVWmzNA==}
     dev: false
 
   /@fontsource/raleway@5.0.5:

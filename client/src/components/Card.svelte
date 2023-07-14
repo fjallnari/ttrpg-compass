@@ -1,4 +1,5 @@
 <script lang="ts">
+    import Icon from "@iconify/svelte";
     import type TTRPGSystem from "../interfaces/TTRPGSystem";
 
     export let system: TTRPGSystem;
@@ -36,23 +37,27 @@
         <div>a</div>
     </div>
 </div> -->
-<div class="max-w-md w-1/2 text-center h-full shadow-md rounded-sm text-eggshell bg-off-gray border-4 border-double border-goldenrod">
+<div class="max-w-md w-1/2 text-center h-full shadow-lg rounded-md text-eggshell bg-abyss-600 border-4 border-double border-goldenrod">
     <div class="container">
-        <div class="title flex justify-center items-center m-0 font-italiana font-bold text-2xl bg-raisin border-r-2 border-b-2 border-goldenrod">
+        <div class="title flex justify-center items-center m-0 shadow-inner font-italiana font-bold text-2xl bg-abyss-800 border-r-2 border-b-2 border-goldenrod">
             <h1>{system.Title}</h1>
         </div>
-        <div class="info flex flex-col justify-center items-center border-r-2 border-goldenrod">
-            <p>{system.Type}</p>
-            <p>{system.Gm}</p>
+        <div class="info flex flex-col justify-center items-center border-r-2 font-cinzel border-goldenrod shadow-inner">
+            <p>{system.Type.toUpperCase()}</p>
+            <p>{system.Gm.toUpperCase()}</p>
         </div>
-        <div class="genre border-t-2 border-r-2 p-2 text-base font-cinzel font-semi-bold border-goldenrod bg-raisin">
+        <div class="genre border-t-2 border-r-2 p-2 text-base font-cinzel font-semi-bold border-goldenrod bg-abyss-800 shadow-inner">
             <p>{system.Genre.toUpperCase()}</p>
         </div>
 
-        <div class="metrics h-full flex flex-col justify-center items-center">
-            <p class="italic p-2">
+        <div class="metrics h-full flex flex-col justify-center items-center p-2 shadow-inner">
+            <p class="italic">
                 {system.Description}
             </p>
+            <div class="flex justify-center items-center gap-2 mt-auto">
+                <Icon icon="mdi:rhombus" class="text-goldenrod cursor-pointer"/>
+                <Icon icon="mdi:rhombus" class="cursor-pointer"/>
+            </div>
         </div>
     </div>
 </div>
