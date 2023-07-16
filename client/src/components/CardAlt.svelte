@@ -1,6 +1,7 @@
 <script lang="ts">
   import Icon from "@iconify/svelte";
     import type TTRPGSystem from "../interfaces/TTRPGSystem";
+  import Chip from "./Chip.svelte";
 
     export let system: TTRPGSystem;
 
@@ -11,7 +12,7 @@
 <div class="card shadow-lg overflow-hidden bg-abyss-900 bg-opacity-95 bg-blend-color-burn bg-auto-100% bg-repeat-round bg-[url('../src/assets/marble_texture.jpg')] h-96 w-72">
     <div class="title flex justify-center items-center text-center text-opacity-90">
         <h1 class="font-italiana font-bold text-2xl p-2">
-            {system.Title}
+            {`${system.Title} ${system.Edition}`}
         </h1>
     </div>
     <div class="delim flex justify-center items-center ">
@@ -22,6 +23,18 @@
             <p class="font-poiret-one text-lg px-4 py-2">
                 {system.Description}
             </p>
+        {:else if navPage === 1}
+            <p class="font-poiret-one text-lg px-4 py-2">
+                
+            </p>
+        {:else}
+            <div class="flex flex-col justify-center items-center gap-2">
+                {#each [system.Type, system.Url, system.Gm] as attrib}
+                    <p class="font-poiret-one text-lg">
+                        {attrib}
+                    </p>
+                {/each}
+            </div>
         {/if}
     </div>
     <div class="nav flex justify-center items-center gap-4 text-opacity-90 text-xl">
