@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
-  	import CardAlt from './CardAlt.svelte';
+  	import Card from './Card.svelte';
 
 	//export let icon: string;
 	//export let width: string = '2em';
@@ -14,14 +14,14 @@
 	<Icon icon="mdi:compass-rose" class="text-goldenrod text-8xl"/>
 	<div class=" flex justify-center items-center gap-4 text-opacity-90">
         {#each Array(3) as _, index}
-            <button class="{navPage === index ? 'text-goldenrod': ''} cursor-pointer text-2xl" on:click={() => {navPage = index}}>
+            <button class="{navPage === index ? 'text-goldenrod': ''} cursor-pointer text-4xl" on:click={() => {navPage = index}}>
                 <Icon icon="mdi:rhombus" />
             </button>
         {/each}
     </div>
 	<div class="flex flex-row flex-wrap justify-center mt-6 h-full w-full gap-8">
 		{#each systems as system}
-			<CardAlt {system} navPage={navPage}/>
+			<Card {system} navPage={navPage}/>
 		{/each}
 	</div>
 </div>
