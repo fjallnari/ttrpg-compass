@@ -1,15 +1,14 @@
 <script lang="ts">
   import Icon from "@iconify/svelte";
     import type TTRPGSystem from "../interfaces/TTRPGSystem";
-  import Chip from "./Chip.svelte";
-
     export let system: TTRPGSystem;
 
     export let navPage = 0;
 
 </script>
 
-<div class="card shadow-lg overflow-hidden bg-abyss-900 bg-opacity-95 bg-blend-color-burn bg-auto-100% bg-repeat-round bg-[url('../src/assets/marble_texture.jpg')] h-96 w-72">
+<!-- bg-opacity-95 bg-blend-color-burn bg-auto-100% bg-repeat-round bg-[url('../src/assets/marble_texture.jpg')] -->
+<div class="card shadow-lg overflow-hidden bg-abyss-900 bg-opacity-75 backdrop-blur-md rounded-md h-96 w-72">
     <div class="title flex justify-center items-center text-center text-opacity-90">
         <h1 class="font-italiana font-bold text-2xl p-2">
             {`${system.Title} ${system.Edition}`}
