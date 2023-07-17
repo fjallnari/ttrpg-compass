@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
   	import Card from './Card.svelte';
+  import LoadCard from './LoadCard.svelte';
 
 	//export let icon: string;
 	//export let width: string = '2em';
@@ -20,6 +21,11 @@
         {/each}
     </div>
 	<div class="flex flex-row flex-wrap justify-center mt-6 h-full w-full gap-8">
+		{#await new Promise((r) => setTimeout(r, 10000))}
+			<LoadCard/>
+		{:then _}
+			<Card system={systems[0]} navPage={navPage}/>	
+		{/await}
 		{#each systems as system}
 			<Card {system} navPage={navPage}/>
 		{/each}

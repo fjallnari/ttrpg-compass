@@ -22,6 +22,9 @@ dependencies:
   '@fontsource/raleway':
     specifier: ^5.0.5
     version: 5.0.5
+  '@rive-app/canvas':
+    specifier: ^1.2.1
+    version: 1.2.1
   astro:
     specifier: ^2.8.0
     version: 2.8.0
@@ -902,6 +905,10 @@ packages:
       open: 9.1.0
       picocolors: 1.0.0
       tslib: 2.6.0
+    dev: false
+
+  /@rive-app/canvas@1.2.1:
+    resolution: {integrity: sha512-udDH8al7ra9F7zBc3kzseEVa+9znucqfRtLPAPfXNNq/xfeGdvXCwWj7Vu5lFe0fJ76slKYtxUZIxp5LkiPVYw==}
     dev: false
 
   /@sveltejs/vite-plugin-svelte-inspector@1.0.3(@sveltejs/vite-plugin-svelte@2.4.2)(svelte@4.0.5)(vite@4.4.2):
