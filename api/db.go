@@ -47,7 +47,7 @@ func setupDBClient() (*redis.Client, context.Context) {
 func rebuildDB(client *redis.Client, ctx context.Context) {
 	fmt.Printf("Building DB...\n")
 	var system TTRPGSystem
-	entries, err := os.ReadDir("../data")
+	entries, err := os.ReadDir("../data/mock")
 
 	if err != nil {
 		panic(err)
@@ -55,7 +55,7 @@ func rebuildDB(client *redis.Client, ctx context.Context) {
 
 	for _, entry := range entries {
 		if filepath.Ext(entry.Name()) == ".toml" {
-			doc, err := os.ReadFile(fmt.Sprintf("../data/%s", entry.Name()))
+			doc, err := os.ReadFile(fmt.Sprintf("../data/mock/%s", entry.Name()))
 
 			if err != nil {
 				panic(err)
@@ -67,7 +67,7 @@ func rebuildDB(client *redis.Client, ctx context.Context) {
 				panic(err)
 			}
 
-			systemId := strings.Split(entry.Name(), ".")[0]
+			systemId := fmt.Sprintf("system:%s", strings.Split(entry.Name(), ".")[0])
 
 			if _, err := client.Pipelined(ctx, func(rdb redis.Pipeliner) error {
 				rdb.HSet(ctx, systemId, "title", system.Title)

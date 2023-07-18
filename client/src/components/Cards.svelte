@@ -2,6 +2,7 @@
 	import Icon from '@iconify/svelte';
   	import Card from './Card.svelte';
   	import LoadCard from './LoadCard.svelte';
+  import { slide } from 'svelte/transition';
 
 	//export let icon: string;
 	//export let width: string = '2em';
@@ -10,11 +11,26 @@
 	export let systems: any[] = [];
 	let navPage = 0;
 
+	let filtersMenuActive = false;
+
 </script>
 <div class="flex flex-col flex-wrap justify-center items-center w-11/12 text-eggshell gap-8">
 	<Icon icon="mdi:compass-rose" class="text-goldenrod text-8xl"/>
-	<div class="flex items-center w-4/5 md:w-3/5 lg:w-1/3 h-10 border-b-2 border-transparent border-b-goldenrod border-solid rounded-t bg-abyss-900 bg-opacity-75 hover:bg-opacity-50 backdrop-blur-md">
-		<p class="p-2 font-italiana font-semibold">Search systems...</p>
+	<div class="flex flex-col items-center w-72 md:w-3/5 lg:w-1/3 p-2 border-b-[3px] border-transparent border-b-goldenrod border-solid rounded-t bg-abyss-900 bg-opacity-75 focus-within:bg-opacity-50 focus-within:shadow-xl shadow backdrop-blur-md">
+		<div class="flex items-center flex-row w-full gap-2">
+			<button on:click={() => console.log("search")}>
+				<Icon icon="mdi:search" class="text-2xl active:text-goldenrod"/>
+			</button>
+			<input type="search" id="default-search" class="w-full font-italiana font-semibold bg-inherit border-none outline-none" placeholder="Search TTRPG systems..." required>
+			<button on:click={() => filtersMenuActive = !filtersMenuActive}>
+				<Icon icon="mdi:filter-multiple" class="text-xl active:text-goldenrod {filtersMenuActive ? "text-goldenrod": ""}"/>
+			</button>
+		</div>
+		{#if filtersMenuActive}
+			<div transition:slide class="h-20 w-full m-2 p-2 font-poiret-one">
+				Here be dragons
+			</div>
+		{/if}
 	</div>
 	<div class=" flex justify-center items-center gap-4 text-opacity-90">
         {#each Array(3) as _, index}
