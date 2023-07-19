@@ -4,3 +4,12 @@ type = "nsr"
 genre = "Espionage"
 edition = "6e"
 gm = "Shadow Commander"
+
+complexity = 3
+progression = 5
+narrative = 2
+combat = 1
+exploration = 3
+balance = 2
+versatility = 2
+customization = 2

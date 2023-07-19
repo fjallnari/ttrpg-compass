@@ -4,3 +4,12 @@ type = "bubbleshoe"
 genre = "Post-Apocalyptic"
 edition = "6e"
 gm = "Mutation Master"
+
+complexity = 2
+progression = 4
+narrative = 5
+combat = 1
+exploration = 3
+balance = 3
+versatility = 1
+customization = 1

@@ -4,3 +4,12 @@ type = "nsr"
 genre = "Cyberpunk"
 edition = "4e"
 gm = "Virtual Architect"
+
+complexity = 2
+progression = 5
+narrative = 2
+combat = 1
+exploration = 5
+balance = 5
+versatility = 1
+customization = 2

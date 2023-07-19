@@ -4,3 +4,12 @@ type = "nsr"
 genre = "Cyberpunk"
 edition = "3e"
 gm = "Techno Ethicist"
+
+complexity = 4
+progression = 3
+narrative = 4
+combat = 2
+exploration = 4
+balance = 2
+versatility = 1
+customization = 4

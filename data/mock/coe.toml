@@ -4,3 +4,12 @@ type = "osr"
 genre = "Heroic Fantasy"
 edition = "4e"
 gm = "Keeper of Legends"
+
+complexity = 4
+progression = 1
+narrative = 5
+combat = 2
+exploration = 3
+balance = 3
+versatility = 3
+customization = 2

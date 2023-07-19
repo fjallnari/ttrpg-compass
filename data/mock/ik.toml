@@ -4,3 +4,12 @@ type = "bubbleshoe"
 genre = "Steampunk"
 edition = "9e"
 gm = "Iron Marshal"
+
+complexity = 2
+progression = 1
+narrative = 2
+combat = 5
+exploration = 3
+balance = 4
+versatility = 5
+customization = 4

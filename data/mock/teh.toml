@@ -4,3 +4,13 @@ type = "d69"
 genre = "Horror"
 edition = "4e"
 gm = "Eldritch Scholar"
+
+
+complexity = 4
+progression = 1
+narrative = 4
+combat = 1
+exploration = 1
+balance = 1
+versatility = 1
+customization = 1

@@ -4,3 +4,12 @@ type = "bubbleshoe"
 genre = "Post-Apocalyptic"
 edition = "8e"
 gm = "Confectionary King"
+
+complexity = 5
+progression = 3
+narrative = 3
+combat = 1
+exploration = 2
+balance = 1
+versatility = 1
+customization = 4

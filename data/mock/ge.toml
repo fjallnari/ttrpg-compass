@@ -4,3 +4,12 @@ type = "pbjs"
 genre = "Mythology"
 edition = "3.5e"
 gm = "Divine Arbiter"
+
+complexity = 5
+progression = 5
+narrative = 2
+combat = 4
+exploration = 4
+balance = 4
+versatility = 1
+customization = 3

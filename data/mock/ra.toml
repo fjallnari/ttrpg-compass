@@ -4,3 +4,12 @@ type = "osr"
 genre = "Fantasy"
 edition = "3e"
 gm = "Royal Enchanter"
+
+complexity = 4
+progression = 5
+narrative = 2
+combat = 1
+exploration = 1
+balance = 1
+versatility = 1
+customization = 3

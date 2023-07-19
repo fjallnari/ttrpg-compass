@@ -4,3 +4,12 @@ type = "pbjs"
 genre = "sci-fi"
 edition = ""
 gm = "Cosmic Voyager"
+
+complexity = 2
+progression = 2
+narrative = 5
+combat = 4
+exploration = 4
+balance = 5
+versatility = 5
+customization = 1

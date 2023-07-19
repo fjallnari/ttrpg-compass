@@ -4,3 +4,12 @@ type = "d69"
 genre = "Horror"
 edition = "9e"
 gm = "Ringmaster of Nightmares"
+
+complexity = 5
+progression = 4
+narrative = 5
+combat = 4
+exploration = 3
+balance = 5
+versatility = 4
+customization = 4

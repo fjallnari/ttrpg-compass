@@ -4,3 +4,12 @@ type = "pbjs"
 genre = "lo-fi sci-fi"
 edition = "3e"
 gm = "Cosmic Navigator"
+
+complexity = 2
+progression = 4
+narrative = 1
+combat = 5
+exploration = 2
+balance = 4
+versatility = 2
+customization = 5

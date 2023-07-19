@@ -4,3 +4,12 @@ type = "d69"
 genre = "Horror"
 edition = "2e"
 gm = "Cryptmaster"
+
+complexity = 1
+progression = 5
+narrative = 3
+combat = 5
+exploration = 1
+balance = 1
+versatility = 2
+customization = 2

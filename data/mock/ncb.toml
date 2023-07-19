@@ -4,3 +4,12 @@ type = "nsr"
 genre = "Cyberpunk"
 edition = "6e"
 gm = "Cityscape Overlord"
+
+complexity = 4
+progression = 4
+narrative = 5
+combat = 4
+exploration = 2
+balance = 1
+versatility = 5
+customization = 4

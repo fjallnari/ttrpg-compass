@@ -4,3 +4,12 @@ type = "osr"
 genre = "Fantasy"
 edition = "2e"
 gm = "Empire Whisperer"
+
+complexity = 3
+progression = 3
+narrative = 3
+combat = 1
+exploration = 5
+balance = 3
+versatility = 2
+customization = 2

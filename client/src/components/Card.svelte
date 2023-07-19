@@ -1,6 +1,7 @@
 <script lang="ts">
   import Icon from "@iconify/svelte";
     import type TTRPGSystem from "../interfaces/TTRPGSystem";
+  import StellarChart from "./StellarChart.svelte";
     export let system: TTRPGSystem;
 
     export let navPage = 0;
@@ -23,9 +24,7 @@
                 {system.Description}
             </p>
         {:else if navPage === 1}
-            <p class="font-poiret-one text-lg px-4 py-2">
-                
-            </p>
+            <StellarChart {system} />
         {:else}
             <div class="flex flex-col justify-center items-center gap-2">
                 {#each [system.Type, system.Url, system.Gm] as attrib}

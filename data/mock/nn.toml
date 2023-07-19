@@ -4,3 +4,12 @@ type = "nsr"
 genre = "Cyberpunk"
 edition = "5e"
 gm = "Techno Oracle"
+
+complexity = 5
+progression = 2
+narrative = 5
+combat = 2
+exploration = 1
+balance = 1
+versatility = 4
+customization = 5

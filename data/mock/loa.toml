@@ -4,3 +4,12 @@ type = "osr"
 genre = "Fantasy"
 edition = "9e"
 gm = "Master of Elements"
+
+complexity = 5
+progression = 1
+narrative = 5
+combat = 2
+exploration = 1
+balance = 4
+versatility = 2
+customization = 1

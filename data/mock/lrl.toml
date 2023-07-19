@@ -4,3 +4,12 @@ type = "osr"
 genre = "Dark Fantasy"
 edition = "5e"
 gm = "Master Archaeologist"
+
+complexity = 1
+progression = 5
+narrative = 2
+combat = 2
+exploration = 3
+balance = 1
+versatility = 1
+customization = 2

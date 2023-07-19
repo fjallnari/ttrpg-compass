@@ -4,3 +4,12 @@ type = "osr"
 genre = "Horror"
 edition = "7e"
 gm = "Keeper of Shadows"
+
+complexity = 4
+progression = 2
+narrative = 1
+combat = 2
+exploration = 5
+balance = 2
+versatility = 2
+customization = 2

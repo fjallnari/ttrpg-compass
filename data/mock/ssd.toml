@@ -4,3 +4,12 @@ type = "d69"
 genre = "Horror"
 edition = "5e"
 gm = "Deep-sea Guide"
+
+complexity = 4
+progression = 3
+narrative = 4
+combat = 4
+exploration = 1
+balance = 4
+versatility = 1
+customization = 1

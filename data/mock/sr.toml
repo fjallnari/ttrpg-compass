@@ -4,3 +4,12 @@ type = "nsr"
 genre = "Cyberpunk"
 edition = "3e"
 gm = "Shadow Broker"
+
+complexity = 2
+progression = 5
+narrative = 1
+combat = 2
+exploration = 5
+balance = 4
+versatility = 1
+customization = 4
