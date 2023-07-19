@@ -2,26 +2,29 @@
 	import Icon from '@iconify/svelte';
   	import Card from './Card.svelte';
   	import LoadCard from './LoadCard.svelte';
-  import { slide } from 'svelte/transition';
+	import { slide } from 'svelte/transition';
+	import Autocomplete from './Autocomplete.svelte';
+  	import type TTRPGSystem from '../interfaces/TTRPGSystem';
 
 	//export let icon: string;
 	//export let width: string = '2em';
 	//export let height: string = width;
 
-	export let systems: any[] = [];
+	export let systems: TTRPGSystem[] = [];
 	let navPage = 0;
 
 	let filtersMenuActive = false;
+	let searchValue = '';
 
 </script>
 <div class="flex flex-col flex-wrap justify-center items-center w-11/12 text-eggshell gap-8">
 	<Icon icon="mdi:compass-rose" class="text-goldenrod text-8xl"/>
 	<div class="flex flex-col items-center w-72 md:w-3/5 lg:w-1/3 p-2 border-b-[3px] border-transparent border-b-goldenrod border-solid rounded-t bg-abyss-900 bg-opacity-75 focus-within:bg-opacity-50 focus-within:shadow-xl shadow backdrop-blur-md">
 		<div class="flex items-center flex-row w-full gap-2">
-			<button on:click={() => console.log("search")}>
+			<button on:click={() => {}}>
 				<Icon icon="mdi:search" class="text-2xl active:text-goldenrod"/>
 			</button>
-			<input type="search" id="default-search" class="w-full font-italiana font-semibold bg-inherit border-none outline-none" placeholder="Search TTRPG systems..." required>
+			<Autocomplete bind:value={searchValue} systems={systems.map(sys => sys.Title)}/>
 			<button on:click={() => filtersMenuActive = !filtersMenuActive}>
 				<Icon icon="mdi:filter-multiple" class="text-xl active:text-goldenrod {filtersMenuActive ? "text-goldenrod": ""}"/>
 			</button>
@@ -40,7 +43,7 @@
         {/each}
     </div>
 	<div class="flex flex-row flex-wrap justify-center mt-6 h-full w-full gap-8">
-		{#each systems as system}
+		{#each systems.filter(system => searchValue === '' ? true : system.Title.toLowerCase() === searchValue.toLowerCase()) as system}
 			{#await new Promise((r) => setTimeout(r, 1000))}
 				<LoadCard/>
 			{:then _}
