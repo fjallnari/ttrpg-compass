@@ -1,7 +1,8 @@
 <script lang="ts">
   import Icon from "@iconify/svelte";
     import type TTRPGSystem from "../interfaces/TTRPGSystem";
-  import StellarChart from "./StellarChart.svelte";
+    import StellarChart from "./StellarChart.svelte";
+    import Star from "./Star.svelte";
     export let system: TTRPGSystem;
 
     export let navPage = 0;
@@ -9,7 +10,7 @@
 </script>
 
 <!-- bg-opacity-95 bg-blend-color-burn bg-auto-100% bg-repeat-round bg-[url('../src/assets/marble_texture.jpg')] -->
-<div class="card shadow-lg overflow-hidden bg-abyss-900 bg-opacity-75 backdrop-blur-md rounded h-96 w-72">
+<div class="card shadow-lg overflow-hidden bg-abyss-900 bg-opacity-75 backdrop-blur-md rounded h-[28rem] w-[22rem]">
     <div class="title flex justify-center items-center text-center text-opacity-90">
         <h1 class="font-italiana font-bold text-2xl p-2">
             {`${system.Title} ${system.Edition}`}
@@ -18,26 +19,45 @@
     <div class="delim flex justify-center items-center ">
         <img src="../src/assets/delim_deco.svg" class="w-4/5" alt="line">
     </div>
-    <div class="content flex justify-center items-center text-center">
+    <div class="content flex justify-center items-center text-center min-h-0">
         {#if navPage === 0}
-            <p class="font-poiret-one text-lg px-4 py-2">
-                {system.Description}
-            </p>
+            <div class="flex flex-col justify-evenly items-center gap-8">
+<!--                 <div class="flex justify-center items-center gap-4 font-poiret-one font-semibold text-lg">
+                    <p>{system.Gm}</p>
+                </div> -->
+                <p class="font-poiret-one text-lg px-4 py-2">
+                    {system.Description}
+                </p>
+                <!-- <div class="flex justify-center items-center gap-4 font-poiret-one font-bold text-lg">
+                    <p>{system.Type.toUpperCase()}</p>
+                </div> -->
+            </div>
         {:else if navPage === 1}
-            <StellarChart {system} />
+            <Star {system} />
         {:else}
-            <div class="flex flex-col justify-center items-center gap-2">
-                {#each [system.Type, system.Url, system.Gm] as attrib}
+            <div class="flex flex-col justify-center items-center gap-4 px-4 py-2">
+                <div class="flex flex-col justify-center items-center gap-1">
+                    <h3 class="font-italiana text-xl font-semibold">System family</h3>
                     <p class="font-poiret-one text-lg">
-                        {attrib}
+                        {system.Type.toUpperCase()}
                     </p>
-                {/each}
+                </div>
+                <div class="flex flex-col justify-center items-center gap-1">
+                    <h3 class="font-italiana text-xl font-semibold">URL</h3>
+                    <a class="font-poiret-one text-lg active:text-goldenrod transition-colors" href="{system.Url}">{system.Url}</a>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-1">
+                    <h3 class="font-italiana text-xl font-semibold">GM title</h3>
+                    <p class="font-poiret-one text-lg">
+                        {system.Gm}
+                    </p>
+                </div>
             </div>
         {/if}
     </div>
-    <div class="nav flex justify-center items-center gap-4 text-opacity-90 text-xl">
+    <div class="nav flex justify-center items-center gap-4 text-opacity-90 text-2xl">
         {#each Array(3) as _, index}
-            <button class="{navPage === index ? 'text-goldenrod': ''} cursor-pointer" on:click={() => {navPage = index}}>
+            <button class="{navPage === index ? 'text-goldenrod': ''} cursor-pointer transition-colors" on:click={() => {navPage = index}}>
                 <Icon icon="mdi:rhombus" />
             </button>
         {/each}

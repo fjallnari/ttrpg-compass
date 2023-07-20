@@ -37,7 +37,7 @@
 	</div>
 	<div class=" flex justify-center items-center gap-4 text-opacity-90">
         {#each Array(3) as _, index}
-            <button class="{navPage === index ? 'text-goldenrod': ''} cursor-pointer text-4xl" on:click={() => {navPage = index}}>
+            <button class="{navPage === index ? 'text-goldenrod': ''} cursor-pointer text-4xl transition-colors" on:click={() => {navPage = index}}>
                 <Icon icon="mdi:rhombus" />
             </button>
         {/each}

@@ -25,6 +25,6 @@
 
 </script>
 
-<div class="flex justify-center items-center shadow-lg overflow-hidden bg-abyss-900 bg-opacity-75 backdrop-blur-md rounded-md h-96 w-72">
+<div class="flex justify-center items-center shadow-lg overflow-hidden bg-abyss-900 bg-opacity-75 backdrop-blur-md rounded-md h-[28rem] w-[22rem]">
     <canvas bind:this={canvas} class="w-1/2 h-1/2"></canvas>
 </div>
