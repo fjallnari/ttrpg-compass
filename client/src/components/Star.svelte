@@ -4,7 +4,6 @@
 	export let system: TTRPGSystem;
 	export let starColor: string = "#b69047";
 	export let radialColor: string = "#5e6163";
-	export let labelColor: string = "#d2d2d2";
 
 	type CoordMap = Record<number, string>;
 
@@ -76,9 +75,9 @@
 
 <svg viewBox="-25 -40 250 250" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2">
 	<path style="fill:none" d="M0 0h200v200H0z"/>
-	<path d="m99.966 68.915 21.99 9.109 9.109 21.991-9.109 21.99-21.99 9.109-21.991-9.109-9.109-21.99 9.109-21.991 21.991-9.109Z" style="fill:none;stroke:#5e6163;stroke-width:.53px;stroke-dasharray:1.6,2.13,0,0"/>
-  	<path d="m99.966 58.031 29.676 12.292L141.935 100l-12.293 29.677-29.676 12.292-29.677-12.292L57.997 100l12.292-29.677 29.677-12.292Z" style="fill:none;stroke:#5e6163;stroke-width:.53px;stroke-dasharray:1.6,2.13,0,0"/>
-  	<path d="m99.966 44.292 39.391 16.317L155.674 100l-16.317 39.391-39.391 16.317-39.392-16.317L44.258 100l16.316-39.391 39.392-16.317Z" style="fill:none;stroke:#5e6163;stroke-width:.53px;stroke-dasharray:1.6,2.13,0,0"/>
-  	<path d="m99.966 22.466 54.824 22.709L177.499 100l-22.709 54.825-54.824 22.709-54.825-22.709L22.432 100l22.709-54.825 54.825-22.709Z" style="fill:none;stroke:#5e6163;stroke-width:.53px;stroke-dasharray:1.6,2.13,0,0"/>
-	<path d="M87.489 94.818{NW[2]}L100 {N[5]}{NE[3]}{E[2]} 5.182{SE[4]}L100 {S[3]}{SW[4]}{W[4]}Zm19.466 5.324c.079-.078.079-.206 0-.284l-6.813-6.813c-.078-.079-.206-.079-.284 0l-6.813 6.813c-.079.078-.079.206 0 .284l6.813 6.813c.078.079.206.079.284 0l6.813-6.813Z" style="fill:#b69047"/>
+	<path d="m99.966 68.915 21.99 9.109 9.109 21.991-9.109 21.99-21.99 9.109-21.991-9.109-9.109-21.99 9.109-21.991 21.991-9.109Z" style="fill:none;stroke:{radialColor};stroke-width:.53px;stroke-dasharray:1.6,2.13,0,0"/>
+  	<path d="m99.966 58.031 29.676 12.292L141.935 100l-12.293 29.677-29.676 12.292-29.677-12.292L57.997 100l12.292-29.677 29.677-12.292Z" style="fill:none;stroke:{radialColor};stroke-width:.53px;stroke-dasharray:1.6,2.13,0,0"/>
+  	<path d="m99.966 44.292 39.391 16.317L155.674 100l-16.317 39.391-39.391 16.317-39.392-16.317L44.258 100l16.316-39.391 39.392-16.317Z" style="fill:none;stroke:{radialColor};stroke-width:.53px;stroke-dasharray:1.6,2.13,0,0"/>
+  	<path d="m99.966 22.466 54.824 22.709L177.499 100l-22.709 54.825-54.824 22.709-54.825-22.709L22.432 100l22.709-54.825 54.825-22.709Z" style="fill:none;stroke:{radialColor};stroke-width:.53px;stroke-dasharray:1.6,2.13,0,0"/>
+	<path d="M87.489 94.818{NW[system.Versatility]}L100 {N[system.Complexity]}{NE[system.Progression]}{E[system.Balance]} 5.182{SE[system.Narrative]}L100 {S[system.Combat]}{SW[system.Exploration]}{W[system.Customization]}Zm19.466 5.324c.079-.078.079-.206 0-.284l-6.813-6.813c-.078-.079-.206-.079-.284 0l-6.813 6.813c-.079.078-.079.206 0 .284l6.813 6.813c.078.079.206.079.284 0l6.813-6.813Z" style="fill:{starColor}"/>
 </svg>

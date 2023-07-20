@@ -73,7 +73,7 @@
     .card {  display: grid;
         background-image: stretch;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1.25fr 0.25fr 4fr 1fr 1fr;
+        grid-template-rows: 1.25fr 0.25fr 6fr 1fr 1fr;
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
