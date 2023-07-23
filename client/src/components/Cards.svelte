@@ -17,7 +17,7 @@
 	let searchValue = '';
 
 </script>
-<div class="flex flex-col flex-wrap justify-center items-center w-11/12 text-eggshell gap-8">
+<div class="flex flex-col justify-center items-center w-11/12 gap-8">
 	<!-- <Icon icon="mdi:compass-rose" class="text-goldenrod text-8xl"/> -->
 	<img src="/favicon_bgless.svg" class="w-48" alt="compass">
 	<div class="flex flex-col items-center w-72 md:w-3/5 lg:w-1/3 p-2 border-b-[3px] border-transparent border-b-goldenrod border-solid rounded-t bg-abyss-900 bg-opacity-75 focus-within:bg-opacity-50 focus-within:shadow-xl shadow backdrop-blur-md">
@@ -36,7 +36,7 @@
 			</div>
 		{/if}
 	</div>
-	<div class=" flex justify-center items-center gap-4 text-opacity-90">
+	<div class="flex justify-center items-center gap-4 text-opacity-90">
         {#each Array(3) as _, index}
             <button class="{navPage === index ? 'text-goldenrod': ''} cursor-pointer text-4xl transition-colors" on:click={() => {navPage = index}}>
                 <Icon icon="mdi:rhombus" />

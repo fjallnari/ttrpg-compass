@@ -1,6 +1,7 @@
 ---
 import '@fontsource/italiana';
 import '@fontsource/poiret-one';
+import '@fontsource/metropolis';
 import '@fontsource-variable/raleway';
 import '@fontsource-variable/cinzel';
 
@@ -21,7 +22,7 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="text-off-white">
 		<slot />
 	</body>
 </html>

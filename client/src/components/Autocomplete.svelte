@@ -29,7 +29,7 @@
 
 </script>
 
-<div id="container" class="w-full font-italiana font-semibold relative text-eggshell">
+<div id="container" class="w-full font-poiret-one relative font-semibold">
     <div id="complete" class="absolute top-0 left-0 cursor-text text-[#999]">{suggestion}</div>
     <input bind:value on:keypress={onKeypress} type="search" id="input" class="bg-inherit border-none outline-none z-10 w-full" placeholder="Search TTRPG systems..." required>
 </div>

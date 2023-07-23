@@ -1,8 +1,7 @@
 <script lang="ts">
-  import Icon from "@iconify/svelte";
+    import Icon from "@iconify/svelte";
     import type TTRPGSystem from "../interfaces/TTRPGSystem";
     import StellarChart from "./StellarChart.svelte";
-    import Star from "./Star.svelte";
     export let system: TTRPGSystem;
 
     export let navPage = 0;
@@ -11,10 +10,15 @@
 
 <!-- bg-opacity-95 bg-blend-color-burn bg-auto-100% bg-repeat-round bg-[url('../src/assets/marble_texture.jpg')] -->
 <div class="card shadow-lg overflow-hidden bg-abyss-900 bg-opacity-75 backdrop-blur-md rounded h-[28rem] w-[22rem]">
-    <div class="title flex justify-center items-center text-center text-opacity-90">
-        <h1 class="font-italiana font-bold text-2xl p-2">
-            {`${system.Title} ${system.Edition}`}
+    <div class="title flex flex-col justify-center items-center gap-2 text-center text-opacity-90">
+        <h1 class="font-cinzel text-xl pt-2 px-2">
+            {`${system.Title}`}
         </h1>
+        {#if system.Edition && system.Edition !== ''}
+            <h2 class="font-poiret-one italic text-gray-300 text-lg pb-2">
+                {`${system.Edition}`}
+            </h2>
+        {/if}
     </div>
     <div class="delim flex justify-center items-center ">
         <img src="../src/assets/delim_deco.svg" class="w-4/5" alt="line">
@@ -33,24 +37,24 @@
                 </div> -->
             </div>
         {:else if navPage === 1}
-            <Star {system} />
+            <StellarChart {system} />
         {:else}
             <div class="flex flex-col justify-center items-center gap-4 px-4 py-2">
                 <div class="flex flex-col justify-center items-center gap-1">
-                    <h3 class="font-italiana text-xl font-semibold">System family</h3>
+                    <h3 class="font-cinzel text-xl font-medium">System family</h3>
                     <p class="font-poiret-one text-lg">
                         {system.Type.toUpperCase()}
                     </p>
                 </div>
                 <div class="flex flex-col justify-center items-center gap-1">
-                    <h3 class="font-italiana text-xl font-semibold">URL</h3>
-                    <a class="font-poiret-one text-lg active:text-goldenrod transition-colors" href="{system.Url}">{system.Url}</a>
-                </div>
-                <div class="flex flex-col justify-center items-center gap-1">
-                    <h3 class="font-italiana text-xl font-semibold">GM title</h3>
+                    <h3 class="font-cinzel text-xl font-medium">GM title</h3>
                     <p class="font-poiret-one text-lg">
                         {system.Gm}
                     </p>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-1">
+                    <h3 class="font-cinzel text-xl font-medium">URL</h3>
+                    <a class="font-poiret-one text-lg active:text-goldenrod transition-colors" href="{system.Url}">{system.Url}</a>
                 </div>
             </div>
         {/if}
@@ -63,7 +67,7 @@
         {/each}
     </div>
     <div class="genre bg-transparent bg-opacity-60 flex justify-center items-center">
-        <h1 class="font-poiret-one text-xl text-opacity-90 font-bold">
+        <h1 class="font-cinzel text-xl text-opacity-90 ">
             {system.Genre.toUpperCase()}
         </h1>
     </div>

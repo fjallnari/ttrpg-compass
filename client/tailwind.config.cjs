@@ -39,6 +39,7 @@ module.exports = {
 				raleway: ['Raleway Variable', 'sans-serif'],
 				cinzel: ['Cinzel Variable', 'serif'],
 				'poiret-one': ['Poiret One', 'sans-serif'],
+				metropolis: ['Metropolis', 'sans-serif'],
 			},
 			backgroundSize: {
 				'auto-100%': 'auto 100%',

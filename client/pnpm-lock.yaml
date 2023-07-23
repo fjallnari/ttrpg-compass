@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@astrojs/svelte':
     specifier: ^3.1.0
@@ -14,6 +18,9 @@ dependencies:
     specifier: ^5.0.6
     version: 5.0.6
   '@fontsource/italiana':
+    specifier: ^5.0.5
+    version: 5.0.5
+  '@fontsource/metropolis':
     specifier: ^5.0.5
     version: 5.0.5
   '@fontsource/poiret-one':
@@ -818,6 +825,10 @@ packages:
 
   /@fontsource/italiana@5.0.5:
     resolution: {integrity: sha512-Ch4sbscmHE2NS7UuWzuob+ZsMhcUXE2I1+m2afYCftqxfjn54UQBroUD7+pZ4w9aqXuVtBWsFJf51qRb3bPFxQ==}
+    dev: false
+
+  /@fontsource/metropolis@5.0.5:
+    resolution: {integrity: sha512-+cM25dEv7ZigzKp3fcCp9LXe5IGsyzP1qAUIW1mXRK/C9en4u8MhamGqXMPb43ex9CGqZVtS6Z15iAFbodXTLg==}
     dev: false
 
   /@fontsource/poiret-one@5.0.5:
