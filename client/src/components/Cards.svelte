@@ -17,7 +17,7 @@
 	let searchValue = '';
 
 </script>
-<div class="flex flex-col justify-center items-center w-11/12 gap-8">
+<div class="flex flex-col justify-center items-center w-full gap-8">
 	<!-- <Icon icon="mdi:compass-rose" class="text-goldenrod text-8xl"/> -->
 	<img src="/favicon_bgless.svg" class="w-48" alt="compass">
 	<div class="flex flex-col items-center w-72 md:w-3/5 lg:w-1/3 p-2 border-b-[3px] border-transparent border-b-goldenrod border-solid rounded-t bg-abyss-900 bg-opacity-75 focus-within:bg-opacity-50 focus-within:shadow-xl shadow backdrop-blur-md">

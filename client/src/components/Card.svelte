@@ -2,6 +2,7 @@
     import Icon from "@iconify/svelte";
     import type TTRPGSystem from "../interfaces/TTRPGSystem";
     import StellarChart from "./StellarChart.svelte";
+    import StellarIcons from "./StellarIcons.svelte";
     export let system: TTRPGSystem;
 
     export let navPage = 0;
@@ -9,7 +10,7 @@
 </script>
 
 <!-- bg-opacity-95 bg-blend-color-burn bg-auto-100% bg-repeat-round bg-[url('../src/assets/marble_texture.jpg')] -->
-<div class="card shadow-lg overflow-hidden bg-abyss-900 bg-opacity-75 backdrop-blur-md rounded h-[28rem] w-[22rem]">
+<div class="card shadow-lg overflow-hidden bg-abyss-900 bg-opacity-75 backdrop-blur-md rounded h-[29rem] w-[22rem]">
     <div class="title flex flex-col justify-center items-center gap-2 text-center text-opacity-90">
         <h1 class="font-cinzel text-xl pt-2 px-2">
             {`${system.Title}`}
@@ -23,7 +24,7 @@
     <div class="delim flex justify-center items-center ">
         <img src="../src/assets/delim_deco.svg" class="w-4/5" alt="line">
     </div>
-    <div class="content flex justify-center items-center text-center min-h-0">
+    <div class="content flex justify-center items-center text-center min-h-0 relative">
         {#if navPage === 0}
             <div class="flex flex-col justify-evenly items-center gap-8">
 <!--                 <div class="flex justify-center items-center gap-4 font-poiret-one font-semibold text-lg">
@@ -37,7 +38,8 @@
                 </div> -->
             </div>
         {:else if navPage === 1}
-            <StellarChart {system} />
+            <StellarChart {system} config={{ wantIcons: false, wantRadial: true }} />
+            <StellarIcons />
         {:else}
             <div class="flex flex-col justify-center items-center gap-4 px-4 py-2">
                 <div class="flex flex-col justify-center items-center gap-1">
@@ -59,7 +61,7 @@
             </div>
         {/if}
     </div>
-    <div class="nav flex justify-center items-center gap-4 text-opacity-90 text-2xl">
+    <div class="nav flex justify-center items-center gap-4 text-opacity-90 text-2xl z-10">
         {#each Array(3) as _, index}
             <button class="{navPage === index ? 'text-goldenrod': ''} cursor-pointer transition-colors" on:click={() => {navPage = index}}>
                 <Icon icon="mdi:rhombus" />
