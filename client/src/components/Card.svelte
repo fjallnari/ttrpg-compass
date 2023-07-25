@@ -3,9 +3,13 @@
     import type TTRPGSystem from "../interfaces/TTRPGSystem";
     import StellarChart from "./StellarChart.svelte";
     import StellarIcons from "./StellarIcons.svelte";
+    import { int2roman } from "../util/util.ts"
+
     export let system: TTRPGSystem;
 
     export let navPage = 0;
+
+    let trackedMetric = '' as keyof TTRPGSystem;
 
 </script>
 
@@ -39,7 +43,7 @@
             </div>
         {:else if navPage === 1}
             <StellarChart {system} config={{ wantIcons: false, wantRadial: true }} />
-            <StellarIcons />
+            <StellarIcons bind:trackedMetric />
         {:else}
             <div class="flex flex-col justify-center items-center gap-4 px-4 py-2">
                 <div class="flex flex-col justify-center items-center gap-1">
@@ -70,7 +74,13 @@
     </div>
     <div class="genre bg-transparent bg-opacity-60 flex justify-center items-center">
         <h1 class="font-cinzel text-xl text-opacity-90 ">
-            {system.Genre.toUpperCase()}
+            {#if navPage === 1}
+                {trackedMetric ? `${trackedMetric}: ${int2roman(~~system[trackedMetric]) ?? ''}` : 'hover metric to show'}
+            {:else if navPage === 2}
+                {system.Type.toUpperCase()}
+            {:else}
+                {system.Genre.toUpperCase()}
+            {/if}
         </h1>
     </div>
 </div>
