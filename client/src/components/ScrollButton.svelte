@@ -6,7 +6,7 @@
 
 </script>
 
-<button class="w-12 h-12 bottom-10 right-10 fixed flex justify-center items-center "
+<button class="md:w-12 md:h-12 w-10 h-10 md:bottom-10 md:right-10 bottom-4 right-4 fixed flex justify-center items-center"
     transition:fade
     on:click={() => topElem.scrollIntoView({behavior: 'smooth'})}
 >
@@ -17,4 +17,7 @@
         <path d="M36.339 45.678v87.297M115.42 45.678v87.297" style="fill:none;stroke:#b69047;stroke-width:6px;stroke-linecap:butt;stroke-linejoin:bevel"/>
         <path d="M95.89 61.235a.58.58 0 0 0 0-.821L76.186 40.71a.58.58 0 0 0-.821 0L55.661 60.414a.58.58 0 0 0 0 .821l19.704 19.704a.58.58 0 0 0 .821 0L95.89 61.235Z" style="fill:#b69047"/>
     </svg>
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2" viewBox="0 0 140 135">
+        <path d="M139.909 66.646a1.87 1.87 0 0 1-.514 1.871l-67.988 65.236c-.782.75-2.051.75-2.833 0L.586 68.517a1.868 1.868 0 0 1 0-2.718L68.574.563c.254-.244.558-.408.881-.493.349-.093.72-.093 1.069-.001.323.085.629.25.883.494l67.988 65.236c.254.244.425.537.514.847ZM101.542 89.27l24.899-23.891a1.521 1.521 0 0 0 0-2.211l-55.298-53.06a1.68 1.68 0 0 0-2.305 0L13.54 63.168a1.521 1.521 0 0 0 0 2.211l24.715 23.714L69.08 59.515a1.06 1.06 0 0 1 1.453 0l31.009 29.755Z" style="fill:#b69047"/>
+    </svg> -->
 </button>

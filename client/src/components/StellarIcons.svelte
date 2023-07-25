@@ -1,74 +1,58 @@
 <script lang="ts">
-    import Icon from "@iconify/svelte";
+    import StellarIcon from "./StellarIcon.svelte";
 
-    export let color: string = "[#E5E7EB]";
     export let trackedMetric: string = "";
 
 </script>
 
-<div class="text-{color} text-2xl opacity-80">
-    <button class="absolute left-[50%] translate-x-[-50%] bottom-[84%]"
-        on:mouseover={() => trackedMetric = "Complexity"}
-        on:focus={() => {}}
-    >
-        <Icon icon="mdi:brain" 
-            class="hover:text-goldenrod transition-colors cursor-pointer"
-        />
-    </button>
-    <button class="absolute left-[50%] translate-x-[-50%] bottom-0"
-        on:mouseover={() => trackedMetric = "Combat"}
-        on:focus={() => {}}
-    >
-        <Icon icon="mdi:sword-cross" 
-            class="hover:text-goldenrod transition-colors cursor-pointer"
-        />
-    </button>
-    <button class="absolute left-[27%] translate-x-[-50%] bottom-6"
-        on:mouseover={() => trackedMetric = "Exploration"}
-        on:focus={() => {}}
-    >
-        <Icon icon="mdi:ruler-square-compass" 
-            class="hover:text-goldenrod transition-colors cursor-pointer"
-        />
-    </button>
-    <button class="absolute left-[74%] translate-x-[-50%] bottom-6"
-        on:mouseover={() => trackedMetric = "Narrative"}
-        on:focus={() => {}}
-    >
-        <Icon icon="mdi:scroll-text" 
-            class="hover:text-goldenrod transition-colors cursor-pointer"
-        />
-    </button>
-    <button class="absolute left-[19%] translate-x-[-50%] bottom-[41%]"
-        on:mouseover={() => trackedMetric = "Customization"}
-        on:focus={() => {}}
-    >
-        <Icon icon="mdi:puzzle" 
-            class="hover:text-goldenrod transition-colors cursor-pointer"
-        />
-    </button>
-    <button class="absolute left-[81%] translate-x-[-50%] bottom-[41%]"
-        on:mouseover={() => trackedMetric = "Balance"}
-        on:focus={() => {}}
-    >
-        <Icon icon="mdi:scale-unbalanced" 
-            class="hover:text-goldenrod transition-colors cursor-pointer"
-        />
-    </button>
-    <button class="absolute left-[74%] translate-x-[-50%] bottom-[74%]"
-        on:mouseover={() => trackedMetric = "Progression"}
-        on:focus={() => {}}
-    >
-        <Icon icon="mdi:stairs" 
-            class="hover:text-goldenrod transition-colors cursor-pointer"
-        />
-    </button>
-    <button class="absolute left-[27%] translate-x-[-50%] bottom-[74%]"
-        on:mouseover={() => trackedMetric = "Versatility"}
-        on:focus={() => {}}
-    >
-        <Icon icon="mdi:shape" 
-            class="hover:text-goldenrod transition-colors cursor-pointer"
-        />
-    </button>
+<div class="text-2xl opacity-80">
+    <StellarIcon
+        name="Complexity"
+        icon="mdi:brain"
+        position="absolute left-[50%] translate-x-[-50%] bottom-[84%]"
+        bind:trackedMetric={trackedMetric}
+    />
+    <StellarIcon
+        name="Combat"
+        icon="mdi:sword-cross"
+        position="absolute left-[50%] translate-x-[-50%] bottom-0"
+        bind:trackedMetric={trackedMetric}
+    />
+    <StellarIcon
+        name="Exploration"
+        icon="mdi:ruler-square-compass"
+        position="absolute left-[27%] translate-x-[-50%] bottom-6"
+        bind:trackedMetric={trackedMetric}
+    />
+    <StellarIcon
+        name="Narrative"
+        icon="mdi:scroll-text"
+        position="absolute left-[74%] translate-x-[-50%] bottom-6"
+        bind:trackedMetric={trackedMetric}
+    />
+    <StellarIcon
+        name="Customization"
+        icon="mdi:puzzle"
+        position="absolute left-[19%] translate-x-[-50%] bottom-[41%]"
+        bind:trackedMetric={trackedMetric}
+    />
+    
+    <StellarIcon
+        name="Balance"
+        icon="mdi:scale-unbalanced"
+        position="absolute left-[81%] translate-x-[-50%] bottom-[41%]"
+        bind:trackedMetric={trackedMetric}
+    />
+    <StellarIcon
+        name="Progression"
+        icon="mdi:stairs"
+        position="absolute left-[74%] translate-x-[-50%] bottom-[74%]"
+        bind:trackedMetric={trackedMetric}
+    />
+    <StellarIcon
+        name="Versatility"
+        icon="mdi:shape"
+        position="absolute left-[27%] translate-x-[-50%] bottom-[74%]"
+        bind:trackedMetric={trackedMetric}
+    />
 </div>
