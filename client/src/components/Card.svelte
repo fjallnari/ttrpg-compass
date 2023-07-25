@@ -75,7 +75,7 @@
     <div class="genre bg-transparent bg-opacity-60 flex justify-center items-center">
         <h1 class="font-cinzel text-xl text-opacity-90 ">
             {#if navPage === 1}
-                {trackedMetric ? `${trackedMetric}: ${int2roman(~~system[trackedMetric]) ?? ''}` : 'hover metric to show'}
+                {trackedMetric ? `${trackedMetric}: ${int2roman(~~system[trackedMetric]) ?? ''}` : 'hover/click aspect'}
             {:else if navPage === 2}
                 {system.Type.toUpperCase()}
             {:else}

@@ -1,1 +1,3 @@
 .vscode
+
+/data/stress_test/*.toml

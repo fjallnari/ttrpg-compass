@@ -6,9 +6,6 @@
 
     onMount(() => {
         riveInstance = new Rive({
-            // Hosted .riv asset, or a local one. Uncomment line 8 to try with
-            // a local basketball.riv asset, or add your own!
-            //src: "https://cdn.rive.app/animations/vehicles.riv",
             src: "../src/assets/load_circle.riv",
             canvas: canvas,
             stateMachines: "load",

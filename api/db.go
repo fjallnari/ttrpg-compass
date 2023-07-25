@@ -44,10 +44,10 @@ func setupDBClient() (*redis.Client, context.Context) {
 
 // Rebuilds the database from the data directory
 // Might want to add selective rebuild
-func rebuildDB(client *redis.Client, ctx context.Context) {
+func rebuildDB(client *redis.Client, ctx context.Context, dataDir string) {
 	fmt.Printf("Building DB...\n")
 	var system TTRPGSystem
-	entries, err := os.ReadDir("../data/mock")
+	entries, err := os.ReadDir(dataDir)
 
 	if err != nil {
 		panic(err)
@@ -55,7 +55,7 @@ func rebuildDB(client *redis.Client, ctx context.Context) {
 
 	for _, entry := range entries {
 		if filepath.Ext(entry.Name()) == ".toml" {
-			doc, err := os.ReadFile(fmt.Sprintf("../data/mock/%s", entry.Name()))
+			doc, err := os.ReadFile(fmt.Sprintf("%s%s", dataDir, entry.Name()))
 
 			if err != nil {
 				panic(err)
@@ -98,4 +98,5 @@ func rebuildDB(client *redis.Client, ctx context.Context) {
 			fmt.Printf("%s	\033[32mOK\033[0m\n", system.Title)
 		}
 	}
+	fmt.Printf("Loaded %d systems\n", len(entries))
 }

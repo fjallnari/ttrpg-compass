@@ -27,7 +27,7 @@ func main() {
 
 	dbClient, dbCtx = setupDBClient()
 
-	rebuildDB(dbClient, dbCtx)
+	rebuildDB(dbClient, dbCtx, "../data/mock/")
 
 	app.Use(cors.New(cors.Config{
 		AllowOrigins: "http://localhost:3000",
