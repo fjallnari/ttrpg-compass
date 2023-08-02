@@ -1,5 +1,4 @@
 <script lang="ts">
-    import Icon from "@iconify/svelte";
     import { fade } from "svelte/transition";
 
     export let topElem: HTMLImageElement;

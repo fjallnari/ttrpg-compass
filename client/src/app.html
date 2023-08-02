@@ -1,31 +1,17 @@
----
-import '@fontsource/italiana';
-import '@fontsource/poiret-one';
-import '@fontsource/metropolis';
-import '@fontsource-variable/raleway';
-import '@fontsource-variable/cinzel';
-
-export interface Props {
-	title: string;
-}
-
-const { title } = Astro.props;
----
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description">
-		<meta name="viewport" content="width=device-width" />
+		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon_bg.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<meta name="viewport" content="width=device-width" />
+		<title>TTRPG Compass</title>
+		%sveltekit.head%
 	</head>
-	<body class="text-off-white">
-		<slot />
+	<body data-sveltekit-preload-data="hover" class="text-off-white">
+		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>
+
 <style is:global>
 	:root {
 		--accent: 124, 58, 237;

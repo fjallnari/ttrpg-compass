@@ -26,7 +26,7 @@
         {/if}
     </div>
     <div class="delim flex justify-center items-center ">
-        <img src="../src/assets/delim_deco.svg" class="w-4/5" alt="line">
+        <img src="/delim_deco.svg" class="w-4/5" alt="line">
     </div>
     <div class="content flex justify-center items-center text-center min-h-0 relative">
         {#if navPage === 0}

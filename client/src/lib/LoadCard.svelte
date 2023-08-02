@@ -6,12 +6,12 @@
 
     onMount(() => {
         riveInstance = new Rive({
-            src: "../src/assets/load_circle.riv",
+            src: "/load_circle.riv",
             canvas: canvas,
             stateMachines: "load",
             autoplay: true,
             onLoad: () => {
-                riveInstance.resizeDrawingSurfaceToCanvas();
+                riveInstance?.resizeDrawingSurfaceToCanvas();
             }
         });
     });
