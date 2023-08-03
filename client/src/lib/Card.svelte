@@ -7,7 +7,7 @@
 
     export let system: TTRPGSystem;
 
-    export let navPage = 0;
+    export let cardPage = 0;
 
     let trackedMetric = '' as keyof TTRPGSystem;
 
@@ -29,7 +29,7 @@
         <img src="/delim_deco.svg" class="w-4/5" alt="line">
     </div>
     <div class="content flex justify-center items-center text-center min-h-0 relative">
-        {#if navPage === 0}
+        {#if cardPage === 0}
             <div class="flex flex-col justify-evenly items-center gap-8">
 <!--                 <div class="flex justify-center items-center gap-4 font-poiret-one font-semibold text-lg">
                     <p>{system.Gm}</p>
@@ -41,7 +41,7 @@
                     <p>{system.Type.toUpperCase()}</p>
                 </div> -->
             </div>
-        {:else if navPage === 1}
+        {:else if cardPage === 1}
             <StellarChart {system} config={{ wantIcons: false, wantRadial: true }} />
             <StellarIcons bind:trackedMetric />
         {:else}
@@ -67,16 +67,16 @@
     </div>
     <div class="nav flex justify-center items-center gap-4 text-opacity-90 text-2xl z-10">
         {#each Array(3) as _, index}
-            <button class="{navPage === index ? 'text-goldenrod': ''} cursor-pointer transition-colors" on:click={() => {navPage = index}}>
+            <button class="{cardPage === index ? 'text-goldenrod': ''} cursor-pointer transition-colors" on:click={() => {cardPage = index}}>
                 <Icon icon="mdi:rhombus" />
             </button>
         {/each}
     </div>
     <div class="genre bg-transparent bg-opacity-60 flex justify-center items-center">
         <h1 class="font-cinzel text-xl text-opacity-90 ">
-            {#if navPage === 1}
+            {#if cardPage === 1}
                 {trackedMetric ? `${trackedMetric}: ${int2roman(~~system[trackedMetric]) ?? ''}` : 'hover/click aspect'}
-            {:else if navPage === 2}
+            {:else if cardPage === 2}
                 {system.Type.toUpperCase()}
             {:else}
                 {system.Genre.toUpperCase()}
