@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"strconv"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
@@ -34,24 +35,44 @@ func main() {
 		AllowHeaders: "Origin, Content-Type, Accept",
 	}))
 
-	app.Get("/api/systems", func(c *fiber.Ctx) error {
+	app.Get("/api/systems/:cursor?", func(c *fiber.Ctx) error {
 		var system TTRPGSystem
-		systems := make([]TTRPGSystem, 0)
-		iter := dbClient.Scan(dbCtx, 0, "*", 0).Iterator()
+		var cursor uint64 = 0
+		var err error
+		var keys []string
 
-		for iter.Next(dbCtx) {
-			if err := dbClient.HGetAll(dbCtx, iter.Val()).Scan(&system); err != nil {
+		systems := make([]TTRPGSystem, 0)
+
+		if c.Params("cursor") != "" && c.Params("cursor") != "0" {
+			cursor, err = strconv.ParseUint(c.Params("cursor"), 10, 64)
+			if err != nil {
+				panic(err)
+			}
+			// fmt.Printf("Cursor: %s\n", c.Params("cursor"))
+		}
+
+		keys, cursor, err = dbClient.Scan(dbCtx, cursor, "system:*", 15).Result()
+
+		// fmt.Printf("Cursor: %d\n", cursor)
+		// fmt.Printf("Keys length: %d\n", len(keys))
+
+		if err != nil {
+			panic(err)
+		}
+
+		for _, key := range keys {
+			// fmt.Printf("Key: %s\n", key)
+			if err := dbClient.HGetAll(dbCtx, key).Scan(&system); err != nil {
 				panic(err)
 			}
 
 			systems = append(systems, system)
 		}
 
-		if err := iter.Err(); err != nil {
-			panic(err)
-		}
-
-		return c.JSON(systems)
+		return c.JSON(fiber.Map{
+			"cursor":  cursor,
+			"systems": systems,
+		})
 	})
 
 	app.Get("/api/system/:system", func(c *fiber.Ctx) error {
@@ -59,7 +80,7 @@ func main() {
 		go getSystem(responseChannel, c.Params("system"))
 		system := <-responseChannel
 
-		return c.JSON(system) //c.SendString(fmt.Sprintf("%v", system))
+		return c.JSON(system)
 	})
 
 	app.Static("/", "../client/dist")

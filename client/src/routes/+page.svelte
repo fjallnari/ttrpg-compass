@@ -5,19 +5,14 @@
 	import ScrollButton from "$lib/ScrollButton.svelte";
 	import type TTRPGSystem from "../interfaces/TTRPGSystem";
 	import CardPageSetter from "$lib/CardPageSetter.svelte";
-
-    export let data: PageData;
+	import { cursor } from "../stores";
+	import { onMount } from "svelte";
 
     let cardPage = 0;
 	let topElem: HTMLImageElement;
 	let y = 0;
     let searchValue = '';
-
-    $: systems = data.systems as TTRPGSystem[];
-
-    // $: if (y == 1000) {
-    //     console.log('scrolling');
-    // }
+    let systems: TTRPGSystem[] = [];
 
     // function handleListScroll(
     //   e: UIEvent & {
@@ -32,6 +27,33 @@
     //   }
     // }
 
+    let cardsHeight = 0;
+    let loadingMore = false;
+
+    $: if (y !== 0 && y >= cardsHeight - 700 && !loadingMore && $cursor !== 0) {
+        loadingMore = true;
+
+        loadMore().then(async (newSystems) => {
+            systems = [...systems, ...newSystems];
+            await new Promise((r) => {
+                setTimeout(r, 200);
+            });
+            loadingMore = false;
+        });
+    }
+
+    const loadMore = async () => {
+        const res = await fetch(`http://localhost:5000/api/systems/${$cursor}`);
+        let data = await res.json();
+       
+        cursor.set(data.cursor);
+        return data.systems;
+    }
+
+    onMount(async () => {
+        systems = await loadMore();
+    })
+
 </script>
 
 <svelte:window bind:scrollY={y} />
@@ -41,7 +63,7 @@
         <img src="/favicon_bgless.svg" class="w-48" alt="compass" bind:this={topElem}>
         <Search bind:searchValue systems={systems} />
         <CardPageSetter bind:cardPage />
-        <Cards {systems} {searchValue} {cardPage}/>
+        <Cards {systems} {searchValue} {cardPage} bind:height={cardsHeight} />
         {#if y > 100}
             <ScrollButton {topElem}/>
         {/if}

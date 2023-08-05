@@ -7,11 +7,13 @@
 	export let searchValue = '';
 	export let cardPage = 0;
 
+	export let height = 0;
+
 </script>
 
-<div class="flex flex-row flex-wrap justify-center mt-6 h-full w-full gap-8">
+<div bind:clientHeight={height} class="flex flex-row flex-wrap justify-center mt-6 h-full w-full gap-8">
 	{#each systems.filter(system => searchValue === '' ? true : system.Title.toLowerCase() === searchValue.toLowerCase()) as system}
-		{#await new Promise((r) => setTimeout(r, 1000))}
+		{#await new Promise((r) => setTimeout(r, 500))}
 			<LoadCard/>
 		{:then _}
 			<Card {system} cardPage={cardPage}/>
