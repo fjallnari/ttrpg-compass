@@ -1,3 +1,5 @@
 .vscode
 
 /data/stress_test/*.toml
+
+__pycache__

@@ -1,12 +1,13 @@
 import os
 from random import randint
 
-def append_metrics(folder):
-    files = os.listdir(folder)
-    for file_path in files:
-        if file_path.endswith('.toml'):
-            with open(file_path, "a") as file:
+def append_metrics(path):
+    files = os.listdir(path)
+    for file_name in files:
+        if file_name.endswith('.toml'):
+            with open(f"{path}/{file_name}", "a") as file:
                 for metric in ["complexity", "progression", "narrative", "combat", "exploration",  "balance", "versatility", "customization"]:
                     file.write(f"\n{metric} = {randint(1, 5)}")
-                
-append_metrics(".")
+
+if __name__ == "__main__":
+    append_metrics(".")

@@ -239,11 +239,12 @@ class SystemGenerator:
         return self.system
 
 
-def generate_n_systems(n):
+def generate_n_systems(n, path):
     for _ in range(n):
         id = generate('0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz', 8)
         system = SystemGenerator().get_system()
-        with open(f"{id}.toml", "a+") as file:
+        with open(f"{path}/{id}.toml", "a+") as file:
             file.write(f"title = \"{system['title']}\"\ndescription = \"{system['description']}\"\ntype = \"{system['type']}\"\ngenre = \"{system['genre']}\"\nedition = \"{system['edition']}\"\ngm = \"{system['gm']}\"\n")
 
-generate_n_systems(200)
+if __name__ == "__main__":
+    generate_n_systems(5, ".")

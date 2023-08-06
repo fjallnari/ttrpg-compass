@@ -35,7 +35,7 @@ func main() {
 		AllowHeaders: "Origin, Content-Type, Accept",
 	}))
 
-	app.Get("/api/systems/:cursor?", func(c *fiber.Ctx) error {
+	app.Get("/api/systems/:cursor", func(c *fiber.Ctx) error {
 		var system TTRPGSystem
 		var cursor uint64 = 0
 		var err error
