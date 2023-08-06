@@ -1,17 +1,8 @@
 import tomli
 import os
 import numpy as np
+from metrics_names import METRICS_NAMES
 
-METRICS_NAMES = [
-    "complexity", 
-    "progression", 
-    "narrative", 
-    "combat", 
-    "exploration", 
-    "balance", 
-    "versatility", 
-    "customization"
-]
 
 def get_metrics_as_array(toml_dict):
     metrics = []
