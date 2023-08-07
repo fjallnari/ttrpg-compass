@@ -69,9 +69,16 @@ func main() {
 			systems = append(systems, system)
 		}
 
+		genres, _, err := dbClient.SScan(dbCtx, "genres", 0, "", 0).Result()
+
+		if err != nil {
+			panic(err)
+		}
+
 		return c.JSON(fiber.Map{
 			"cursor":  cursor,
 			"systems": systems,
+			"genres":  genres,
 		})
 	})
 

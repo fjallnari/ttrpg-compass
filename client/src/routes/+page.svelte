@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Cards from "$lib/Cards.svelte";
 	import Search from "$lib/Search.svelte";
-	import type { PageData } from "./$types";
 	import ScrollButton from "$lib/ScrollButton.svelte";
 	import type TTRPGSystem from "../interfaces/TTRPGSystem";
 	import CardPageSetter from "$lib/CardPageSetter.svelte";
@@ -13,19 +12,7 @@
 	let y = 0;
     let searchValue = '';
     let systems: TTRPGSystem[] = [];
-
-    // function handleListScroll(
-    //   e: UIEvent & {
-    //     currentTarget: EventTarget & HTMLUListElement
-    //   },
-    // ) {
-    //   if (
-    //     e.currentTarget.clientHeight + e.currentTarget.scrollTop >=
-	// 	e.currentTarget.scrollHeight - 300
-    //   ) {
-	// 	console.log('load more');
-    //   }
-    // }
+    let genres: string[] = [];
 
     let cardsHeight = 0;
     let loadingMore = false;
@@ -47,6 +34,7 @@
         let data = await res.json();
        
         cursor.set(data.cursor);
+        genres = data.genres;
         return data.systems;
     }
 
@@ -61,7 +49,7 @@
 <main class="flex flex-col flex-wrap justify-center items-center w-11/12 p-6 m-auto">
     <div class="flex flex-col justify-center items-center w-full gap-8 relative">
         <img src="/favicon_bgless.svg" class="w-48" alt="compass" bind:this={topElem}>
-        <Search bind:searchValue systems={systems} />
+        <Search bind:searchValue {systems} {genres} />
         <CardPageSetter bind:cardPage />
         <Cards {systems} {searchValue} {cardPage} bind:height={cardsHeight} />
         {#if y > 100}

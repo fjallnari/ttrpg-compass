@@ -92,6 +92,8 @@ func rebuildDB(client *redis.Client, ctx context.Context, dataDir string) {
 				panic(err)
 			}
 
+			client.SAdd(ctx, "genres", strings.ToLower(system.Genre))
+
 			// if err != nil {
 			// 	panic(err)
 			// }

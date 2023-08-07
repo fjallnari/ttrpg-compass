@@ -5,9 +5,13 @@
 	import { slide } from "svelte/transition";
 
     export let systems: TTRPGSystem[] = [];
+    export let genres: string[] = [];
     export let searchValue: string = "";
 
     let filtersMenuActive = false;
+    let filters = {
+        genre: ''
+    };
     
 
 </script>
