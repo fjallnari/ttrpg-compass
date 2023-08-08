@@ -20,24 +20,33 @@ def load_toml_systems(path):
         if file_name.endswith(".toml"):
             with open(f"{path}/{file_name}", "rb") as f:
                 toml_dict = tomli.load(f)
-                # print(file.split('.')[0], get_metrics_as_array(toml_dict))
-                systems[file_name.split('.')[0]] = get_metrics_as_array(toml_dict)
-                
+                # print(file_name.split('.')[0], get_metrics_as_array(toml_dict), toml_dict['genre'], toml_dict['type'])
+                systems[file_name.split('.')[0]] = {
+                    'genre': toml_dict['genre'],
+                    'type': toml_dict['type'],
+                    'metrics': get_metrics_as_array(toml_dict),
+                }
     return systems
 
-def calc_similarity(metricsA, metricsB):
-    point1 = np.array(metricsA)
-    point2 = np.array(metricsB)
+def calc_similarity(systemA, systemB, genreWeight=4, typeWeight=6):
+    sameGenre = genreWeight if systemA['genre'] == systemB['genre'] else 0
+    sameType = typeWeight if systemA['type'] == systemB['type'] else 0
     
-    return np.linalg.norm(point1 - point2)
+    point1 = np.array(systemA['metrics'])
+    point2 = np.array(systemB['metrics'])
+    
+    # print(np.linalg.norm(point1 - point2) - sameGenre - sameType) 
+    return np.linalg.norm(point1 - point2) - sameGenre - sameType
     
 def calc_all_similarities(systems):
     similarities = {}
     
     for systemA in systems:
         similarities[systemA] = {}
+        
         for systemB in systems:
             if systemA != systemB:
+                # print(f"{systemA} ~ {systemB}: ", end="")
                 similarities[systemA][systemB] = calc_similarity(systems[systemA], systems[systemB])
             
     return similarities
@@ -45,7 +54,7 @@ def calc_all_similarities(systems):
 def append_similar_to_toml(most_similar, path):
     for system in most_similar:
         with open(f"{path}/{system}.toml", "a+") as file:
-            file.write(f"\n\nmost_similar = {most_similar[system]}")
+            file.write(f"\n\nsimilar = {most_similar[system]}")
 
 def get_3_most_similar(similarities):
     most_similar = {}
@@ -63,4 +72,4 @@ def calc_and_write_similarities(path):
     append_similar_to_toml(most_similar, path)
 
 if __name__ == "__main__":
-    calc_and_write_similarities(".")
+    calc_and_write_similarities("../stress_test")

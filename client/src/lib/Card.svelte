@@ -47,15 +47,15 @@
         {:else}
             <div class="flex flex-col justify-center items-center gap-4 px-4 py-2">
                 <div class="flex flex-col justify-center items-center gap-1">
-                    <h3 class="font-cinzel text-xl font-medium">System family</h3>
+                    <h3 class="font-cinzel text-xl font-medium">GM?</h3>
                     <p class="font-poiret-one text-lg">
-                        {system.Type.toUpperCase()}
+                        {system.Gm}
                     </p>
                 </div>
                 <div class="flex flex-col justify-center items-center gap-1">
-                    <h3 class="font-cinzel text-xl font-medium">GM title</h3>
+                    <h3 class="font-cinzel text-xl font-medium">Similar systems</h3>
                     <p class="font-poiret-one text-lg">
-                        {system.Gm}
+                        {system.Similar.join(', ')}
                     </p>
                 </div>
                 <div class="flex flex-col justify-center items-center gap-1">

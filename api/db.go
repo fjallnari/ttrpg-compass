@@ -29,6 +29,8 @@ type TTRPGSystem struct {
 	Genre string `redis:"genre"`
 	Type  string `redis:"type"`
 	Gm    string `redis:"gm"`
+
+	Similar []string `redis:"similar"`
 }
 
 func setupDBClient() (*redis.Client, context.Context) {
@@ -67,7 +69,8 @@ func rebuildDB(client *redis.Client, ctx context.Context, dataDir string) {
 				panic(err)
 			}
 
-			systemId := fmt.Sprintf("system:%s", strings.Split(entry.Name(), ".")[0])
+			systemTextId := strings.Split(entry.Name(), ".")[0]
+			systemId := fmt.Sprintf("system:%s", systemTextId)
 
 			if _, err := client.Pipelined(ctx, func(rdb redis.Pipeliner) error {
 				rdb.HSet(ctx, systemId, "title", system.Title)
@@ -87,9 +90,15 @@ func rebuildDB(client *redis.Client, ctx context.Context, dataDir string) {
 				rdb.HSet(ctx, systemId, "genre", system.Genre)
 				rdb.HSet(ctx, systemId, "type", system.Type)
 				rdb.HSet(ctx, systemId, "gm", system.Gm)
+
 				return nil
 			}); err != nil {
 				panic(err)
+			}
+
+			// similar systems are stored in a separate set for each system
+			for _, similar := range system.Similar {
+				client.SAdd(ctx, fmt.Sprintf("similar:%s", systemTextId), similar)
 			}
 
 			client.SAdd(ctx, "genres", strings.ToLower(system.Genre))

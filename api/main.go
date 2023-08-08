@@ -2,7 +2,6 @@ package main
 
 import (
 	"context"
-	"strconv"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
@@ -28,59 +27,14 @@ func main() {
 
 	dbClient, dbCtx = setupDBClient()
 
-	rebuildDB(dbClient, dbCtx, "../data/mock/")
+	rebuildDB(dbClient, dbCtx, "../data/stress_test/")
 
 	app.Use(cors.New(cors.Config{
 		AllowOrigins: "http://localhost:5173",
 		AllowHeaders: "Origin, Content-Type, Accept",
 	}))
 
-	app.Get("/api/systems/:cursor", func(c *fiber.Ctx) error {
-		var system TTRPGSystem
-		var cursor uint64 = 0
-		var err error
-		var keys []string
-
-		systems := make([]TTRPGSystem, 0)
-
-		if c.Params("cursor") != "" && c.Params("cursor") != "0" {
-			cursor, err = strconv.ParseUint(c.Params("cursor"), 10, 64)
-			if err != nil {
-				panic(err)
-			}
-			// fmt.Printf("Cursor: %s\n", c.Params("cursor"))
-		}
-
-		keys, cursor, err = dbClient.Scan(dbCtx, cursor, "system:*", 15).Result()
-
-		// fmt.Printf("Cursor: %d\n", cursor)
-		// fmt.Printf("Keys length: %d\n", len(keys))
-
-		if err != nil {
-			panic(err)
-		}
-
-		for _, key := range keys {
-			// fmt.Printf("Key: %s\n", key)
-			if err := dbClient.HGetAll(dbCtx, key).Scan(&system); err != nil {
-				panic(err)
-			}
-
-			systems = append(systems, system)
-		}
-
-		genres, _, err := dbClient.SScan(dbCtx, "genres", 0, "", 0).Result()
-
-		if err != nil {
-			panic(err)
-		}
-
-		return c.JSON(fiber.Map{
-			"cursor":  cursor,
-			"systems": systems,
-			"genres":  genres,
-		})
-	})
+	app.Get("/api/systems/:cursor", systemsHandler)
 
 	app.Get("/api/system/:system", func(c *fiber.Ctx) error {
 		responseChannel := make(chan TTRPGSystem)

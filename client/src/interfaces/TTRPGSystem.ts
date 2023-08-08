@@ -16,4 +16,5 @@ export default interface TTRPGSystem {
     Genre: string;
     Type: string;
     Gm: string;
+    Similar: string[];
 }

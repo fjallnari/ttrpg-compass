@@ -111,7 +111,7 @@ compound_start = [
     "Lore",
     "Star",
     "Warp",
-    "Ever"
+    "Ever",
     "World",
     "Myth",
     "Realm",
@@ -138,8 +138,8 @@ compound_start = [
 compound_end = [
     "borne",
     "wind",
-    "ward"
-    "weave"
+    "ward",
+    "weave",
     "weaver",
     "walker",
     "forge",
@@ -162,7 +162,7 @@ genres = [
     "Dark Fantasy",
     "Mythic Fantasy",
     "Sword & Sorcery",
-    "Heroic Fantasy"
+    "Heroic Fantasy",
     "Sci-Fi",
     "Space Opera",
     "Cyberpunk",
@@ -226,7 +226,7 @@ class SystemGenerator:
     def __init__(self):
         self.title = NameGenerator().get_name()
         self.type = choice(system_families)
-        self.genre = choice(genres)
+        self.genre = choice(genres).lower()
         self.edition = self.gen_edition()
         self.gm = choice(20 * ["Game Master"] + ["GM-less/Solo", "Shared GM"])
         self.description = "Venture into a world where elemental forces shape the land, and heroes rise to challenge ancient dragons and mythical beasts."
