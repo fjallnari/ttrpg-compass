@@ -57,7 +57,12 @@ func systemsHandler(c *fiber.Ctx) error {
 		systems = append(systems, system)
 	}
 
-	genres, _, err := dbClient.SScan(dbCtx, "genres", 0, "", 0).Result()
+	iterGenres := dbClient.SScan(dbCtx, "genres", 0, "", 0).Iterator()
+	genres := make([]string, 0)
+
+	for iterGenres.Next(dbCtx) {
+		genres = append(genres, iterGenres.Val())
+	}
 
 	if err != nil {
 		panic(err)

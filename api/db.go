@@ -111,11 +111,16 @@ func rebuildDB(client *redis.Client, ctx context.Context, dataDir string) {
 	}
 	fmt.Printf("Loaded %d systems\n", len(entries))
 
-	//dbClient.Do(ctx, "FT.DROPINDEX", "idx:systems")
+	// dbClient.Do(ctx, "FT.DROPINDEX", "idx:systems")
+
+	//! needs to be run manually for now
+	// docker exec -it redis-stack redis-cli
+	// FT.CREATE idx:systems ON HASH PREFIX 1 system: SCHEMA title TEXT NOSTEM genre TEXT
 
 	//res, err := dbClient.Do(ctx, "FT.CREATE", "idx:systems", "ON HASH", "PREFIX 1 system:", "SCHEMA title TEXT").Result()
 	// if err != nil {
 	// 	panic(err)
 	// }
-	// fmt.Printf("Created index: %s\n", res)
+
+	fmt.Printf("Created index: %s\n", "idx:systems")
 }

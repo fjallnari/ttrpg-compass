@@ -41,7 +41,14 @@ func main() {
 
 	app.Get("/api/systems/search/title::title/genre::genre", func(c *fiber.Ctx) error {
 		var systems []TTRPGSystem = make([]TTRPGSystem, 0)
-		res, err := dbClient.Do(dbCtx, "FT.SEARCH", "idx:systems", fmt.Sprintf("@title:%s*", c.Params("title")), "NOCONTENT").Result()
+		genreFilter := ""
+
+		if c.Params("genre") != "*" {
+			genreFilter = fmt.Sprintf(" @genre:%s", c.Params("genre"))
+		}
+
+		res, err := dbClient.Do(dbCtx, "FT.SEARCH", "idx:systems", fmt.Sprintf("@title:%s*%s", c.Params("title"), genreFilter), "NOCONTENT").Result()
+
 		if err != nil {
 			return c.SendStatus(404)
 		}

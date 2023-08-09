@@ -80,7 +80,7 @@
             {:else if cardPage === 2}
                 {system.Type.toUpperCase()}
             {:else}
-                {system.Genre.toUpperCase()}
+                {system.Genre.replaceAll('_', ' ').toUpperCase()}
             {/if}
         </h1>
     </div>
