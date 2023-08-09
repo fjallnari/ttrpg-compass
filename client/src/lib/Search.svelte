@@ -3,15 +3,37 @@
 	import type TTRPGSystem from "../interfaces/TTRPGSystem";
 	import Autocomplete from "./Autocomplete.svelte";
 	import { slide } from "svelte/transition";
+	import { foundSystems } from "../stores";
 
-    export let systems: TTRPGSystem[] = [];
     export let genres: string[] = [];
     export let searchValue: string = "";
+    export let suggestion: string = "";
+
+    const api = 'http://localhost:5000/api/systems/search';
 
     let filtersMenuActive = false;
     let filters = {
-        genre: ''
+        genre: '*'
     };
+
+    const searchSystems = async () => {
+        const res = await fetch(`${api}/title:${searchValue}/genre:${filters.genre}`);
+        if (res.status === 404) {
+            return;
+        }
+        let data = await res.json() as TTRPGSystem[];
+
+        if (data.length === 0) {
+            return;
+        }
+
+        if (data) {
+            suggestion = `${searchValue}${data[0].Title.slice(searchValue.length)}`
+        } else {
+            suggestion = '';
+        }
+        foundSystems.set(data);
+    }
     
 
 </script>
@@ -28,7 +50,11 @@
                 class="text-2xl active:text-goldenrod"
             />
         </button>
-        <Autocomplete bind:value={searchValue} systems={systems.map(sys => sys.Title)}/>
+        <Autocomplete 
+            bind:value={searchValue}
+            bind:suggestion
+            on:search={searchSystems}
+        />
         <button on:click={() => filtersMenuActive = !filtersMenuActive}>
             <Icon 
                 icon="mdi:filter-multiple" 
@@ -39,6 +65,11 @@
     {#if filtersMenuActive}
         <div transition:slide class="h-20 w-full m-2 p-2 font-poiret-one">
             Here be dragons
+            <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                {#each genres.sort() as genre}
+                    <option value={genre}>{genre}</option>
+                {/each}
+            </select>
         </div>
     {/if}
 </div>

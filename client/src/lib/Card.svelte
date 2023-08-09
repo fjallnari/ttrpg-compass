@@ -55,7 +55,8 @@
                 <div class="flex flex-col justify-center items-center gap-1">
                     <h3 class="font-cinzel text-xl font-medium">Similar systems</h3>
                     <p class="font-poiret-one text-lg">
-                        {system.Similar.join(', ')}
+                        <!-- TODO: FIX SIMILAR FOR SEARCHED SYSTEMS -->
+                        {system.Similar?.join(', ')}
                     </p>
                 </div>
                 <div class="flex flex-col justify-center items-center gap-1">

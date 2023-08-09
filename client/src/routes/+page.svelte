@@ -17,6 +17,7 @@
     let cardsHeight = 0;
     let loadingMore = false;
 
+    // trigger loadMore() when user scrolls to bottom
     $: if (y !== 0 && y >= cardsHeight - 700 && !loadingMore && $cursor !== 0) {
         loadingMore = true;
 
@@ -30,7 +31,7 @@
     }
 
     const loadMore = async () => {
-        const res = await fetch(`http://localhost:5000/api/systems/${$cursor}`);
+        const res = await fetch(`http://localhost:5000/api/systems/all/${$cursor}`);
         let data = await res.json();
        
         cursor.set(data.cursor);
@@ -49,9 +50,9 @@
 <main class="flex flex-col flex-wrap justify-center items-center w-11/12 p-6 m-auto">
     <div class="flex flex-col justify-center items-center w-full gap-8 relative">
         <img src="/favicon_bgless.svg" class="w-48" alt="compass" bind:this={topElem}>
-        <Search bind:searchValue {systems} {genres} />
+        <Search bind:searchValue {genres} />
         <CardPageSetter bind:cardPage />
-        <Cards {systems} {searchValue} {cardPage} bind:height={cardsHeight} />
+        <Cards {systems} {cardPage} bind:height={cardsHeight} />
         {#if y > 100}
             <ScrollButton {topElem}/>
         {/if}

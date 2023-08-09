@@ -1,22 +1,18 @@
 <script lang="ts">
+	import { createEventDispatcher } from "svelte";
+	import { foundSystems } from "../stores";
 
     export let value = '';
-    export let systems: string[] = [];
+    export let suggestion = '';
 
-    let suggestion = '';
-    let systemFound: string | undefined = undefined;
+    const dispatch = createEventDispatcher();
 
     $: {
         if (value === '') {
             suggestion = '';
-        } else {
-            systemFound = systems.find((system) => system.toLowerCase().startsWith(value.toLowerCase()));
-
-            if (systemFound) {
-                suggestion = `${value}${systemFound.slice(value.length)}`
-            } else {
-                suggestion = '';
-            }
+            foundSystems.set([]);
+        } else if (value.length >= 2) {
+            dispatch('search');
         }
     }
 

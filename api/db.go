@@ -70,7 +70,7 @@ func rebuildDB(client *redis.Client, ctx context.Context, dataDir string) {
 			}
 
 			systemTextId := strings.Split(entry.Name(), ".")[0]
-			systemId := fmt.Sprintf("system:%s", systemTextId)
+			systemId := "system:" + systemTextId
 
 			if _, err := client.Pipelined(ctx, func(rdb redis.Pipeliner) error {
 				rdb.HSet(ctx, systemId, "title", system.Title)
@@ -98,7 +98,7 @@ func rebuildDB(client *redis.Client, ctx context.Context, dataDir string) {
 
 			// similar systems are stored in a separate set for each system
 			for _, similar := range system.Similar {
-				client.SAdd(ctx, fmt.Sprintf("similar:%s", systemTextId), similar)
+				client.SAdd(ctx, "similar:"+systemTextId, similar)
 			}
 
 			client.SAdd(ctx, "genres", strings.ToLower(system.Genre))
@@ -110,4 +110,12 @@ func rebuildDB(client *redis.Client, ctx context.Context, dataDir string) {
 		}
 	}
 	fmt.Printf("Loaded %d systems\n", len(entries))
+
+	//dbClient.Do(ctx, "FT.DROPINDEX", "idx:systems")
+
+	//res, err := dbClient.Do(ctx, "FT.CREATE", "idx:systems", "ON HASH", "PREFIX 1 system:", "SCHEMA title TEXT").Result()
+	// if err != nil {
+	// 	panic(err)
+	// }
+	// fmt.Printf("Created index: %s\n", res)
 }
