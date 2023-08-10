@@ -12,6 +12,7 @@ import (
 )
 
 type TTRPGSystem struct {
+	Id          string
 	Title       string `redis:"title"`
 	Edition     string `redis:"edition"`
 	Description string `redis:"desc"`
@@ -31,6 +32,11 @@ type TTRPGSystem struct {
 	Gm    string `redis:"gm"`
 
 	Similar []string `redis:"similar"`
+}
+
+type SimilarSystem struct {
+	Id    string `json:"id"`
+	Title string `json:"title"`
 }
 
 func setupDBClient() (*redis.Client, context.Context) {
@@ -122,5 +128,5 @@ func rebuildDB(client *redis.Client, ctx context.Context, dataDir string) {
 	// 	panic(err)
 	// }
 
-	fmt.Printf("Created index: %s\n", "idx:systems")
+	//fmt.Printf("Created index: %s\n", "idx:systems")
 }

@@ -38,17 +38,8 @@ func systemsHandler(c *fiber.Ctx) error {
 			panic(err)
 		}
 
-		similar, _, err := dbClient.SScan(dbCtx, "similar:"+strings.Split(key, ":")[1], 0, "", 0).Result()
-
-		if err != nil {
-			panic(err)
-		}
-
-		for i, key := range similar {
-			similar[i] = dbClient.HGet(dbCtx, "system:"+key, "title").Val()
-		}
-
-		system.Similar = similar
+		system.Id = strings.Split(key, ":")[1]
+		system.Similar = getTitlesOnly(getSimilarSystems(system.Id))
 
 		// for i, similar := range similarSet {
 		// 	similarSet[i] = dbClient.Get(dbCtx, "similar:"+similar).Val()

@@ -2,7 +2,6 @@ package main
 
 import (
 	"context"
-	"fmt"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
@@ -23,6 +22,30 @@ func getSystem(res chan TTRPGSystem, systemId string) {
 	res <- system
 }
 
+func getSimilarSystems(systemId string) []SimilarSystem {
+	similar := make([]SimilarSystem, 3)
+	similarKeys, _, err := dbClient.SScan(dbCtx, "similar:"+systemId, 0, "", 0).Result()
+
+	if err != nil {
+		panic(err)
+	}
+
+	for i, key := range similarKeys {
+		similar[i].Id = key
+		similar[i].Title = dbClient.HGet(dbCtx, "system:"+key, "title").Val()
+	}
+
+	return similar
+}
+
+func getTitlesOnly(systems []SimilarSystem) []string {
+	titles := make([]string, 3)
+	for i, system := range systems {
+		titles[i] = system.Title
+	}
+	return titles
+}
+
 func main() {
 	app := fiber.New()
 
@@ -39,32 +62,26 @@ func main() {
 
 	app.Get("/api/systems/all/:cursor", systemsHandler)
 
-	app.Get("/api/systems/search/title::title/genre::genre", func(c *fiber.Ctx) error {
-		var systems []TTRPGSystem = make([]TTRPGSystem, 0)
-		genreFilter := ""
+	app.Get("/api/systems/search/title::title/genre::genre", searchHandler)
 
-		if c.Params("genre") != "*" {
-			genreFilter = fmt.Sprintf(" @genre:%s", c.Params("genre"))
-		}
+	// app.Get("/api/systems/similar/:id", func(c *fiber.Ctx) error {
+	// 	// fmt.Printf("ID: %s\n", c.Params("id"))
+	// 	// similarSystems := getSimilarSystems(c.Params("id"))
+	// 	// var system TTRPGSystem
+	// 	// res := make([]TTRPGSystem, 3)
 
-		res, err := dbClient.Do(dbCtx, "FT.SEARCH", "idx:systems", fmt.Sprintf("@title:%s*%s", c.Params("title"), genreFilter), "NOCONTENT").Result()
+	// 	// for _, sys := range similarSystems {
+	// 	// 	if err := dbClient.HGetAll(dbCtx, sys.Id).Scan(&system); err != nil {
+	// 	// 		panic(err)
+	// 	// 	}
 
-		if err != nil {
-			return c.SendStatus(404)
-		}
-
-		foundSystems := res.([]interface{})[1:]
-
-		for _, systemKey := range foundSystems {
-			var system TTRPGSystem
-			if err := dbClient.HGetAll(dbCtx, fmt.Sprintf("%s", systemKey)).Scan(&system); err != nil {
-				panic(err)
-			}
-			systems = append(systems, system)
-		}
-
-		return c.JSON(systems)
-	})
+	// 	// 	system.Id = sys.Id
+	// 	// 	system.Similar = getTitlesOnly(getSimilarSystems(sys.Id))
+	// 	// 	res = append(res, system)
+	// 	// }
+	// 	// return c.JSON(res)
+	// 	//return c.JSON(getSimilarSystems(c.Params("id"))
+	// })
 
 	app.Get("/api/system/:system", func(c *fiber.Ctx) error {
 		responseChannel := make(chan TTRPGSystem)
