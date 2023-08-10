@@ -17,22 +17,29 @@
     };
 
     const searchSystems = async () => {
-        const res = await fetch(`${api}/title:${searchValue}/genre:${filters.genre}`);
+        const sanitizedSearchValue = searchValue == "" ? "*" : searchValue.replace(' ', '_');
+        const res = await fetch(`${api}/title:${sanitizedSearchValue}/genre:${filters.genre}`);
+        
         if (res.status === 404) {
+            //console.log('no systems found');
+            //foundSystems.set([]);
             return;
         }
+
         let data = await res.json() as TTRPGSystem[];
 
         if (data.length === 0) {
             suggestion = '';
+            foundSystems.set([]);
             return;
         }
 
-        if (data) {
-            suggestion = `${searchValue}${data[0].Title.slice(searchValue.length)}`
+        if (data && sanitizedSearchValue != "*") {
+            suggestion = `${searchValue}${data[0].Title.slice(searchValue.length)}`;
         } else {
             suggestion = '';
         }
+
         foundSystems.set(data);
     }
     
@@ -66,7 +73,7 @@
     {#if filtersMenuActive}
         <div transition:slide class="h-20 w-full m-2 p-2 font-poiret-one">
             Here be dragons
-            <select id="countries" bind:value={filters.genre} class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <select id="countries" bind:value={filters.genre} on:change={() => searchSystems()} class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                 <option value={'*'}>any</option>
                 {#each genres.sort() as genre}
                     <option value={genre}>{genre.replaceAll('_', ' ')}</option>

@@ -4,12 +4,29 @@
     import StellarChart from "./StellarChart.svelte";
     import StellarIcons from "./StellarIcons.svelte";
     import { int2roman } from "../util/util.ts"
+	import { foundSystems } from "../stores.ts";
 
     export let system: TTRPGSystem;
 
     export let cardPage = 0;
 
     let trackedMetric = '' as keyof TTRPGSystem;
+
+    const api = 'http://localhost:5000/api/systems/similar';
+
+    // ! TODO 
+    const getSimilarSystems = async () => {
+        const res = await fetch(`${api}/${system.Id}`);
+        
+        if (res.status === 404) {
+            return;
+        }
+
+        let data = await res.json() as TTRPGSystem[];
+        console.log(data);
+
+        foundSystems.set(data);
+    }
 
 </script>
 
@@ -53,10 +70,18 @@
                     </p>
                 </div>
                 <div class="flex flex-col justify-center items-center gap-1">
-                    <h3 class="font-cinzel text-xl font-medium">Similar systems</h3>
+                    <div class="flex flex-row justify-center items-center gap-2">
+                        <h3 class="font-cinzel text-xl font-medium">Similar systems</h3>
+                        <!-- getSimilarSystems() -->
+                        <button on:click={() => {}}
+                            class="active:text-goldenrod cursor-pointer transition-colors"
+                        >
+                            <Icon icon="mdi:compare" class="text-xl" />
+                        </button>
+                    </div>
+                    
                     <p class="font-poiret-one text-lg">
-                        <!-- TODO: FIX SIMILAR FOR SEARCHED SYSTEMS -->
-                        {system.Similar?.join(', ')}
+                        {system.Similar.join(', ')}
                     </p>
                 </div>
                 <div class="flex flex-col justify-center items-center gap-1">

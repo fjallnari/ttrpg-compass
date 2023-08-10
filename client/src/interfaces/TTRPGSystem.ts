@@ -1,4 +1,5 @@
 export default interface TTRPGSystem {
+    Id: string;
     Title: string;
     Edition: string;
     Description: string;
