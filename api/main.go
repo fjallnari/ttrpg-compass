@@ -22,8 +22,9 @@ func getSystem(res chan TTRPGSystem, systemId string) {
 	res <- system
 }
 
-func getSimilarSystems(systemId string) []SimilarSystem {
-	similar := make([]SimilarSystem, 3)
+func getSimilarSystems(systemId string) []TTRPGSystem {
+	var system TTRPGSystem
+	similar := make([]TTRPGSystem, 3)
 	similarKeys, _, err := dbClient.SScan(dbCtx, "similar:"+systemId, 0, "", 0).Result()
 
 	if err != nil {
@@ -31,14 +32,17 @@ func getSimilarSystems(systemId string) []SimilarSystem {
 	}
 
 	for i, key := range similarKeys {
+		if err := dbClient.HGetAll(dbCtx, "system:"+key).Scan(&system); err != nil {
+			panic(err)
+		}
+		similar[i] = system
 		similar[i].Id = key
-		similar[i].Title = dbClient.HGet(dbCtx, "system:"+key, "title").Val()
 	}
 
 	return similar
 }
 
-func getTitlesOnly(systems []SimilarSystem) []string {
+func getTitlesOnly(systems []TTRPGSystem) []string {
 	titles := make([]string, 3)
 	for i, system := range systems {
 		titles[i] = system.Title
@@ -64,24 +68,15 @@ func main() {
 
 	app.Get("/api/systems/search/title::title/genre::genre", searchHandler)
 
-	// app.Get("/api/systems/similar/:id", func(c *fiber.Ctx) error {
-	// 	// fmt.Printf("ID: %s\n", c.Params("id"))
-	// 	// similarSystems := getSimilarSystems(c.Params("id"))
-	// 	// var system TTRPGSystem
-	// 	// res := make([]TTRPGSystem, 3)
+	app.Get("/api/systems/similar/:id", func(c *fiber.Ctx) error {
+		similarSystems := getSimilarSystems(c.Params("id"))
 
-	// 	// for _, sys := range similarSystems {
-	// 	// 	if err := dbClient.HGetAll(dbCtx, sys.Id).Scan(&system); err != nil {
-	// 	// 		panic(err)
-	// 	// 	}
+		for i, system := range similarSystems {
+			similarSystems[i].Similar = getTitlesOnly(getSimilarSystems(system.Id))
+		}
 
-	// 	// 	system.Id = sys.Id
-	// 	// 	system.Similar = getTitlesOnly(getSimilarSystems(sys.Id))
-	// 	// 	res = append(res, system)
-	// 	// }
-	// 	// return c.JSON(res)
-	// 	//return c.JSON(getSimilarSystems(c.Params("id"))
-	// })
+		return c.JSON(similarSystems)
+	})
 
 	app.Get("/api/system/:system", func(c *fiber.Ctx) error {
 		responseChannel := make(chan TTRPGSystem)

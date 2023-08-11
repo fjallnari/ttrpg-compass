@@ -4,8 +4,9 @@
 	import ScrollButton from "$lib/ScrollButton.svelte";
 	import type TTRPGSystem from "../interfaces/TTRPGSystem";
 	import CardPageSetter from "$lib/CardPageSetter.svelte";
-	import { cursor } from "../stores";
+	import { cursor, foundSystems, selectedSystem } from "../stores";
 	import { onMount } from "svelte";
+	import Icon from "@iconify/svelte";
 
     let cardPage = 0;
 	let topElem: HTMLImageElement;
@@ -43,6 +44,11 @@
         systems = await loadMore();
     })
 
+    const deselectSystem = () => {
+        selectedSystem.set(undefined);
+        foundSystems.set([]);
+    }
+
 </script>
 
 <svelte:window bind:scrollY={y} />
@@ -52,6 +58,18 @@
         <img src="/favicon_bgless.svg" class="w-48" alt="compass" bind:this={topElem}>
         <Search bind:searchValue {genres} />
         <CardPageSetter bind:cardPage />
+        {#if $selectedSystem}
+            <div class="flex flex-row gap-2 text-xl justify-center items-center italic font-poiret-one">
+                <h3>Systems similar to:</h3>
+                <h3 class="text-goldenrod">
+                    {`${$selectedSystem.Title}`}
+                </h3>
+                <button class="text-eggshell font-poiret-one" on:click={() => deselectSystem()}>
+                    <Icon icon="mdi:close-thick" class="text-xl" />
+                </button>
+            </div>
+
+        {/if}
         <Cards {systems} {cardPage} bind:height={cardsHeight} />
         {#if y > 100}
             <ScrollButton {topElem}/>

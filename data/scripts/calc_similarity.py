@@ -28,7 +28,7 @@ def load_toml_systems(path):
                 }
     return systems
 
-def calc_similarity(systemA, systemB, genreWeight=4, familyWeight=6):
+def calc_similarity(systemA, systemB, genreWeight=4, familyWeight=4):
     sameGenre = genreWeight if systemA['genre'] == systemB['genre'] else 0
     sameFamily = familyWeight if systemA['family'] == systemB['family'] else 0
     
