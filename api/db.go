@@ -27,9 +27,9 @@ type TTRPGSystem struct {
 	Versatility   int `redis:"vers"`
 	Customization int `redis:"cust"`
 
-	Genre string `redis:"genre"`
-	Type  string `redis:"type"`
-	Gm    string `redis:"gm"`
+	Genre  string `redis:"genre"`
+	Family string `redis:"family"`
+	Gm     string `redis:"gm"`
 
 	Similar []string `redis:"similar"`
 }
@@ -94,7 +94,7 @@ func rebuildDB(client *redis.Client, ctx context.Context, dataDir string) {
 				rdb.HSet(ctx, systemId, "cust", system.Customization)
 
 				rdb.HSet(ctx, systemId, "genre", system.Genre)
-				rdb.HSet(ctx, systemId, "type", system.Type)
+				rdb.HSet(ctx, systemId, "family", system.Family)
 				rdb.HSet(ctx, systemId, "gm", system.Gm)
 
 				return nil

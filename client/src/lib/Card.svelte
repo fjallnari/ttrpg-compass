@@ -103,7 +103,7 @@
             {#if cardPage === 1}
                 {trackedMetric ? `${trackedMetric}: ${int2roman(~~system[trackedMetric]) ?? ''}` : 'hover/click aspect'}
             {:else if cardPage === 2}
-                {system.Type.toUpperCase()}
+                {system.Family.toUpperCase()}
             {:else}
                 {system.Genre.replaceAll('_', ' ').toUpperCase()}
             {/if}

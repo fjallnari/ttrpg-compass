@@ -20,23 +20,23 @@ def load_toml_systems(path):
         if file_name.endswith(".toml"):
             with open(f"{path}/{file_name}", "rb") as f:
                 toml_dict = tomli.load(f)
-                # print(file_name.split('.')[0], get_metrics_as_array(toml_dict), toml_dict['genre'], toml_dict['type'])
+                # print(file_name.split('.')[0], get_metrics_as_array(toml_dict), toml_dict['genre'], toml_dict['family'])
                 systems[file_name.split('.')[0]] = {
                     'genre': toml_dict['genre'],
-                    'type': toml_dict['type'],
+                    'family': toml_dict['family'],
                     'metrics': get_metrics_as_array(toml_dict),
                 }
     return systems
 
-def calc_similarity(systemA, systemB, genreWeight=4, typeWeight=6):
+def calc_similarity(systemA, systemB, genreWeight=4, familyWeight=6):
     sameGenre = genreWeight if systemA['genre'] == systemB['genre'] else 0
-    sameType = typeWeight if systemA['type'] == systemB['type'] else 0
+    sameFamily = familyWeight if systemA['family'] == systemB['family'] else 0
     
     point1 = np.array(systemA['metrics'])
     point2 = np.array(systemB['metrics'])
     
-    # print(np.linalg.norm(point1 - point2) - sameGenre - sameType) 
-    return np.linalg.norm(point1 - point2) - sameGenre - sameType
+    # print(np.linalg.norm(point1 - point2) - sameGenre - sameFamily) 
+    return np.linalg.norm(point1 - point2) - sameGenre - sameFamily
     
 def calc_all_similarities(systems):
     similarities = {}

@@ -224,12 +224,12 @@ class NameGenerator:
 class SystemGenerator:
     def __init__(self):
         self.title = NameGenerator().get_name()
-        self.type = choice(system_families)
+        self.family = choice(system_families)
         self.genre = choice(genres).lower()
         self.edition = self.gen_edition()
         self.gm = choice(20 * ["Game Master"] + ["GM-less/Solo", "Shared GM"])
         self.description = "Venture into a world where elemental forces shape the land, and heroes rise to challenge ancient dragons and mythical beasts."
-        self.system = {'title': self.title, 'type': self.type, 'genre': self.genre, 'edition': self.edition, 'gm': self.gm, 'description': self.description}
+        self.system = {'title': self.title, 'family': self.family, 'genre': self.genre, 'edition': self.edition, 'gm': self.gm, 'description': self.description}
         
     def gen_edition(self):
         return f'{choice(["1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th"])} edition'
@@ -243,7 +243,7 @@ def generate_n_systems(n, path):
         id = generate('0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz', 8)
         system = SystemGenerator().get_system()
         with open(f"{path}/{id}.toml", "a+") as file:
-            file.write(f"title = \"{system['title']}\"\ndescription = \"{system['description']}\"\ntype = \"{system['type']}\"\ngenre = \"{system['genre']}\"\nedition = \"{system['edition']}\"\ngm = \"{system['gm']}\"\n")
+            file.write(f"title = \"{system['title']}\"\ndescription = \"{system['description']}\"\nfamily = \"{system['family']}\"\ngenre = \"{system['genre']}\"\nedition = \"{system['edition']}\"\ngm = \"{system['gm']}\"\n")
 
 if __name__ == "__main__":
     generate_n_systems(5, ".")

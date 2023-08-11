@@ -9,8 +9,8 @@ import (
 
 func searchHandler(c *fiber.Ctx) error {
 	var systems []TTRPGSystem = make([]TTRPGSystem, 0)
-	genreFilter := ""
 	titleFilter := ""
+	genreFilter := ""
 
 	if c.Params("title") != "*" {
 		titleFilter = fmt.Sprintf("@title:%s*", strings.ReplaceAll(c.Params("title"), "_", " "))
