@@ -1,212 +1,6 @@
 from random import choice
 from nanoid import generate
-
-adjectives = [
-    "Astral",
-    "Celestial",
-    "Cosmic",
-    "Eldritch",
-    "Voyager's",
-    "Arcane",
-    "Enigma",
-    "Darkmoon",
-    "Starward",
-    "Mystic",
-    "Epic",
-    "Terra",
-    "Eclipse",
-    "Mythica",
-    "Nexus",
-    "Enchanted",
-    "Elemental",
-    "Stellar",
-    "Forgotten",
-    "Stardrift",  
-    "Lush",
-    "Eco",
-    "Sunlit",
-    "Rustland",
-    "Dystopian",
-    "Nuclear",
-    "Ashen",
-    "Endless"
-]
-
-preposition_noun = [
-    "of the Celestials",
-    "of the Void",
-    "of the Aether",
-    "of the Stars",
-    "of Nevermore",
-    "of Yesteryear",
-    "of Starlight",
-    "of the Eons",
-    "of Stardust",
-    "of the Cosmos",
-    "of Avendel",
-    "of Gaia",
-    "of the Abyss",
-    "of Evermore",
-    "of the Eternals",
-    "of Eldoria",
-    "of the Empyrean",
-    "of Mythos",
-    "of Lumina",
-    "of Eldarune",
-    "of Elara",
-    "of Astraeus",
-]
-
-nouns = [
-    "Ascendancy",
-    "Realms",
-    "Song",
-    "Chronicles",
-    "Prophecy",
-    "Voyages",
-    "Aetheria",
-    "Sagas",
-    "Empires",
-    "Legends",
-    "Horizons",
-    "Tales",
-    "Odyssey",
-    "Mystica",
-    "Terra",
-    "Infinity",
-    "Journeys",
-    "Eternity",
-    "Quest",
-    "Haven",
-    "Elysium",
-    "Aurora",
-    "Light",
-    "Grove",
-    "Darkness",
-    "Shadow",
-    "Dawn",
-    "Dusk",
-    "Twilight",
-    "Rebirth",
-    "Utopia",
-    "Requiem",
-    "Runners",
-    "Spirits",
-    "Revolution",
-    "Revelation",
-    "Incursion",
-    "Genesis",
-    "Empire",
-    "Protocol",
-    "Insurgency",
-    "Matrix",
-    "Outrunners",
-    "Outriders",
-    "Expanse",
-    "Exodus",
-    "Dominion"
-]
-
-compound_start = [
-    "Lore",
-    "Star",
-    "Warp",
-    "Ever",
-    "World",
-    "Myth",
-    "Realm",
-    "Never",
-    "Silk",
-    "Chain",
-    "Soul",
-    "Cyber",
-    "Steam",
-    "Solar",
-    "Clock",
-    "Synth",
-    "Bio",
-    "Neuro",
-    "Vita",
-    "Pixel",
-    "Arc",
-    "Ruin",
-    "Rune",
-    "Rift",
-    "Ashen"
-]
-
-compound_end = [
-    "borne",
-    "wind",
-    "ward",
-    "weave",
-    "weaver",
-    "walker",
-    "forge",
-    "strider",
-    "maker",
-    "seeker",
-    "binder",
-    "bound",
-    "breaker",
-    "walker",
-    "fall",
-    "pulse",
-    "wave",
-    "drift",
-    "tech",
-    "dyne",
-]
-
-genres = [
-    "dark_fantasy",
-    "mythic_fantasy",
-    "sword_&_sorcery",
-    "heroic_fantasy",
-    "sci-fi",
-    "space_opera",
-    "cyberpunk",
-    "steampunk",
-    "post-apocalyptic",
-    "horror",
-    "supernatural",
-    "mystery",
-    "historical",
-    "western",
-    "superhero",
-    "cosmic_horror",
-    "grimdark",
-    "viking",
-    "mechs",
-    "pirates",
-    "solarpunk",
-    "clockpunk",
-    "dieselpunk",
-    "biopunk",
-    "obscure",
-    "weird_west",
-]
-
-system_families = [
-    "D&D",
-    "OSR",
-    "NSR",
-    "PbtA",
-    "Cypher System",
-    "Fate",
-    "Savage Worlds",
-    "GURPS",
-    "BRP",
-    "Fudge",
-    "D6",
-    "D20",
-    "Card-based",
-    "Shadowrun",
-    "Warhammer",
-    "Indie",
-    "GUMSHOE",
-]
-
+from gen_data import adjectives, nouns, compound_start, compound_end, system_families, genres, preposition_noun
 
 class NameGenerator:    
     def adj_noun(self):
@@ -225,10 +19,11 @@ class SystemGenerator:
     def __init__(self):
         self.title = NameGenerator().get_name()
         self.family = choice(system_families)
-        self.genre = choice(genres).lower()
+        genre = choice(genres)
+        self.genre = genre["name"].lower()
         self.edition = self.gen_edition()
         self.gm = choice(20 * ["Game Master"] + ["GM-less/Solo", "Shared GM"])
-        self.description = "Venture into a world where elemental forces shape the land, and heroes rise to challenge ancient dragons and mythical beasts."
+        self.description = genre["description"]
         self.system = {'title': self.title, 'family': self.family, 'genre': self.genre, 'edition': self.edition, 'gm': self.gm, 'description': self.description}
         
     def gen_edition(self):
@@ -246,4 +41,4 @@ def generate_n_systems(n, path):
             file.write(f"title = \"{system['title']}\"\ndescription = \"{system['description']}\"\nfamily = \"{system['family']}\"\ngenre = \"{system['genre']}\"\nedition = \"{system['edition']}\"\ngm = \"{system['gm']}\"\n")
 
 if __name__ == "__main__":
-    generate_n_systems(5, ".")
+    generate_n_systems(1, ".")
