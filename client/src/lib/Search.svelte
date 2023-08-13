@@ -3,7 +3,7 @@
 	import type TTRPGSystem from "../interfaces/TTRPGSystem";
 	import Autocomplete from "./Autocomplete.svelte";
 	import { slide } from "svelte/transition";
-	import { foundSystems } from "../stores";
+	import { foundSystems, selectedSystem } from "../stores";
 
     export let genres: string[] = [];
     export let searchValue: string = "";
@@ -40,6 +40,7 @@
             suggestion = '';
         }
 
+        selectedSystem.set(undefined);
         foundSystems.set(data);
     }
     
@@ -71,9 +72,15 @@
         </button>
     </div>
     {#if filtersMenuActive}
-        <div transition:slide class="h-20 w-full m-2 p-2 font-poiret-one">
-            Here be dragons
-            <select id="countries" bind:value={filters.genre} on:change={() => searchSystems()} class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <div transition:slide class="flex flex-row justify-center items-center gap-2 h-20 w-full m-2 p-2 font-poiret-one">
+            <h3>Genre:</h3>
+            <select bind:value={filters.genre} 
+                on:change={() => searchSystems()} 
+                class="block w-1/4 p-2.5
+                text-egshell text-sm border-b-abyss-900 border-solid border-b-2
+                rounded-t bg-abyss-800 shadow backdrop-blur-md
+                focus:ring-blue-500 focus:border-goldenrod focus:outline-none"
+            >
                 <option value={'*'}>any</option>
                 {#each genres.sort() as genre}
                     <option value={genre}>{genre.replaceAll('_', ' ')}</option>

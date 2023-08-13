@@ -19,7 +19,7 @@
     let loadingMore = false;
 
     // trigger loadMore() when user scrolls to bottom
-    $: if (y !== 0 && y >= cardsHeight - 700 && !loadingMore && $cursor !== 0) {
+    $: if (y !== 0 && y >= cardsHeight - 800 && !loadingMore && $cursor !== 0) {
         loadingMore = true;
 
         loadMore().then(async (newSystems) => {
@@ -59,7 +59,7 @@
         <Search bind:searchValue {genres} />
         <CardPageSetter bind:cardPage />
         {#if $selectedSystem}
-            <div class="flex flex-row gap-2 text-xl justify-center items-center italic font-poiret-one">
+            <div class="flex flex-row gap-2 mb-[-1.5rem] text-xl justify-center items-center italic font-poiret-one">
                 <h3>Systems similar to:</h3>
                 <h3 class="text-goldenrod">
                     {`${$selectedSystem.Title}`}

@@ -23,7 +23,7 @@ func systemsHandler(c *fiber.Ctx) error {
 		// fmt.Printf("Cursor: %s\n", c.Params("cursor"))
 	}
 
-	keys, cursor, err = dbClient.Scan(dbCtx, cursor, "system:*", 15).Result()
+	keys, cursor, err = dbClient.Scan(dbCtx, cursor, "system:*", 20).Result()
 
 	// fmt.Printf("Cursor: %d\n", cursor)
 	// fmt.Printf("Keys length: %d\n", len(keys))
