@@ -108,6 +108,7 @@ func rebuildDB(client *redis.Client, ctx context.Context, dataDir string) {
 			}
 
 			client.SAdd(ctx, "genres", strings.ToLower(system.Genre))
+			client.SAdd(ctx, "families", strings.ToLower(system.Family))
 
 			// if err != nil {
 			// 	panic(err)
@@ -121,7 +122,7 @@ func rebuildDB(client *redis.Client, ctx context.Context, dataDir string) {
 
 	//! needs to be run manually for now
 	// docker exec -it redis-stack redis-cli
-	// FT.CREATE idx:systems ON HASH PREFIX 1 system: SCHEMA title TEXT NOSTEM genre TEXT
+	// FT.CREATE idx:systems ON HASH PREFIX 1 system: SCHEMA title TEXT NOSTEM genre TEXT family TEXT
 
 	//res, err := dbClient.Do(ctx, "FT.CREATE", "idx:systems", "ON HASH", "PREFIX 1 system:", "SCHEMA title TEXT").Result()
 	// if err != nil {

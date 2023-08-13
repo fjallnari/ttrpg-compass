@@ -13,7 +13,7 @@
 
 <div bind:clientHeight={height} class="flex flex-row flex-wrap justify-center mt-6 h-full w-full gap-8">
 	{#each $foundSystems.length == 0 ? systems : $foundSystems as system}
-		{#await new Promise((r) => setTimeout(r, 500))}
+		{#await new Promise((r) => setTimeout(r, 400))}
 			<LoadCard/>
 		{:then _}
 			<Card {system} cardPage={cardPage}/>

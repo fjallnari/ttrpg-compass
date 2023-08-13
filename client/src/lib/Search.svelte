@@ -4,8 +4,10 @@
 	import Autocomplete from "./Autocomplete.svelte";
 	import { slide } from "svelte/transition";
 	import { foundSystems, selectedSystem } from "../stores";
+	import FilterSelect from "./FilterSelect.svelte";
 
     export let genres: string[] = [];
+    export let families: string[] = [];
     export let searchValue: string = "";
     export let suggestion: string = "";
 
@@ -13,13 +15,15 @@
 
     let filtersMenuActive = false;
     let filters = {
-        genre: '*'
+        genre: '*',
+        family: '*',
     };
 
     const searchSystems = async () => {
-        const sanitizedSearchValue = searchValue == "" ? "*" : searchValue.replace(' ', '_');
-        const res = await fetch(`${api}/title:${sanitizedSearchValue}/genre:${filters.genre}`);
-        
+        const sanitizedSearchValue = searchValue === "" ? "*" : searchValue.replace(' ', '_');
+        const sanitizedFamily = filters.family === "*" ? "*" : filters.family.replace(' ', '_');
+        const res = await fetch(`${api}/title:${sanitizedSearchValue}/genre:${filters.genre}/family:${sanitizedFamily}`);
+
         if (res.status === 404) {
             //console.log('no systems found');
             //foundSystems.set([]);
@@ -29,6 +33,10 @@
         let data = await res.json() as TTRPGSystem[];
 
         if (data.length === 0) {
+            filters = {
+                genre: '*',
+                family: '*',
+            };
             suggestion = '';
             foundSystems.set([]);
             return;
@@ -72,20 +80,20 @@
         </button>
     </div>
     {#if filtersMenuActive}
-        <div transition:slide class="flex flex-row justify-center items-center gap-2 h-20 w-full m-2 p-2 font-poiret-one">
-            <h3>Genre:</h3>
-            <select bind:value={filters.genre} 
-                on:change={() => searchSystems()} 
-                class="block w-1/4 p-2.5
-                text-egshell text-sm border-b-abyss-900 border-solid border-b-2
-                rounded-t bg-abyss-800 shadow backdrop-blur-md
-                focus:ring-blue-500 focus:border-goldenrod focus:outline-none"
-            >
-                <option value={'*'}>any</option>
-                {#each genres.sort() as genre}
-                    <option value={genre}>{genre.replaceAll('_', ' ')}</option>
-                {/each}
-            </select>
+        <div transition:slide class="flex flex-row justify-center items-center gap-5 h-20 w-full m-2 p-2 font-poiret-one">
+            <FilterSelect 
+                bind:value={filters.genre} 
+                title="Genre:" 
+                options={genres}
+                on:search={searchSystems}
+            />
+
+            <FilterSelect 
+                bind:value={filters.family} 
+                title="Family:" 
+                options={families}
+                on:search={searchSystems}
+            />
         </div>
     {/if}
 </div>

@@ -14,6 +14,7 @@
     let searchValue = '';
     let systems: TTRPGSystem[] = [];
     let genres: string[] = [];
+    let families: string[] = [];
 
     let cardsHeight = 0;
     let loadingMore = false;
@@ -37,6 +38,7 @@
        
         cursor.set(data.cursor);
         genres = data.genres;
+        families = data.families;
         return data.systems;
     }
 
@@ -56,7 +58,7 @@
 <main class="flex flex-col flex-wrap justify-center items-center w-11/12 p-6 m-auto">
     <div class="flex flex-col justify-center items-center w-full gap-8 relative">
         <img src="/favicon_bgless.svg" class="w-48" alt="compass" bind:this={topElem}>
-        <Search bind:searchValue {genres} />
+        <Search bind:searchValue {genres} {families} />
         <CardPageSetter bind:cardPage />
         {#if $selectedSystem}
             <div class="flex flex-row gap-2 mb-[-1.5rem] text-xl justify-center items-center italic font-poiret-one">

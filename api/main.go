@@ -66,7 +66,7 @@ func main() {
 
 	app.Get("/api/systems/all/:cursor", systemsHandler)
 
-	app.Get("/api/systems/search/title::title/genre::genre", searchHandler)
+	app.Get("/api/systems/search/title::title/genre::genre/family::family", searchHandler)
 
 	app.Get("/api/systems/similar/:id", func(c *fiber.Ctx) error {
 		similarSystems := getSimilarSystems(c.Params("id"))

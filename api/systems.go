@@ -48,11 +48,18 @@ func systemsHandler(c *fiber.Ctx) error {
 		systems = append(systems, system)
 	}
 
-	iterGenres := dbClient.SScan(dbCtx, "genres", 0, "", 0).Iterator()
 	genres := make([]string, 0)
+	iterGenres := dbClient.SScan(dbCtx, "genres", 0, "", 0).Iterator()
 
 	for iterGenres.Next(dbCtx) {
 		genres = append(genres, iterGenres.Val())
+	}
+
+	families := make([]string, 0)
+	iterFamilies := dbClient.SScan(dbCtx, "families", 0, "", 0).Iterator()
+
+	for iterFamilies.Next(dbCtx) {
+		families = append(families, iterFamilies.Val())
 	}
 
 	if err != nil {
@@ -60,8 +67,9 @@ func systemsHandler(c *fiber.Ctx) error {
 	}
 
 	return c.JSON(fiber.Map{
-		"cursor":  cursor,
-		"systems": systems,
-		"genres":  genres,
+		"cursor":   cursor,
+		"systems":  systems,
+		"genres":   genres,
+		"families": families,
 	})
 }

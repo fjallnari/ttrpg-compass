@@ -11,6 +11,7 @@ func searchHandler(c *fiber.Ctx) error {
 	var systems []TTRPGSystem = make([]TTRPGSystem, 0)
 	titleFilter := ""
 	genreFilter := ""
+	familyFilter := ""
 
 	if c.Params("title") != "*" {
 		titleFilter = fmt.Sprintf("@title:%s*", strings.ReplaceAll(c.Params("title"), "_", " "))
@@ -20,7 +21,11 @@ func searchHandler(c *fiber.Ctx) error {
 		genreFilter = fmt.Sprintf(" @genre:%s", c.Params("genre"))
 	}
 
-	res, err := dbClient.Do(dbCtx, "FT.SEARCH", "idx:systems", fmt.Sprintf("%s%s", titleFilter, genreFilter), "NOCONTENT").Result()
+	if c.Params("family") != "*" {
+		familyFilter = fmt.Sprintf(" @family:%s", strings.ReplaceAll(c.Params("family"), "_", " "))
+	}
+
+	res, err := dbClient.Do(dbCtx, "FT.SEARCH", "idx:systems", fmt.Sprintf("%s%s%s", titleFilter, genreFilter, familyFilter), "NOCONTENT").Result()
 
 	if err != nil {
 		return c.SendStatus(404)
