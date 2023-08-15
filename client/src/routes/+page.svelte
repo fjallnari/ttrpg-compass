@@ -47,6 +47,7 @@
     })
 
     const deselectSystem = () => {
+        cardPage = 0;
         selectedSystem.set(undefined);
         foundSystems.set([]);
     }

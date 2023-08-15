@@ -3,7 +3,7 @@
     import type TTRPGSystem from "../interfaces/TTRPGSystem";
     import StellarChart from "./StellarChart.svelte";
     import StellarIcons from "./StellarIcons.svelte";
-    import { int2roman } from "../util/util.ts"
+    import { ASPECTS, int2roman } from "../util/util.ts"
 	import { foundSystems, selectedSystem } from "../stores.ts";
 
     export let system: TTRPGSystem;
@@ -47,21 +47,21 @@
     <div class="content flex justify-center items-center text-center min-h-0 relative">
         {#if cardPage === 0}
             <div class="flex flex-col justify-evenly items-center gap-8">
-<!--                 <div class="flex justify-center items-center gap-4 font-poiret-one font-semibold text-lg">
-                    <p>{system.Gm}</p>
-                </div> -->
                 <p class="font-poiret-one text-lg px-4 py-2">
                     {system.Description}
                 </p>
-                <!-- <div class="flex justify-center items-center gap-4 font-poiret-one font-bold text-lg">
-                    <p>{system.Type.toUpperCase()}</p>
-                </div> -->
             </div>
         {:else if cardPage === 1}
             <StellarChart {system} config={{ wantIcons: false, wantRadial: true }} />
             <StellarIcons bind:trackedMetric />
-        {:else}
+        {:else if cardPage === 2}
             <div class="flex flex-col justify-center items-center gap-4 px-4 py-2">
+                <div class="flex flex-col justify-center items-center gap-1">
+                    <h3 class="font-cinzel text-xl font-medium">Family</h3>
+                    <p class="font-poiret-one text-lg">
+                        {system.Family.replaceAll('_', ' ')}
+                    </p>
+                </div>
                 <div class="flex flex-col justify-center items-center gap-1">
                     <h3 class="font-cinzel text-xl font-medium">GM?</h3>
                     <p class="font-poiret-one text-lg">
@@ -69,6 +69,13 @@
                     </p>
                 </div>
                 <div class="flex flex-col justify-center items-center gap-1">
+                    <h3 class="font-cinzel text-xl font-medium">URL</h3>
+                    <a class="font-poiret-one text-lg active:text-goldenrod transition-colors" href="{system.Url}">{system.Url}</a>
+                </div>
+            </div>
+        {:else if cardPage === 3}
+            <div class="flex flex-col justify-center items-center gap-1 px-2">
+                <div class="flex flex-col justify-center items-center gap-1 p-2">
                     <div class="flex flex-row justify-center items-center gap-2">
                         <h3 class="font-cinzel text-xl font-medium">Similar systems</h3>
                         <!--  -->
@@ -78,33 +85,69 @@
                             <Icon icon="mdi:compare" class="text-xl" />
                         </button>
                     </div>
-                    
-                    <p class="font-poiret-one text-lg">
-                        {system.Similar.join(', ')}
-                    </p>
+                    {#if !$selectedSystem || $selectedSystem.Id == system.Id}
+                        <p class="font-poiret-one text-lg">
+                            {system.Similar.join(', ')}
+                        </p>
+                    {/if}
                 </div>
-                <div class="flex flex-col justify-center items-center gap-1">
-                    <h3 class="font-cinzel text-xl font-medium">URL</h3>
-                    <a class="font-poiret-one text-lg active:text-goldenrod transition-colors" href="{system.Url}">{system.Url}</a>
-                </div>
+                {#if $selectedSystem && $selectedSystem.Id != system.Id}
+                    {#if $selectedSystem?.Genre === system.Genre}
+                        <div class="flex flex-row justify-center items-center gap-2">
+                            <div class="text-goldenrod">
+                                <Icon icon="mdi:plus-thick"/>
+                            </div>
+                            <div class="flex flex-row gap-1 text-lg">
+                                <h3 class="font-cinzel text-goldenrod font-medium">same genre |</h3>
+                                <h3 class="font-poiret-one">{system.Genre.replaceAll('_', ' ')}</h3>
+                            </div>
+                        </div>
+                    {/if}
+                    {#if $selectedSystem?.Family === system.Family}
+                        <div class="flex flex-row justify-center items-center gap-2">
+                            <div class="text-goldenrod">
+                                <Icon icon="mdi:plus-thick"/>
+                            </div>
+                            <div class="flex flex-row gap-1 text-lg">
+                                <h3 class="font-cinzel text-goldenrod font-medium">family |</h3>
+                                <h3 class="font-poiret-one">{system.Family.replaceAll('_', ' ').toLowerCase()}</h3>
+                            </div>
+                        </div>
+                    {/if}
+                    {#each ASPECTS as aspect}
+                        {#if $selectedSystem[aspect] === system[aspect]}
+                            <div class="flex flex-row justify-center items-center gap-2">
+                                <div class="text-goldenrod">
+                                    <Icon icon="mdi:plus-thick"/>
+                                </div>
+                                <div class="flex flex-row gap-1 text-lg">
+                                    <h3 class="font-cinzel text-goldenrod font-medium lowercase">{aspect} |</h3>
+                                    <h3 class="font-poiret-one">{system[aspect]}</h3>
+                                </div>
+                            </div>
+                        {/if}
+                    {/each}
+                {/if}
             </div>
         {/if}
     </div>
     <div class="nav flex justify-center items-center gap-4 text-opacity-90 text-2xl z-10">
-        {#each Array(3) as _, index}
+        {#each Array(4) as _, index}
             <button class="{cardPage === index ? 'text-goldenrod': ''} cursor-pointer transition-colors" on:click={() => {cardPage = index}}>
                 <Icon icon="mdi:rhombus" />
             </button>
         {/each}
     </div>
     <div class="genre bg-transparent bg-opacity-60 flex justify-center items-center">
-        <h1 class="font-cinzel text-xl text-opacity-90 ">
+        <h1 class="font-cinzel text-xl text-opacity-90 uppercase">
             {#if cardPage === 1}
                 {trackedMetric ? `${trackedMetric}: ${int2roman(~~system[trackedMetric]) ?? ''}` : 'hover/click aspect'}
             {:else if cardPage === 2}
-                {system.Family.toUpperCase()}
-            {:else}
+                details
+            {:else if cardPage === 0}
                 {system.Genre.replaceAll('_', ' ').toUpperCase()}
+            {:else}
+                similarity
             {/if}
         </h1>
     </div>

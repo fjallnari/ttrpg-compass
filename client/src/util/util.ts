@@ -1,3 +1,5 @@
+import type TTRPGSystem from "../interfaces/TTRPGSystem";
+
 // from https://joshtronic.com/2020/02/17/converting-integers-to-roman-numerals-with-typescript/
 export const int2roman = (original: number): string => {
     if (original === 0) { return '-' }
@@ -26,3 +28,16 @@ export const int2roman = (original: number): string => {
       return roman;
     }, '');
 }
+
+type AspectKey = keyof TTRPGSystem;
+
+export const ASPECTS: AspectKey[] = [
+  "Complexity",
+  "Combat",
+  "Exploration",
+  "Narrative",
+  "Customization",
+  "Balance",
+  "Progression",
+  "Versatility"
+];
