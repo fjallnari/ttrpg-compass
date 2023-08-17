@@ -16,7 +16,7 @@ type TTRPGSystem struct {
 	Title       string `redis:"title"`
 	Edition     string `redis:"edition"`
 	Description string `redis:"desc"`
-	Url         string `redis:"url"`
+	Publisher   string `redis:"publisher"`
 
 	Complexity    int `redis:"cmpx"`
 	Progression   int `redis:"prgr"`
@@ -82,7 +82,7 @@ func rebuildDB(client *redis.Client, ctx context.Context, dataDir string) {
 				rdb.HSet(ctx, systemId, "title", system.Title)
 				rdb.HSet(ctx, systemId, "edition", system.Edition)
 				rdb.HSet(ctx, systemId, "desc", system.Description)
-				rdb.HSet(ctx, systemId, "url", system.Url)
+				rdb.HSet(ctx, systemId, "publisher", system.Publisher)
 
 				rdb.HSet(ctx, systemId, "cmpx", system.Complexity)
 				rdb.HSet(ctx, systemId, "prgr", system.Progression)

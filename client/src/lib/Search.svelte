@@ -61,13 +61,11 @@
     focus-within:bg-opacity-50 focus-within:shadow-xl shadow backdrop-blur-md"
 >
     <div class="flex items-center flex-row w-full gap-2">
-        <button on:click={() => {}}>
-            <Icon 
-                icon="mdi:search" 
-                class="text-2xl active:text-goldenrod"
-            />
-        </button>
-        <Autocomplete 
+        <Icon 
+            icon="mdi:search" 
+            class="text-xl"
+        />
+        <Autocomplete
             bind:value={searchValue}
             bind:suggestion
             on:search={searchSystems}
@@ -80,7 +78,7 @@
         </button>
     </div>
     {#if filtersMenuActive}
-        <div transition:slide class="flex flex-row justify-center items-center gap-5 h-20 w-full m-2 p-2 font-poiret-one">
+        <div transition:slide class="flex flex-row flex-wrap justify-center items-center gap-5 h-fit w-full m-2 p-2 font-poiret-one">
             <FilterSelect 
                 bind:value={filters.genre} 
                 title="Genre:" 

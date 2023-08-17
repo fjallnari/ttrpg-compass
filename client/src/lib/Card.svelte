@@ -27,6 +27,8 @@
         foundSystems.set([system, ...data]);
     }
 
+    $: isNotSelected = $selectedSystem && $selectedSystem.Id != system.Id;
+
 </script>
 
 <!-- bg-opacity-95 bg-blend-color-burn bg-auto-100% bg-repeat-round bg-[url('../src/assets/marble_texture.jpg')] -->
@@ -44,7 +46,7 @@
     <div class="delim flex justify-center items-center ">
         <img src="/delim_deco.svg" class="w-4/5" alt="line">
     </div>
-    <div class="content flex justify-center items-center text-center min-h-0 relative">
+    <div class="content flex justify-center items-center text-center {cardPage === 3 ? 'overflow-y-auto': ''} min-h-0 relative">
         {#if cardPage === 0}
             <div class="flex flex-col justify-evenly items-center gap-8">
                 <p class="font-poiret-one text-lg px-4 py-2">
@@ -63,18 +65,21 @@
                     </p>
                 </div>
                 <div class="flex flex-col justify-center items-center gap-1">
-                    <h3 class="font-cinzel text-xl font-medium">GM?</h3>
+                    <h3 class="font-cinzel text-xl font-medium">GM</h3>
                     <p class="font-poiret-one text-lg">
                         {system.Gm}
                     </p>
                 </div>
                 <div class="flex flex-col justify-center items-center gap-1">
-                    <h3 class="font-cinzel text-xl font-medium">URL</h3>
-                    <a class="font-poiret-one text-lg active:text-goldenrod transition-colors" href="{system.Url}">{system.Url}</a>
+                    <h3 class="font-cinzel text-xl font-medium">Publisher</h3>
+                    <p class="font-poiret-one text-lg">
+                        {system.Publisher}
+                    </p>
+                    <!-- <a class="font-poiret-one text-lg active:text-goldenrod transition-colors" href="{system.Url}">{system.Url}</a> -->
                 </div>
             </div>
         {:else if cardPage === 3}
-            <div class="flex flex-col justify-center items-center gap-1 px-2">
+            <div class="flex flex-col justify-center {isNotSelected ? 'self-start': ''} gap-1 px-2">
                 <div class="flex flex-col justify-center items-center gap-1 p-2">
                     <div class="flex flex-row justify-center items-center gap-2">
                         <h3 class="font-cinzel text-xl font-medium">Similar systems</h3>
@@ -91,7 +96,7 @@
                         </p>
                     {/if}
                 </div>
-                {#if $selectedSystem && $selectedSystem.Id != system.Id}
+                {#if isNotSelected}
                     {#if $selectedSystem?.Genre === system.Genre}
                         <div class="flex flex-row justify-center items-center gap-2">
                             <div class="text-goldenrod">
@@ -115,7 +120,7 @@
                         </div>
                     {/if}
                     {#each ASPECTS as aspect}
-                        {#if $selectedSystem[aspect] === system[aspect]}
+                        {#if $selectedSystem && $selectedSystem[aspect] === system[aspect]}
                             <div class="flex flex-row justify-center items-center gap-2">
                                 <div class="text-goldenrod">
                                     <Icon icon="mdi:plus-thick"/>

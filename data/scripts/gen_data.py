@@ -273,3 +273,26 @@ genres = [
         "description": "Traverse ghostly plains, confront paranormal outlaws, and embrace the unsettling blend of frontier grit and otherworldly strangeness that defines the Weird West."
     },
 ]
+
+publishers = [
+    "Mythic Forge Games",
+    "Enchanted Realms Publishing",
+    "Starfall Adventures",
+    "Eldritch Chronicles Publishing",
+    "Crystal Dice Creations",
+    "Arcane Scribe Studios",
+    "Nebula Quest Publishing",
+    "Shadowrealm RPGs",
+    "Dragon Tome Press",
+    "Celestial Table Games",
+    "Steam Craft Studios",
+    "Etherbound Entertainment",
+    "Wyldwood Ventures",
+    "Technomancy Tales",
+    "Dreamweaver Publishing",
+    "Grimoire Guild Games",
+    "Solarflare RPGs",
+    "Mages & Monoliths",
+    "Wicked Fate Publishing",
+    "Timewarp Studios"
+]

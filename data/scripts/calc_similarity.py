@@ -21,6 +21,9 @@ def load_toml_systems(path):
             with open(f"{path}/{file_name}", "rb") as f:
                 toml_dict = tomli.load(f)
                 # print(file_name.split('.')[0], get_metrics_as_array(toml_dict), toml_dict['genre'], toml_dict['family'])
+                if 'similar' in toml_dict:
+                    os.system("sed -i '$d' {0} && sed -i '$d' {0}".format(f"{path}/{file_name}"))
+                
                 systems[file_name.split('.')[0]] = {
                     'genre': toml_dict['genre'],
                     'family': toml_dict['family'],

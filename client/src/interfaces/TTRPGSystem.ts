@@ -3,7 +3,7 @@ export default interface TTRPGSystem {
     Title: string;
     Edition: string;
     Description: string;
-    Url: string;
+    Publisher: string;
 
     Complexity: number;
     Progression: number;
