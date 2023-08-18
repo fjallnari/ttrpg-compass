@@ -3,7 +3,10 @@ Template used is the following:
 title = ""
 edition = ""
 description = ""
-url = ""
+family = ""
+genre = ""
+gm = "" # whether the game is gm-less/solo/gm
+publisher = ""
 
 # metrics 1(low) to 5(high)
 complexity = 1
@@ -15,6 +18,4 @@ balance = 1
 versatility = 1
 customization = 1 # (incl. 3rd party)
 
-genre = "" # fantasy, sci-fi, horror, etc. (can be specific)
-type = "" # group of similar systems (e.g. d20, pbta, osr etc.)
-gm = "" # either the name of the gm (e.g. warden), or gm-less or solo
+similar = [] # list of ids of 3 most similar systems

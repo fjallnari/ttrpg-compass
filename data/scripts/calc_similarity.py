@@ -1,7 +1,7 @@
 import tomli
 import os
 import numpy as np
-from metrics_names import METRICS_NAMES
+from gen_data import METRICS_NAMES
 
 
 def get_metrics_as_array(toml_dict):
@@ -75,4 +75,4 @@ def calc_and_write_similarities(path):
     append_similar_to_toml(most_similar, path)
 
 if __name__ == "__main__":
-    calc_and_write_similarities("../stress_test")
+    calc_and_write_similarities("../mock")

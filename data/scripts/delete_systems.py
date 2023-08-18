@@ -13,4 +13,4 @@ def delete_systems(dir_name, flushdb):
 
 if __name__ == "__main__":
     flushdb = sys.argv[1] == '-f' if len(sys.argv) == 2 else False
-    delete_systems("../stress_test", flushdb)
+    delete_systems("../mock", flushdb)

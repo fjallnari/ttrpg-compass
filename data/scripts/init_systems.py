@@ -12,4 +12,4 @@ def init_systems(n, path):
     
 if __name__ == "__main__":
     no_of_systems = 5 if len(sys.argv) == 1 else int(sys.argv[1])
-    init_systems(no_of_systems, "../stress_test")
+    init_systems(no_of_systems, "../mock")

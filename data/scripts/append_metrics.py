@@ -1,6 +1,6 @@
 import os
 from random import randint
-from metrics_names import METRICS_NAMES
+from gen_data import METRICS_NAMES
 
 def append_metrics(path):
     files = os.listdir(path)

@@ -296,3 +296,14 @@ publishers = [
     "Wicked Fate Publishing",
     "Timewarp Studios"
 ]
+
+METRICS_NAMES = [
+    "complexity", 
+    "progression", 
+    "narrative", 
+    "combat", 
+    "exploration", 
+    "balance", 
+    "versatility", 
+    "customization"
+]

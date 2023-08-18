@@ -57,7 +57,7 @@ func main() {
 
 	defer dbClient.Close()
 
-	rebuildDB(dbClient, dbCtx, "../data/stress_test/")
+	rebuildDB(dbClient, dbCtx, "../data/mock/")
 
 	app.Use(cors.New(cors.Config{
 		AllowOrigins: "http://localhost:5173",
