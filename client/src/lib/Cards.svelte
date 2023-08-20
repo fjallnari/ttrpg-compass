@@ -3,9 +3,11 @@
   	import LoadCard from './LoadCard.svelte';
   	import type TTRPGSystem from '../interfaces/TTRPGSystem';
 	import { foundSystems } from '../stores';
+	import type Filters from '../interfaces/Filters';
 
 	export let systems: TTRPGSystem[] = [];
 	export let cardPage = 0;
+	export let filters: Filters;
 
 	export let height = 0;
 
@@ -16,7 +18,7 @@
 		{#await new Promise((r) => setTimeout(r, 400))}
 			<LoadCard/>
 		{:then _}
-			<Card {system} cardPage={cardPage}/>
+			<Card {system} cardPage={cardPage} bind:filters/>
 		{/await}
 	{/each}
 </div>

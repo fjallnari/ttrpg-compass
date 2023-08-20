@@ -5,8 +5,10 @@
     import StellarIcons from "./StellarIcons.svelte";
     import { ASPECTS, int2roman } from "../util/util.ts"
 	import { foundSystems, selectedSystem } from "../stores.ts";
+	import type Filters from "../interfaces/Filters.ts";
 
     export let system: TTRPGSystem;
+    export let filters: Filters;
 
     export let cardPage = 0;
 
@@ -23,6 +25,10 @@
 
         let data = await res.json() as TTRPGSystem[];
 
+        filters = {
+            genre: '*',
+            family: '*',
+        };
         selectedSystem.set(system);
         foundSystems.set([system, ...data]);
     }

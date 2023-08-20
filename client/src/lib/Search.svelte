@@ -5,19 +5,18 @@
 	import { slide } from "svelte/transition";
 	import { foundSystems, selectedSystem } from "../stores";
 	import FilterSelect from "./FilterSelect.svelte";
+	import type Filters from "../interfaces/Filters";
 
     export let genres: string[] = [];
     export let families: string[] = [];
     export let searchValue: string = "";
     export let suggestion: string = "";
+    export let filters: Filters;
 
     const api = 'http://localhost:5000/api/systems/search';
 
     let filtersMenuActive = false;
-    let filters = {
-        genre: '*',
-        family: '*',
-    };
+
 
     const searchSystems = async () => {
         const sanitizedSearchValue = searchValue === "" ? "*" : searchValue.replace(' ', '_');

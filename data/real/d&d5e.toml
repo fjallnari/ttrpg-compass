@@ -1,0 +1,19 @@
+title = "Dungeons and Dragons"
+edition = "5e"
+description = "Gather your friends to vanquish mighty monsters, embark on epic quests, and tell legendary stories filled with fantasy and fun."
+
+family = "d20"
+genre = heroic fantasy"
+gm = "dungeon master"
+
+publisher = "Wizards of the Coast"
+url = "https://www.dndbeyond.com/"
+
+complexity = 3
+progression = 4
+narrative = 2
+combat = 4
+exploration = 2
+balance = 3
+versatility = 3
+customization = 5

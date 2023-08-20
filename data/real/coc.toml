@@ -1,0 +1,19 @@
+title = "Call of Cthulhu"
+edition = "7e"
+description = "Uncover the eldritch mysteries and face your darkest fears in Call of Cthulhu, where sanity is fragile and the true horrors lie beyond human comprehension."
+
+family = "BRP"
+genre = "cosmic horror"
+gm = "keeper"
+
+publisher = "Chaosium"
+url = "https://www.chaosium.com/call-of-cthulhu-rpg/"
+
+complexity = 1
+progression = 1
+narrative = 1
+combat = 1
+exploration = 1
+balance = 1
+versatility = 1
+customization = 1

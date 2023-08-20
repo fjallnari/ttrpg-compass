@@ -7,17 +7,23 @@
 	import { cursor, foundSystems, selectedSystem } from "../stores";
 	import { onMount } from "svelte";
 	import Icon from "@iconify/svelte";
+	import type Filters from "../interfaces/Filters";
 
-    let cardPage = 0;
+    let cardPage: number = 0;
 	let topElem: HTMLImageElement;
-	let y = 0;
+	let y: number = 0;
     let searchValue = '';
     let systems: TTRPGSystem[] = [];
     let genres: string[] = [];
     let families: string[] = [];
 
-    let cardsHeight = 0;
-    let loadingMore = false;
+    let cardsHeight: number = 0;
+    let loadingMore: boolean = false;
+
+    let filters: Filters = {
+        genre: '*',
+        family: '*',
+    };
 
     // trigger loadMore() when user scrolls to bottom
     $: if (y !== 0 && y >= cardsHeight - 800 && !loadingMore && $cursor !== 0) {
@@ -59,21 +65,41 @@
 <main class="flex flex-col flex-wrap justify-center items-center w-11/12 p-6 m-auto">
     <div class="flex flex-col justify-center items-center w-full gap-8 relative">
         <img src="/favicon_bgless.svg" class="w-48" alt="compass" bind:this={topElem}>
-        <Search bind:searchValue {genres} {families} />
+        <Search bind:searchValue bind:filters {genres} {families} />
         <CardPageSetter bind:cardPage />
         {#if $selectedSystem}
-            <div class="flex flex-row gap-2 mb-[-1.5rem] text-xl justify-center items-center italic font-poiret-one">
-                <h3>Systems similar to:</h3>
-                <h3 class="text-goldenrod">
+            <div class="flex flex-row gap-2 mb-[-1.5rem] text-xl justify-center items-center">
+                <h3 class="text-goldenrod font-cinzel">Systems similar to:</h3>
+                <h3 class="text-inherit font-poiret-one">
                     {`${$selectedSystem.Title}`}
                 </h3>
                 <button class="text-eggshell font-poiret-one" on:click={() => deselectSystem()}>
                     <Icon icon="mdi:close-thick" class="text-xl" />
                 </button>
             </div>
-
         {/if}
-        <Cards {systems} {cardPage} bind:height={cardsHeight} />
+        {#if Object.entries(filters).map(([_, v], i) => v !== '*').includes(true)}
+            <div class="flex flex-row gap-2 mb-[-1.5rem] text-xl justify-center items-center">
+                <Icon 
+                    icon="mdi:filter-multiple" 
+                    class="text-2xl text-goldenrod"
+                />
+                {#each Object.entries(filters) as [key, value]}
+                    {#if value !== '*'}
+                        <h3 class="text-goldenrod font-cinzel">
+                            {`${key}:`}
+                        </h3>
+                        <h3 class="text-inherit font-poiret-one">
+                            {` ${value}`}
+                        </h3>
+                    {/if}
+                {/each}
+                <button class="text-eggshell font-poiret-one" on:click={() => filters = { genre: '*', family: '*' }}>
+                    <Icon icon="mdi:close-thick" class="text-xl" />
+                </button>
+            </div>
+        {/if}
+        <Cards {systems} {cardPage} bind:height={cardsHeight} bind:filters />
         {#if y > 100}
             <ScrollButton {topElem}/>
         {/if}

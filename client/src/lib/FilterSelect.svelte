@@ -9,7 +9,7 @@
 
 </script>
 
-<div class="flex flex-row justify-center items-center gap-2 w-36 lg:w-1/3">
+<div class="flex flex-row justify-center items-center gap-2 w-fit">
     <h3>{title}</h3>
     <select bind:value 
         on:change={() => dispatch('search')} 
