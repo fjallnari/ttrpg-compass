@@ -109,7 +109,7 @@
                                 <Icon icon="mdi:plus-thick"/>
                             </div>
                             <div class="flex flex-row gap-1 text-lg">
-                                <h3 class="font-cinzel text-goldenrod font-medium">same genre |</h3>
+                                <h3 class="font-cinzel text-goldenrod font-medium">genre |</h3>
                                 <h3 class="font-poiret-one">{system.Genre.replaceAll('_', ' ')}</h3>
                             </div>
                         </div>

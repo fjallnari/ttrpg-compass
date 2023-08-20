@@ -58,6 +58,15 @@
         foundSystems.set([]);
     }
 
+    const resetFilters = () => {
+        filters = { 
+            genre: '*', 
+            family: '*' 
+        };
+        selectedSystem.set(undefined);
+        foundSystems.set([]);
+    }
+
 </script>
 
 <svelte:window bind:scrollY={y} />
@@ -79,22 +88,24 @@
             </div>
         {/if}
         {#if Object.entries(filters).map(([_, v], i) => v !== '*').includes(true)}
-            <div class="flex flex-row gap-2 mb-[-1.5rem] text-xl justify-center items-center">
+            <div class="flex flex-row flex-wrap gap-2 mb-[-1.5rem] text-xl justify-center items-center">
                 <Icon 
                     icon="mdi:filter-multiple" 
                     class="text-2xl text-goldenrod"
                 />
                 {#each Object.entries(filters) as [key, value]}
                     {#if value !== '*'}
-                        <h3 class="text-goldenrod font-cinzel">
-                            {`${key}:`}
-                        </h3>
-                        <h3 class="text-inherit font-poiret-one">
-                            {` ${value}`}
-                        </h3>
+                        <div class="flex flex-row gap-2">
+                            <h3 class="text-goldenrod font-cinzel">
+                                {`${key}:`}
+                            </h3>
+                            <h3 class="text-inherit font-poiret-one">
+                                {` ${value.replaceAll('_', ' ')}`}
+                            </h3>
+                        </div>
                     {/if}
                 {/each}
-                <button class="text-eggshell font-poiret-one" on:click={() => filters = { genre: '*', family: '*' }}>
+                <button class="text-inherit font-poiret-one" on:click={() => resetFilters()}>
                     <Icon icon="mdi:close-thick" class="text-xl" />
                 </button>
             </div>

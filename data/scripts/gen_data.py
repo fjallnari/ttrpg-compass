@@ -168,7 +168,6 @@ system_families = [
     "Fudge",
     "D6",
     "D20",
-    "Card-based",
     "Shadowrun",
     "Warhammer",
     "Indie",
@@ -193,7 +192,7 @@ genres = [
         "description": "Immerse yourself in a world where mythical creatures roam and epic battles unfold, as you wield both blade and spell to leave an indelible mark on a tapestry of grand fantasy."
     },
     {
-        "name": "sci-fi",
+        "name": "science_fiction",
         "description": "Navigate futuristic worlds, encounter alien civilizations, and unravel the mysteries of the universe as you forge your path amidst the stars and beyond."
     },
     {
@@ -209,7 +208,7 @@ genres = [
         "description": "Navigate airships, unravel clockwork mysteries, and explore a realm where the boundaries between science and fantasy blur, offering a unique blend of retro-futuristic wonder."
     },
     {
-        "name": "post-apocalyptic",
+        "name": "postapocalyptic",
         "description": "Navigate desolate wastelands, encounter ruthless factions, and forge alliances amidst the remnants of society as you navigate the challenges of a post-apocalyptic landscape."
     },
     {
