@@ -1,0 +1,18 @@
+title = "Grove of the Aether"
+description = "Uncover hidden truths, decipher cryptic clues, and immerse yourself in a realm where the thrill of solving mysteries takes center stage."
+family = "BRP"
+genre = "mystery"
+edition = "6th edition"
+gm = "Shared GM"
+publisher = "Enchanted Realms Publishing"
+
+complexity = 5
+progression = 1
+narrative = 4
+combat = 5
+exploration = 1
+balance = 5
+versatility = 2
+customization = 2
+
+similar = ['QhnWjG7j', 'h6PF6qSK', 'aKWDUe8A']

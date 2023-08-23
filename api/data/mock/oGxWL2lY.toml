@@ -1,0 +1,18 @@
+title = "Epic Odyssey"
+description = "Step into a realm where twisted creatures and sinister sorcery intertwine, as players navigate a treacherous journey through moral ambiguity and haunting landscapes."
+family = "OSR"
+genre = "dark_fantasy"
+edition = "8th edition"
+gm = "Game Master"
+publisher = "Dragon Tome Press"
+
+complexity = 4
+progression = 2
+narrative = 4
+combat = 4
+exploration = 4
+balance = 4
+versatility = 5
+customization = 4
+
+similar = ['qaWhJI94', 'n4YFsaqo', 'hPFApEkW']

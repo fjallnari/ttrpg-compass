@@ -1,0 +1,18 @@
+title = "Lush Shadow"
+description = "Leap into a world of extraordinary powers and heroic feats, where masked vigilantes and caped crusaders protect the innocent and battle villains"
+family = "GUMSHOE"
+genre = "superhero"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Solarflare RPGs"
+
+complexity = 5
+progression = 3
+narrative = 3
+combat = 2
+exploration = 1
+balance = 1
+versatility = 4
+customization = 2
+
+similar = ['KzIVkvB8', '43nJ6Hrg', 'RLVdKWVT']

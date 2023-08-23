@@ -1,0 +1,18 @@
+title = "Empire of Avendel"
+description = "Navigate airships, unravel clockwork mysteries, and explore a realm where the boundaries between science and fantasy blur, offering a unique blend of retro-futuristic wonder."
+family = "Shadowrun"
+genre = "steampunk"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Etherbound Entertainment"
+
+complexity = 3
+progression = 1
+narrative = 2
+combat = 1
+exploration = 2
+balance = 5
+versatility = 4
+customization = 4
+
+similar = ['wxo6ZKA7', 'rp4r2XrR', 'tIAxy17O']

@@ -1,0 +1,18 @@
+title = "Eclipse Aetheria"
+description = "Saddle up for a wild ride into the untamed frontier, navigate dusty trails, engage in high-stakes showdowns, and immerse yourself in a world of rugged landscapes and moral ambiguity"
+family = "Shadowrun"
+genre = "western"
+edition = "7th edition"
+gm = "GM-less/Solo"
+publisher = "Crystal Dice Creations"
+
+complexity = 4
+progression = 1
+narrative = 4
+combat = 3
+exploration = 5
+balance = 3
+versatility = 4
+customization = 3
+
+similar = ['pqPr7lil', 'eagnzGCi', 'Sbnh97zZ']

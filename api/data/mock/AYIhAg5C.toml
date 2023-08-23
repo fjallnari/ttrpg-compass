@@ -1,0 +1,18 @@
+title = "Dystopian Quest"
+description = "Navigate through a brutal and unforgiving landscape, where grim circumstances and harsh realities paint a stark backdrop for the stories of flawed characters and the harsh struggles they face."
+family = "D20"
+genre = "grimdark"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Celestial Table Games"
+
+complexity = 1
+progression = 2
+narrative = 5
+combat = 1
+exploration = 3
+balance = 4
+versatility = 5
+customization = 2
+
+similar = ['LOhClR90', 'OQ78o2iu', 'spSgCgtH']

@@ -1,0 +1,18 @@
+title = "Rebirth of the Stars"
+description = "Traverse ghostly plains, confront paranormal outlaws, and embrace the unsettling blend of frontier grit and otherworldly strangeness that defines the Weird West."
+family = "BRP"
+genre = "weird_west"
+edition = "7th edition"
+gm = "Game Master"
+publisher = "Wyldwood Ventures"
+
+complexity = 2
+progression = 4
+narrative = 3
+combat = 5
+exploration = 3
+balance = 1
+versatility = 4
+customization = 2
+
+similar = ['RUVT07n5', 'RhpTkCkZ', 'iuozE1Wg']

@@ -1,0 +1,18 @@
+title = "Mythwalker"
+description = "Collaborate to restore the planet's balance, harness eco-friendly technologies, and immerse yourself in a world where the triumph of human ingenuity nurtures a brighter, interconnected future."
+family = "Warhammer"
+genre = "solarpunk"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Etherbound Entertainment"
+
+complexity = 1
+progression = 4
+narrative = 2
+combat = 5
+exploration = 3
+balance = 4
+versatility = 3
+customization = 2
+
+similar = ['xnLv9sMU', 'sHD1IGkq', 'rpuhW9yw']

@@ -1,0 +1,18 @@
+title = "Clockweave"
+description = "Unravel the secrets of the paranormal, harness arcane powers, and explore the depths of the unseen as you journey through a tapestry of supernatural wonders."
+family = "Shadowrun"
+genre = "supernatural"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Technomancy Tales"
+
+complexity = 3
+progression = 3
+narrative = 2
+combat = 2
+exploration = 3
+balance = 2
+versatility = 3
+customization = 4
+
+similar = ['0LtLlLCu', 'l03TJTvs', '9Sz4BOnd']

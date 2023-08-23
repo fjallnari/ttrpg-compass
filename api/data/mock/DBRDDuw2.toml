@@ -1,0 +1,18 @@
+title = "Runebinder"
+description = "Confront ancient cosmic entities, grapple with existential terror, and navigate a universe that defies reason, as you explore the fragile nature of sanity in the face of unfathomable cosmic forces."
+family = "NSR"
+genre = "cosmic_horror"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Arcane Scribe Studios"
+
+complexity = 5
+progression = 4
+narrative = 4
+combat = 4
+exploration = 5
+balance = 2
+versatility = 3
+customization = 3
+
+similar = ['4xa9LJxo', '9dhNV8WQ', 'OkdB0Ngr']

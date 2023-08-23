@@ -1,0 +1,18 @@
+title = "Forgotten Expanse"
+description = "Confront unspeakable horrors, unravel eerie mysteries, and test the limits of your courage as you traverse a realm where fear and the unknown reign supreme."
+family = "GUMSHOE"
+genre = "horror"
+edition = "8th edition"
+gm = "Game Master"
+publisher = "Eldritch Chronicles Publishing"
+
+complexity = 4
+progression = 2
+narrative = 3
+combat = 2
+exploration = 1
+balance = 3
+versatility = 4
+customization = 2
+
+similar = ['6Jf3Wetx', 'I1Hqi59u', 'n7MTW28k']

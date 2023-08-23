@@ -1,0 +1,18 @@
+title = "Runetech"
+description = "Navigate through sprawling star systems, engage in political intrigue, and shape the destiny of entire galaxies as you immerse yourself in a space opera of limitless possibilities."
+family = "D&D"
+genre = "space_opera"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Starfall Adventures"
+
+complexity = 5
+progression = 5
+narrative = 4
+combat = 4
+exploration = 1
+balance = 5
+versatility = 2
+customization = 4
+
+similar = ['9zXXw1bK', 'uyy9c4eB', 'eBLYotgk']

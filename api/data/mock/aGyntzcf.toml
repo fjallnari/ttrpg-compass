@@ -1,0 +1,18 @@
+title = "Enchanted Revolution"
+description = "Carve your path as a hero of unparalleled valor, battling ancient evils and mastering eldritch arts in a realm where swords and spells intertwine."
+family = "D6"
+genre = "sword_&_sorcery"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Wyldwood Ventures"
+
+complexity = 3
+progression = 2
+narrative = 3
+combat = 3
+exploration = 3
+balance = 1
+versatility = 2
+customization = 5
+
+similar = ['v3qWwz9Z', 'eOqPnI8d', 'OjhFh6CH']

@@ -1,0 +1,18 @@
+title = "Evermaker"
+description = "Navigate a society shaped by genetic manipulation and ethical dilemmas. Explore the intricate interplay between organic life and synthetic advancement as science takes a bold step into uncharted territory."
+family = "GUMSHOE"
+genre = "biopunk"
+edition = "5th edition"
+gm = "Game Master"
+publisher = "Crystal Dice Creations"
+
+complexity = 1
+progression = 1
+narrative = 4
+combat = 3
+exploration = 4
+balance = 3
+versatility = 1
+customization = 5
+
+similar = ['hWg6O9NM', '25fXMfjN', 'RRKpfrNT']

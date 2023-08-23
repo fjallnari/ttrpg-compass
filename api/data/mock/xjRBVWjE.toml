@@ -1,0 +1,18 @@
+title = "Eldritch Aurora"
+description = "Navigate futuristic worlds, encounter alien civilizations, and unravel the mysteries of the universe as you forge your path amidst the stars and beyond."
+family = "GURPS"
+genre = "science_fiction"
+edition = "5th edition"
+gm = "Game Master"
+publisher = "Mythic Forge Games"
+
+complexity = 2
+progression = 2
+narrative = 1
+combat = 1
+exploration = 5
+balance = 1
+versatility = 5
+customization = 1
+
+similar = ['7lCe6RHv', 'gsM35lDs', 'sb94gLFv']

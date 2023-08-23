@@ -1,0 +1,18 @@
+title = "Incursion of Mythos"
+description = "Navigate airships, unravel clockwork mysteries, and explore a realm where the boundaries between science and fantasy blur, offering a unique blend of retro-futuristic wonder."
+family = "Shadowrun"
+genre = "steampunk"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Dreamweaver Publishing"
+
+complexity = 1
+progression = 2
+narrative = 5
+combat = 4
+exploration = 5
+balance = 1
+versatility = 3
+customization = 2
+
+similar = ['rp4r2XrR', 'byix4dQ0', 'BbSrzsF5']

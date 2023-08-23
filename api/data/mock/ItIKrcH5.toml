@@ -1,0 +1,18 @@
+title = "Rustland Odyssey"
+description = "Confront unspeakable horrors, unravel eerie mysteries, and test the limits of your courage as you traverse a realm where fear and the unknown reign supreme."
+family = "Shadowrun"
+genre = "horror"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Wyldwood Ventures"
+
+complexity = 1
+progression = 1
+narrative = 2
+combat = 3
+exploration = 5
+balance = 3
+versatility = 1
+customization = 1
+
+similar = ['gzek4vKY', 'byix4dQ0', 'rp4r2XrR']

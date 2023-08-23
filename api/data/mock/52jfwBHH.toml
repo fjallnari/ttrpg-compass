@@ -1,0 +1,18 @@
+title = "Mystica of Evermore"
+description = "Traverse ghostly plains, confront paranormal outlaws, and embrace the unsettling blend of frontier grit and otherworldly strangeness that defines the Weird West."
+family = "OSR"
+genre = "weird_west"
+edition = "5th edition"
+gm = "Game Master"
+publisher = "Crystal Dice Creations"
+
+complexity = 5
+progression = 1
+narrative = 4
+combat = 2
+exploration = 5
+balance = 5
+versatility = 1
+customization = 2
+
+similar = ['0FyhSPRs', 'ZZtmobXW', '5wlpqwjj']

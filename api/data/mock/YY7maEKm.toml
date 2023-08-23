@@ -1,0 +1,18 @@
+title = "Astral Utopia"
+description = "Traverse ghostly plains, confront paranormal outlaws, and embrace the unsettling blend of frontier grit and otherworldly strangeness that defines the Weird West."
+family = "OSR"
+genre = "weird_west"
+edition = "7th edition"
+gm = "Game Master"
+publisher = "Celestial Table Games"
+
+complexity = 4
+progression = 5
+narrative = 4
+combat = 5
+exploration = 5
+balance = 1
+versatility = 4
+customization = 4
+
+similar = ['0FyhSPRs', 'A6VXweRU', 'JhXLF8ug']

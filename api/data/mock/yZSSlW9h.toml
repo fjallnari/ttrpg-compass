@@ -1,0 +1,18 @@
+title = "Dominion of Yesteryear"
+description = "Navigate futuristic worlds, encounter alien civilizations, and unravel the mysteries of the universe as you forge your path amidst the stars and beyond."
+family = "D&D"
+genre = "science_fiction"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Arcane Scribe Studios"
+
+complexity = 1
+progression = 4
+narrative = 1
+combat = 2
+exploration = 5
+balance = 5
+versatility = 2
+customization = 5
+
+similar = ['jlv7dbDW', 'zSNKG6c6', 'b56sIePc']

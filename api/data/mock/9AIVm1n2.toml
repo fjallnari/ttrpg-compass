@@ -1,0 +1,18 @@
+title = "Warpbound"
+description = "Traverse dimly lit alleys, decipher cryptic codes, and delve into the unknown as you navigate a world shrouded in obscurity and rife with hidden truths."
+family = "GURPS"
+genre = "obscure"
+edition = "5th edition"
+gm = "Game Master"
+publisher = "Solarflare RPGs"
+
+complexity = 1
+progression = 4
+narrative = 3
+combat = 4
+exploration = 5
+balance = 3
+versatility = 4
+customization = 2
+
+similar = ['VN2toIz1', 'B68808Db', 'WOMH5lXm']

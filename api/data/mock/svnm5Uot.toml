@@ -1,0 +1,18 @@
+title = "Requiem of the Void"
+description = "Uncover corporate conspiracies, harness cutting-edge cybernetics, and carve out your existence in a world where high-tech dreams collide with gritty reality."
+family = "NSR"
+genre = "cyberpunk"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Enchanted Realms Publishing"
+
+complexity = 3
+progression = 3
+narrative = 1
+combat = 1
+exploration = 5
+balance = 5
+versatility = 1
+customization = 1
+
+similar = ['kOPm2E3a', 'Y5CX17ih', '5wlpqwjj']

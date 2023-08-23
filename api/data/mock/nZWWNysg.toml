@@ -1,0 +1,18 @@
+title = "Runewave"
+description = "Embark on an epic odyssey through a realm where gods and legends walk among mortals, weaving a tapestry of grand myths, ancient prophecies and heroic quests."
+family = "OSR"
+genre = "mythic_fantasy"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Etherbound Entertainment"
+
+complexity = 2
+progression = 1
+narrative = 4
+combat = 4
+exploration = 5
+balance = 4
+versatility = 5
+customization = 1
+
+similar = ['ZZtmobXW', 'J1IP5R3Q', '5GYJFOol']

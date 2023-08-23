@@ -1,0 +1,18 @@
+title = "Elysium of Elara"
+description = "Navigate a society shaped by genetic manipulation and ethical dilemmas. Explore the intricate interplay between organic life and synthetic advancement as science takes a bold step into uncharted territory."
+family = "OSR"
+genre = "biopunk"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Eldritch Chronicles Publishing"
+
+complexity = 2
+progression = 4
+narrative = 5
+combat = 4
+exploration = 4
+balance = 1
+versatility = 2
+customization = 1
+
+similar = ['uauBz7bX', '4gzLqSTB', 'qnid04Zq']

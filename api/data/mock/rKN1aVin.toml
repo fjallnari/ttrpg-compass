@@ -1,0 +1,18 @@
+title = "Matrix of Elara"
+description = "Explore the events, cultures, and challenges of a bygone age, as you shape the destinies of characters against the backdrop of history's pages."
+family = "NSR"
+genre = "historical"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Wicked Fate Publishing"
+
+complexity = 3
+progression = 1
+narrative = 2
+combat = 5
+exploration = 4
+balance = 4
+versatility = 2
+customization = 3
+
+similar = ['buMk95Q0', '5Md12ncs', 'PZMksTwq']

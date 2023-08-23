@@ -1,0 +1,18 @@
+title = "Mythica Quest"
+description = "Navigate through a brutal and unforgiving landscape, where grim circumstances and harsh realities paint a stark backdrop for the stories of flawed characters and the harsh struggles they face."
+family = "OSR"
+genre = "grimdark"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Enchanted Realms Publishing"
+
+complexity = 3
+progression = 1
+narrative = 2
+combat = 3
+exploration = 3
+balance = 4
+versatility = 2
+customization = 2
+
+similar = ['49rFhw3L', 'XqSaNYG0', 'eA5tGkKD']

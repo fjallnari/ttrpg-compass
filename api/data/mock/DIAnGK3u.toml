@@ -1,0 +1,18 @@
+title = "Cosmic Song"
+description = "Confront unspeakable horrors, unravel eerie mysteries, and test the limits of your courage as you traverse a realm where fear and the unknown reign supreme."
+family = "D&D"
+genre = "horror"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Mythic Forge Games"
+
+complexity = 1
+progression = 2
+narrative = 1
+combat = 5
+exploration = 2
+balance = 1
+versatility = 3
+customization = 1
+
+similar = ['pvQqLnnX', 'fKxpMoT7', 'ehyEqVVO']

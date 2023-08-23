@@ -1,0 +1,18 @@
+title = "Biobinder"
+description = "Leap into a world of extraordinary powers and heroic feats, where masked vigilantes and caped crusaders protect the innocent and battle villains"
+family = "OSR"
+genre = "superhero"
+edition = "5th edition"
+gm = "Game Master"
+publisher = "Timewarp Studios"
+
+complexity = 5
+progression = 1
+narrative = 4
+combat = 1
+exploration = 2
+balance = 3
+versatility = 4
+customization = 1
+
+similar = ['jBVNdr89', 'TibO3Dw1', 'J1IP5R3Q']

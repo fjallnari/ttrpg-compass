@@ -1,0 +1,18 @@
+title = "Eco Aurora"
+description = "Navigate through sprawling star systems, engage in political intrigue, and shape the destiny of entire galaxies as you immerse yourself in a space opera of limitless possibilities."
+family = "GURPS"
+genre = "space_opera"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Etherbound Entertainment"
+
+complexity = 5
+progression = 3
+narrative = 1
+combat = 3
+exploration = 1
+balance = 1
+versatility = 4
+customization = 3
+
+similar = ['lbghdHHA', 'TkOl9q5Q', 'JLA4HVoK']

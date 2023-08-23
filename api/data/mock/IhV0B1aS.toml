@@ -1,0 +1,18 @@
+title = "Dawn of Astraeus"
+description = "Navigate through sprawling star systems, engage in political intrigue, and shape the destiny of entire galaxies as you immerse yourself in a space opera of limitless possibilities."
+family = "Cypher System"
+genre = "space_opera"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Mythic Forge Games"
+
+complexity = 1
+progression = 5
+narrative = 2
+combat = 3
+exploration = 1
+balance = 1
+versatility = 4
+customization = 3
+
+similar = ['plLrOoxU', 'UDY5lfT0', 'A6VXweRU']

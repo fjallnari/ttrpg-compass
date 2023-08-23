@@ -1,0 +1,18 @@
+title = "Cosmic Genesis"
+description = "Embark on an epic odyssey through a realm where gods and legends walk among mortals, weaving a tapestry of grand myths, ancient prophecies and heroic quests."
+family = "D20"
+genre = "mythic_fantasy"
+edition = "5th edition"
+gm = "Game Master"
+publisher = "Grimoire Guild Games"
+
+complexity = 3
+progression = 3
+narrative = 3
+combat = 4
+exploration = 2
+balance = 3
+versatility = 3
+customization = 3
+
+similar = ['Jg7NyM3Z', 'RL98bq1V', '3PobDXFQ']

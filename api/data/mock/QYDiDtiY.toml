@@ -1,0 +1,18 @@
+title = "Revelation of the Stars"
+description = "Traverse ghostly plains, confront paranormal outlaws, and embrace the unsettling blend of frontier grit and otherworldly strangeness that defines the Weird West."
+family = "GURPS"
+genre = "weird_west"
+edition = "3rd edition"
+gm = "GM-less/Solo"
+publisher = "Arcane Scribe Studios"
+
+complexity = 3
+progression = 2
+narrative = 2
+combat = 5
+exploration = 2
+balance = 5
+versatility = 2
+customization = 3
+
+similar = ['ebVqNxAq', 'GQijkFiJ', 'B0dgLz0j']

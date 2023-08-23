@@ -1,0 +1,18 @@
+title = "Arcborne"
+description = "Customize your colossal war machine, engage in futuristic conflicts, and navigate a world where technology and tactics collide in the ultimate showdown of metal and might."
+family = "Fate"
+genre = "mechs"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Mages & Monoliths"
+
+complexity = 2
+progression = 1
+narrative = 5
+combat = 5
+exploration = 4
+balance = 5
+versatility = 4
+customization = 3
+
+similar = ['PHDEdKY5', 'VuHMV7b3', 'AkYj9qrx']

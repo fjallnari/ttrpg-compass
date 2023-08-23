@@ -1,0 +1,18 @@
+title = "Grove of Lumina"
+description = "Navigate through a brutal and unforgiving landscape, where grim circumstances and harsh realities paint a stark backdrop for the stories of flawed characters and the harsh struggles they face."
+family = "Fudge"
+genre = "grimdark"
+edition = "5th edition"
+gm = "Game Master"
+publisher = "Enchanted Realms Publishing"
+
+complexity = 3
+progression = 3
+narrative = 4
+combat = 1
+exploration = 3
+balance = 1
+versatility = 2
+customization = 2
+
+similar = ['spSgCgtH', '6cvk7Fcp', 'DTDeFI9i']

@@ -1,0 +1,18 @@
+title = "Mythica Song"
+description = "Immerse yourself in a world where mythical creatures roam and epic battles unfold, as you wield both blade and spell to leave an indelible mark on a tapestry of grand fantasy."
+family = "Cypher System"
+genre = "heroic_fantasy"
+edition = "5th edition"
+gm = "Game Master"
+publisher = "Eldritch Chronicles Publishing"
+
+complexity = 2
+progression = 3
+narrative = 3
+combat = 4
+exploration = 1
+balance = 4
+versatility = 2
+customization = 1
+
+similar = ['qNoJIGmZ', 'dxE9gswl', 'M7ZM3SpT']

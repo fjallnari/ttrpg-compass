@@ -1,0 +1,18 @@
+title = "Shadow of the Empyrean"
+description = "Explore the events, cultures, and challenges of a bygone age, as you shape the destinies of characters against the backdrop of history's pages."
+family = "D&D"
+genre = "historical"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Celestial Table Games"
+
+complexity = 3
+progression = 4
+narrative = 2
+combat = 3
+exploration = 3
+balance = 3
+versatility = 3
+customization = 3
+
+similar = ['mJCM0sVU', '847VoRr6', 'jlv7dbDW']

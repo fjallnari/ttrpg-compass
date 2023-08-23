@@ -1,0 +1,18 @@
+title = "Shadow of Gaia"
+description = "Saddle up for a wild ride into the untamed frontier, navigate dusty trails, engage in high-stakes showdowns, and immerse yourself in a world of rugged landscapes and moral ambiguity"
+family = "Fate"
+genre = "western"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Starfall Adventures"
+
+complexity = 4
+progression = 4
+narrative = 4
+combat = 2
+exploration = 2
+balance = 3
+versatility = 3
+customization = 2
+
+similar = ['qazWrjq9', 'cnh5gqZj', 'FRMN0NjI']

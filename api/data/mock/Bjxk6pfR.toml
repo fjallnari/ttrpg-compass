@@ -1,0 +1,18 @@
+title = "Mythdyne"
+description = "Traverse dimly lit alleys, decipher cryptic codes, and delve into the unknown as you navigate a world shrouded in obscurity and rife with hidden truths."
+family = "Savage Worlds"
+genre = "obscure"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Etherbound Entertainment"
+
+complexity = 3
+progression = 1
+narrative = 1
+combat = 5
+exploration = 1
+balance = 4
+versatility = 3
+customization = 2
+
+similar = ['xYAj6f90', 'HAb0PQHX', 'kqErPGAU']

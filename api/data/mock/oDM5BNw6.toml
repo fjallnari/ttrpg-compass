@@ -1,0 +1,18 @@
+title = "Worlddrift"
+description = "Embark on an epic odyssey through a realm where gods and legends walk among mortals, weaving a tapestry of grand myths, ancient prophecies and heroic quests."
+family = "GUMSHOE"
+genre = "mythic_fantasy"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Enchanted Realms Publishing"
+
+complexity = 4
+progression = 2
+narrative = 5
+combat = 2
+exploration = 1
+balance = 1
+versatility = 4
+customization = 5
+
+similar = ['EGU79yRT', 'hWg6O9NM', 'aNMr9vyW']

@@ -1,0 +1,18 @@
+title = "Mythica Rebirth"
+description = "Navigate a society shaped by genetic manipulation and ethical dilemmas. Explore the intricate interplay between organic life and synthetic advancement as science takes a bold step into uncharted territory."
+family = "GUMSHOE"
+genre = "biopunk"
+edition = "5th edition"
+gm = "Game Master"
+publisher = "Mythic Forge Games"
+
+complexity = 2
+progression = 1
+narrative = 4
+combat = 1
+exploration = 1
+balance = 3
+versatility = 4
+customization = 4
+
+similar = ['CKrZ5QNS', '6Jf3Wetx', 'XABPTtOn']

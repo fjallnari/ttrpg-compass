@@ -1,0 +1,18 @@
+title = "Darkmoon Protocol"
+description = "Traverse dimly lit alleys, decipher cryptic codes, and delve into the unknown as you navigate a world shrouded in obscurity and rife with hidden truths."
+family = "GURPS"
+genre = "obscure"
+edition = "7th edition"
+gm = "Game Master"
+publisher = "Enchanted Realms Publishing"
+
+complexity = 2
+progression = 1
+narrative = 2
+combat = 1
+exploration = 3
+balance = 3
+versatility = 3
+customization = 4
+
+similar = ['9AIVm1n2', 'nrgmYRtJ', 'wyt5Q4mW']

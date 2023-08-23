@@ -1,0 +1,18 @@
+title = "Warpward"
+description = "Plunder riches, uphold honor, and immerse yourself in a world of Viking sagas, where bravery and valor shape the course of history."
+family = "Indie"
+genre = "viking"
+edition = "5th edition"
+gm = "Game Master"
+publisher = "Enchanted Realms Publishing"
+
+complexity = 4
+progression = 4
+narrative = 4
+combat = 2
+exploration = 2
+balance = 1
+versatility = 2
+customization = 5
+
+similar = ['IZsWOF5s', 'QoRGeJTK', '43nJ6Hrg']

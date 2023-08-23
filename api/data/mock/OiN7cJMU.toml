@@ -1,0 +1,18 @@
+title = "Requiem of Evermore"
+description = "Customize your colossal war machine, engage in futuristic conflicts, and navigate a world where technology and tactics collide in the ultimate showdown of metal and might."
+family = "BRP"
+genre = "mechs"
+edition = "7th edition"
+gm = "Game Master"
+publisher = "Crystal Dice Creations"
+
+complexity = 3
+progression = 5
+narrative = 5
+combat = 1
+exploration = 1
+balance = 1
+versatility = 5
+customization = 2
+
+similar = ['1a2VwOoI', 'u13wwU63', 'IdrTDBk1']

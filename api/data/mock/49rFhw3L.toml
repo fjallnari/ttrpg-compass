@@ -1,0 +1,18 @@
+title = "Runewalker"
+description = "Navigate through a brutal and unforgiving landscape, where grim circumstances and harsh realities paint a stark backdrop for the stories of flawed characters and the harsh struggles they face."
+family = "OSR"
+genre = "grimdark"
+edition = "8th edition"
+gm = "Game Master"
+publisher = "Eldritch Chronicles Publishing"
+
+complexity = 2
+progression = 3
+narrative = 3
+combat = 4
+exploration = 2
+balance = 4
+versatility = 3
+customization = 5
+
+similar = ['eA5tGkKD', 'XVuYrdyR', 'jlv7dbDW']

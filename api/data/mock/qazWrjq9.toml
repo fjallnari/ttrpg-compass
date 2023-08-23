@@ -1,0 +1,18 @@
+title = "Vitaweaver"
+description = "Saddle up for a wild ride into the untamed frontier, navigate dusty trails, engage in high-stakes showdowns, and immerse yourself in a world of rugged landscapes and moral ambiguity"
+family = "Fate"
+genre = "western"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Crystal Dice Creations"
+
+complexity = 4
+progression = 4
+narrative = 2
+combat = 1
+exploration = 1
+balance = 5
+versatility = 2
+customization = 1
+
+similar = ['y58xoglr', 'yf6XtpyB', 'cnh5gqZj']

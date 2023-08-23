@@ -1,0 +1,18 @@
+title = "Terra Legends"
+description = "Unravel the secrets of the paranormal, harness arcane powers, and explore the depths of the unseen as you journey through a tapestry of supernatural wonders."
+family = "BRP"
+genre = "supernatural"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Solarflare RPGs"
+
+complexity = 3
+progression = 2
+narrative = 3
+combat = 4
+exploration = 5
+balance = 2
+versatility = 4
+customization = 3
+
+similar = ['RUVT07n5', '6wNbxWR4', 'Z40iI1n3']

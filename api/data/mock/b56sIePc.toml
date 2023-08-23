@@ -1,0 +1,18 @@
+title = "Riftward"
+description = "Uncover corporate conspiracies, harness cutting-edge cybernetics, and carve out your existence in a world where high-tech dreams collide with gritty reality."
+family = "D&D"
+genre = "cyberpunk"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Solarflare RPGs"
+
+complexity = 2
+progression = 5
+narrative = 3
+combat = 2
+exploration = 5
+balance = 5
+versatility = 5
+customization = 4
+
+similar = ['jlv7dbDW', 'iyogbTEX', 'GHPV1Q6o']

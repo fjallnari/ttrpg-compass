@@ -1,0 +1,18 @@
+title = "Runners of Stardust"
+description = "Unravel the secrets of the paranormal, harness arcane powers, and explore the depths of the unseen as you journey through a tapestry of supernatural wonders."
+family = "OSR"
+genre = "supernatural"
+edition = "7th edition"
+gm = "Game Master"
+publisher = "Crystal Dice Creations"
+
+complexity = 5
+progression = 2
+narrative = 2
+combat = 2
+exploration = 4
+balance = 3
+versatility = 4
+customization = 3
+
+similar = ['wyDD4k1X', '9Sz4BOnd', 'Zk6LPCQP']

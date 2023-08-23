@@ -1,0 +1,18 @@
+title = "Starward Journeys"
+description = "Navigate a society shaped by genetic manipulation and ethical dilemmas. Explore the intricate interplay between organic life and synthetic advancement as science takes a bold step into uncharted territory."
+family = "BRP"
+genre = "biopunk"
+edition = "5th edition"
+gm = "Game Master"
+publisher = "Dreamweaver Publishing"
+
+complexity = 2
+progression = 2
+narrative = 5
+combat = 2
+exploration = 3
+balance = 3
+versatility = 1
+customization = 1
+
+similar = ['zRfLonuW', 'dy60HSrT', 'xnLv9sMU']

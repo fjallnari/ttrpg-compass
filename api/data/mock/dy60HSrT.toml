@@ -1,0 +1,18 @@
+title = "Pixelbreaker"
+description = "Collaborate to restore the planet's balance, harness eco-friendly technologies, and immerse yourself in a world where the triumph of human ingenuity nurtures a brighter, interconnected future."
+family = "BRP"
+genre = "solarpunk"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Etherbound Entertainment"
+
+complexity = 1
+progression = 1
+narrative = 5
+combat = 2
+exploration = 3
+balance = 2
+versatility = 3
+customization = 3
+
+similar = ['7W1NBXPn', 'xnLv9sMU', '4gzLqSTB']

@@ -1,0 +1,18 @@
+title = "Ashen Sagas"
+description = "Embark on an epic odyssey through a realm where gods and legends walk among mortals, weaving a tapestry of grand myths, ancient prophecies and heroic quests."
+family = "NSR"
+genre = "mythic_fantasy"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Enchanted Realms Publishing"
+
+complexity = 4
+progression = 4
+narrative = 4
+combat = 3
+exploration = 2
+balance = 1
+versatility = 2
+customization = 4
+
+similar = ['A6FaOhNe', 'bmbTtBXu', 'RzqJ8W2r']

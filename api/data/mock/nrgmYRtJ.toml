@@ -1,0 +1,18 @@
+title = "Bioward"
+description = "Traverse dimly lit alleys, decipher cryptic codes, and delve into the unknown as you navigate a world shrouded in obscurity and rife with hidden truths."
+family = "Indie"
+genre = "obscure"
+edition = "7th edition"
+gm = "Game Master"
+publisher = "Timewarp Studios"
+
+complexity = 3
+progression = 1
+narrative = 3
+combat = 1
+exploration = 3
+balance = 5
+versatility = 5
+customization = 4
+
+similar = ['ESKm1dTz', 'uaxDfvpF', 'VN2toIz1']

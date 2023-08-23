@@ -1,0 +1,18 @@
+title = "Expanse of the Aether"
+description = "Navigate futuristic worlds, encounter alien civilizations, and unravel the mysteries of the universe as you forge your path amidst the stars and beyond."
+family = "D6"
+genre = "science_fiction"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Eldritch Chronicles Publishing"
+
+complexity = 3
+progression = 2
+narrative = 3
+combat = 3
+exploration = 2
+balance = 4
+versatility = 3
+customization = 5
+
+similar = ['UJAwj7Le', 'I1Hqi59u', 'k6uL2pqr']

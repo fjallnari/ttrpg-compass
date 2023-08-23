@@ -1,0 +1,18 @@
+title = "Epic Song"
+description = "Customize your colossal war machine, engage in futuristic conflicts, and navigate a world where technology and tactics collide in the ultimate showdown of metal and might."
+family = "Fudge"
+genre = "mechs"
+edition = "7th edition"
+gm = "Game Master"
+publisher = "Timewarp Studios"
+
+complexity = 2
+progression = 1
+narrative = 4
+combat = 2
+exploration = 3
+balance = 5
+versatility = 3
+customization = 1
+
+similar = ['QQYQo6Xj', 'XqSaNYG0', 'mr6uZQLv']

@@ -1,0 +1,18 @@
+title = "Nuclear Horizons"
+description = "Step into a realm where twisted creatures and sinister sorcery intertwine, as players navigate a treacherous journey through moral ambiguity and haunting landscapes."
+family = "Cypher System"
+genre = "dark_fantasy"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Steam Craft Studios"
+
+complexity = 5
+progression = 5
+narrative = 4
+combat = 3
+exploration = 4
+balance = 5
+versatility = 3
+customization = 5
+
+similar = ['UrYe7blw', 'UDY5lfT0', 'kIJuk1U1']

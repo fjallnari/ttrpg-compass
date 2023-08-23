@@ -1,0 +1,18 @@
+title = "Aetheria of Eldarune"
+description = "Navigate futuristic worlds, encounter alien civilizations, and unravel the mysteries of the universe as you forge your path amidst the stars and beyond."
+family = "NSR"
+genre = "science_fiction"
+edition = "5th edition"
+gm = "Game Master"
+publisher = "Enchanted Realms Publishing"
+
+complexity = 2
+progression = 4
+narrative = 1
+combat = 1
+exploration = 1
+balance = 5
+versatility = 3
+customization = 4
+
+similar = ['OkdB0Ngr', 'UcJehffu', 'A1xAkWe1']

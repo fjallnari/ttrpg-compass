@@ -1,0 +1,18 @@
+title = "Chainward"
+description = "Navigate a society shaped by genetic manipulation and ethical dilemmas. Explore the intricate interplay between organic life and synthetic advancement as science takes a bold step into uncharted territory."
+family = "D&D"
+genre = "biopunk"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Dreamweaver Publishing"
+
+complexity = 5
+progression = 3
+narrative = 2
+combat = 2
+exploration = 5
+balance = 2
+versatility = 1
+customization = 5
+
+similar = ['RRKpfrNT', 'mJCM0sVU', 'pvQqLnnX']

@@ -1,0 +1,18 @@
+title = "Ruinwalker"
+description = "Confront ancient cosmic entities, grapple with existential terror, and navigate a universe that defies reason, as you explore the fragile nature of sanity in the face of unfathomable cosmic forces."
+family = "PbtA"
+genre = "cosmic_horror"
+edition = "2nd edition"
+gm = "Shared GM"
+publisher = "Eldritch Chronicles Publishing"
+
+complexity = 4
+progression = 4
+narrative = 2
+combat = 2
+exploration = 3
+balance = 3
+versatility = 5
+customization = 4
+
+similar = ['d2fO5ruV', 'lvYeg7iU', 'zB5CakG2']

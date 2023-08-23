@@ -1,0 +1,18 @@
+title = "Arcpulse"
+description = "Uncover hidden truths, decipher cryptic clues, and immerse yourself in a realm where the thrill of solving mysteries takes center stage."
+family = "OSR"
+genre = "mystery"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Arcane Scribe Studios"
+
+complexity = 4
+progression = 5
+narrative = 1
+combat = 4
+exploration = 2
+balance = 5
+versatility = 1
+customization = 4
+
+similar = ['eA5tGkKD', '5GYJFOol', 'zH6cJgxY']

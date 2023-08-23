@@ -1,0 +1,18 @@
+title = "Ruindrift"
+description = "Navigate through sprawling star systems, engage in political intrigue, and shape the destiny of entire galaxies as you immerse yourself in a space opera of limitless possibilities."
+family = "Savage Worlds"
+genre = "space_opera"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Solarflare RPGs"
+
+complexity = 1
+progression = 4
+narrative = 4
+combat = 3
+exploration = 5
+balance = 4
+versatility = 4
+customization = 1
+
+similar = ['zuhRGbMu', 'wVddWIoe', 'VOgQBMNt']

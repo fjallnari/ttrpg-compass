@@ -1,0 +1,18 @@
+title = "Tales of the Empyrean"
+description = "Confront ancient cosmic entities, grapple with existential terror, and navigate a universe that defies reason, as you explore the fragile nature of sanity in the face of unfathomable cosmic forces."
+family = "Savage Worlds"
+genre = "cosmic_horror"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Crystal Dice Creations"
+
+complexity = 3
+progression = 1
+narrative = 5
+combat = 2
+exploration = 5
+balance = 3
+versatility = 1
+customization = 2
+
+similar = ['m9njW20I', 'xwTq4zbj', 'tnj7DdQE']

@@ -1,0 +1,18 @@
+title = "Enchanted Insurgency"
+description = "Step into a realm where twisted creatures and sinister sorcery intertwine, as players navigate a treacherous journey through moral ambiguity and haunting landscapes."
+family = "Indie"
+genre = "dark_fantasy"
+edition = "5th edition"
+gm = "Game Master"
+publisher = "Steam Craft Studios"
+
+complexity = 5
+progression = 4
+narrative = 3
+combat = 5
+exploration = 3
+balance = 5
+versatility = 4
+customization = 2
+
+similar = ['V0lBIwNa', 'qaWhJI94', '1RadiIgm']

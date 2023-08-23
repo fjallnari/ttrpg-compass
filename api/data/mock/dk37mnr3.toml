@@ -1,0 +1,18 @@
+title = "Realms of Eldoria"
+description = "Step into a realm where twisted creatures and sinister sorcery intertwine, as players navigate a treacherous journey through moral ambiguity and haunting landscapes."
+family = "Cypher System"
+genre = "dark_fantasy"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Starfall Adventures"
+
+complexity = 2
+progression = 3
+narrative = 2
+combat = 1
+exploration = 4
+balance = 1
+versatility = 4
+customization = 1
+
+similar = ['847VoRr6', 'VCC4QYCY', 'LYdEJp1U']

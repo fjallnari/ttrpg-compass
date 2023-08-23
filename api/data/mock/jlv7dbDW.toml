@@ -1,0 +1,18 @@
+title = "Silkstrider"
+description = "Navigate through a brutal and unforgiving landscape, where grim circumstances and harsh realities paint a stark backdrop for the stories of flawed characters and the harsh struggles they face."
+family = "D&D"
+genre = "grimdark"
+edition = "5th edition"
+gm = "Game Master"
+publisher = "Dreamweaver Publishing"
+
+complexity = 2
+progression = 4
+narrative = 2
+combat = 3
+exploration = 3
+balance = 5
+versatility = 4
+customization = 4
+
+similar = ['eA5tGkKD', 'E8OiSAZF', '49rFhw3L']

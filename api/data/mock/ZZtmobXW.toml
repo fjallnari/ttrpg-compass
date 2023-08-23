@@ -1,0 +1,18 @@
+title = "Darkmoon Empire"
+description = "Traverse dimly lit alleys, decipher cryptic codes, and delve into the unknown as you navigate a world shrouded in obscurity and rife with hidden truths."
+family = "OSR"
+genre = "obscure"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Arcane Scribe Studios"
+
+complexity = 4
+progression = 1
+narrative = 4
+combat = 4
+exploration = 5
+balance = 4
+versatility = 3
+customization = 1
+
+similar = ['J1IP5R3Q', 'nZWWNysg', '5GYJFOol']

@@ -1,0 +1,18 @@
+title = "Riftseeker"
+description = "Explore the events, cultures, and challenges of a bygone age, as you shape the destinies of characters against the backdrop of history's pages."
+family = "Warhammer"
+genre = "historical"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Solarflare RPGs"
+
+complexity = 4
+progression = 2
+narrative = 3
+combat = 4
+exploration = 5
+balance = 3
+versatility = 5
+customization = 1
+
+similar = ['9mTW9bpI', 'iJ2q2yZy', 'asMl85zw']

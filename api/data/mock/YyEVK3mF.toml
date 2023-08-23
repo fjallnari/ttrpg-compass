@@ -1,0 +1,18 @@
+title = "Dominion of the Eternals"
+description = "Traverse ghostly plains, confront paranormal outlaws, and embrace the unsettling blend of frontier grit and otherworldly strangeness that defines the Weird West."
+family = "D&D"
+genre = "weird_west"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Arcane Scribe Studios"
+
+complexity = 3
+progression = 3
+narrative = 5
+combat = 5
+exploration = 1
+balance = 2
+versatility = 2
+customization = 2
+
+similar = ['cnh5gqZj', '0bWxu9ZH', 'zSNKG6c6']

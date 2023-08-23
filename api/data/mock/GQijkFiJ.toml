@@ -1,0 +1,18 @@
+title = "Starweave"
+description = "Traverse ghostly plains, confront paranormal outlaws, and embrace the unsettling blend of frontier grit and otherworldly strangeness that defines the Weird West."
+family = "NSR"
+genre = "weird_west"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Technomancy Tales"
+
+complexity = 2
+progression = 2
+narrative = 2
+combat = 4
+exploration = 1
+balance = 5
+versatility = 3
+customization = 1
+
+similar = ['5wlpqwjj', 'QYDiDtiY', 'ebVqNxAq']

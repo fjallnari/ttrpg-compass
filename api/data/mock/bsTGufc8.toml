@@ -1,0 +1,18 @@
+title = "Astral Expanse"
+description = "Collaborate to restore the planet's balance, harness eco-friendly technologies, and immerse yourself in a world where the triumph of human ingenuity nurtures a brighter, interconnected future."
+family = "BRP"
+genre = "solarpunk"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Arcane Scribe Studios"
+
+complexity = 4
+progression = 4
+narrative = 1
+combat = 1
+exploration = 5
+balance = 4
+versatility = 5
+customization = 1
+
+similar = ['7W1NBXPn', 'SQf5RvEV', 'vZe1xpNt']

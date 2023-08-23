@@ -1,0 +1,18 @@
+title = "Runepulse"
+description = "Step into a realm where twisted creatures and sinister sorcery intertwine, as players navigate a treacherous journey through moral ambiguity and haunting landscapes."
+family = "GUMSHOE"
+genre = "dark_fantasy"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Technomancy Tales"
+
+complexity = 2
+progression = 4
+narrative = 1
+combat = 3
+exploration = 1
+balance = 5
+versatility = 3
+customization = 2
+
+similar = ['WfopsmFA', 'MS1UlTtq', '2xdOuKE0']

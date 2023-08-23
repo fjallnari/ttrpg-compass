@@ -1,0 +1,18 @@
+title = "Light of Yesteryear"
+description = "Step into a realm where twisted creatures and sinister sorcery intertwine, as players navigate a treacherous journey through moral ambiguity and haunting landscapes."
+family = "Fudge"
+genre = "dark_fantasy"
+edition = "7th edition"
+gm = "Shared GM"
+publisher = "Mythic Forge Games"
+
+complexity = 3
+progression = 4
+narrative = 2
+combat = 1
+exploration = 2
+balance = 1
+versatility = 5
+customization = 2
+
+similar = ['VCC4QYCY', 'dk37mnr3', 'MS1UlTtq']

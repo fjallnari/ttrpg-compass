@@ -1,0 +1,18 @@
+title = "Biowind"
+description = "Traverse ghostly plains, confront paranormal outlaws, and embrace the unsettling blend of frontier grit and otherworldly strangeness that defines the Weird West."
+family = "Fudge"
+genre = "weird_west"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Celestial Table Games"
+
+complexity = 2
+progression = 3
+narrative = 1
+combat = 1
+exploration = 3
+balance = 3
+versatility = 3
+customization = 2
+
+similar = ['KCo41Gu7', 'RhpTkCkZ', 'OjZHd10z']

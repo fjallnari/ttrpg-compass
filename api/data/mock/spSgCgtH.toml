@@ -1,0 +1,18 @@
+title = "Runeward"
+description = "Navigate through a brutal and unforgiving landscape, where grim circumstances and harsh realities paint a stark backdrop for the stories of flawed characters and the harsh struggles they face."
+family = "D20"
+genre = "grimdark"
+edition = "8th edition"
+gm = "Game Master"
+publisher = "Mythic Forge Games"
+
+complexity = 5
+progression = 3
+narrative = 5
+combat = 1
+exploration = 3
+balance = 1
+versatility = 2
+customization = 3
+
+similar = ['LOhClR90', 'ZNhkeJW7', 'AYIhAg5C']

@@ -1,0 +1,18 @@
+title = "Ashen Expanse"
+description = "Plunder riches, uphold honor, and immerse yourself in a world of Viking sagas, where bravery and valor shape the course of history."
+family = "Shadowrun"
+genre = "viking"
+edition = "7th edition"
+gm = "Game Master"
+publisher = "Eldritch Chronicles Publishing"
+
+complexity = 5
+progression = 1
+narrative = 5
+combat = 5
+exploration = 4
+balance = 3
+versatility = 2
+customization = 5
+
+similar = ['tRSycQtz', 'uQwrQuyw', 'FWU7HLo7']

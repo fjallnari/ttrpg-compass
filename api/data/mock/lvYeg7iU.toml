@@ -1,0 +1,18 @@
+title = "Riftborne"
+description = "Confront ancient cosmic entities, grapple with existential terror, and navigate a universe that defies reason, as you explore the fragile nature of sanity in the face of unfathomable cosmic forces."
+family = "PbtA"
+genre = "cosmic_horror"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Nebula Quest Publishing"
+
+complexity = 1
+progression = 4
+narrative = 2
+combat = 1
+exploration = 5
+balance = 3
+versatility = 4
+customization = 4
+
+similar = ['d2fO5ruV', 'aNf3B0a0', 'uiCU4Sed']

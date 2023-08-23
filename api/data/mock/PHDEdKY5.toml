@@ -1,0 +1,18 @@
+title = "Neverborne"
+description = "Customize your colossal war machine, engage in futuristic conflicts, and navigate a world where technology and tactics collide in the ultimate showdown of metal and might."
+family = "Fate"
+genre = "mechs"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Shadowrealm RPGs"
+
+complexity = 3
+progression = 5
+narrative = 5
+combat = 3
+exploration = 5
+balance = 4
+versatility = 4
+customization = 3
+
+similar = ['6rLs9oQN', 'D3Fk4RIs', 'vfkkBv5M']

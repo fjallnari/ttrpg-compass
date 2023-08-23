@@ -1,0 +1,18 @@
+title = "Warptech"
+description = "Navigate desolate wastelands, encounter ruthless factions, and forge alliances amidst the remnants of society as you navigate the challenges of a post-apocalyptic landscape."
+family = "OSR"
+genre = "postapocalyptic"
+edition = "8th edition"
+gm = "Game Master"
+publisher = "Nebula Quest Publishing"
+
+complexity = 5
+progression = 5
+narrative = 5
+combat = 1
+exploration = 5
+balance = 4
+versatility = 3
+customization = 3
+
+similar = ['jTNypigj', '94sdrzRG', 'wyDD4k1X']

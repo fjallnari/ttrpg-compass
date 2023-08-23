@@ -1,0 +1,18 @@
+title = "Solarbound"
+description = "Immerse yourself in a world where mythical creatures roam and epic battles unfold, as you wield both blade and spell to leave an indelible mark on a tapestry of grand fantasy."
+family = "BRP"
+genre = "heroic_fantasy"
+edition = "7th edition"
+gm = "Game Master"
+publisher = "Mythic Forge Games"
+
+complexity = 1
+progression = 1
+narrative = 5
+combat = 4
+exploration = 4
+balance = 5
+versatility = 4
+customization = 4
+
+similar = ['iQg0XM6u', 'LtG6GWCH', 'G3dGmKuw']

@@ -1,0 +1,18 @@
+title = "Neurofall"
+description = "Step into a realm where twisted creatures and sinister sorcery intertwine, as players navigate a treacherous journey through moral ambiguity and haunting landscapes."
+family = "D&D"
+genre = "dark_fantasy"
+edition = "5th edition"
+gm = "Game Master"
+publisher = "Arcane Scribe Studios"
+
+complexity = 2
+progression = 5
+narrative = 4
+combat = 3
+exploration = 1
+balance = 2
+versatility = 4
+customization = 4
+
+similar = ['GU9wM4rc', 'wPkgEu7L', '1RadiIgm']

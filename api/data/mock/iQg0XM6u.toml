@@ -1,0 +1,18 @@
+title = "Spirits of Avendel"
+description = "Immerse yourself in a world where mythical creatures roam and epic battles unfold, as you wield both blade and spell to leave an indelible mark on a tapestry of grand fantasy."
+family = "GURPS"
+genre = "heroic_fantasy"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Starfall Adventures"
+
+complexity = 1
+progression = 1
+narrative = 4
+combat = 5
+exploration = 4
+balance = 5
+versatility = 5
+customization = 2
+
+similar = ['LtG6GWCH', 'XTKNxOhi', 'TkOl9q5Q']

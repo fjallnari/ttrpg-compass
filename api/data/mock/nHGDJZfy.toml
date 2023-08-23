@@ -1,0 +1,18 @@
+title = "Vitadyne"
+description = "Traverse dimly lit alleys, decipher cryptic codes, and delve into the unknown as you navigate a world shrouded in obscurity and rife with hidden truths."
+family = "Cypher System"
+genre = "obscure"
+edition = "8th edition"
+gm = "Game Master"
+publisher = "Starfall Adventures"
+
+complexity = 3
+progression = 4
+narrative = 4
+combat = 2
+exploration = 1
+balance = 3
+versatility = 3
+customization = 3
+
+similar = ['FRMN0NjI', 'plLrOoxU', 'x5pXEEe6']

@@ -1,0 +1,18 @@
+title = "Ruinweave"
+description = "Unravel the secrets of the paranormal, harness arcane powers, and explore the depths of the unseen as you journey through a tapestry of supernatural wonders."
+family = "D&D"
+genre = "supernatural"
+edition = "8th edition"
+gm = "Game Master"
+publisher = "Technomancy Tales"
+
+complexity = 4
+progression = 2
+narrative = 2
+combat = 3
+exploration = 2
+balance = 4
+versatility = 5
+customization = 4
+
+similar = ['FOCBN0VE', 'zlOv5TeQ', 'jlv7dbDW']

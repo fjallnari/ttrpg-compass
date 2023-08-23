@@ -1,0 +1,18 @@
+title = "Silkwalker"
+description = "Customize your colossal war machine, engage in futuristic conflicts, and navigate a world where technology and tactics collide in the ultimate showdown of metal and might."
+family = "Indie"
+genre = "mechs"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Etherbound Entertainment"
+
+complexity = 2
+progression = 2
+narrative = 1
+combat = 3
+exploration = 5
+balance = 1
+versatility = 1
+customization = 2
+
+similar = ['QoRGeJTK', 'RH6znD6L', 'Ga37tJ7p']

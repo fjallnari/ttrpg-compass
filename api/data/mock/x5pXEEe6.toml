@@ -1,0 +1,18 @@
+title = "Eclipse Ascendancy"
+description = "Embark on an epic odyssey through a realm where gods and legends walk among mortals, weaving a tapestry of grand myths, ancient prophecies and heroic quests."
+family = "Cypher System"
+genre = "mythic_fantasy"
+edition = "3rd edition"
+gm = "Shared GM"
+publisher = "Dragon Tome Press"
+
+complexity = 2
+progression = 5
+narrative = 4
+combat = 2
+exploration = 1
+balance = 2
+versatility = 1
+customization = 4
+
+similar = ['7Ge2NOCh', 'wr5ACYOP', 'nHGDJZfy']

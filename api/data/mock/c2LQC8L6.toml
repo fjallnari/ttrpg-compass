@@ -1,0 +1,18 @@
+title = "Tales of the Stars"
+description = "Immerse yourself in a world where mythical creatures roam and epic battles unfold, as you wield both blade and spell to leave an indelible mark on a tapestry of grand fantasy."
+family = "Fudge"
+genre = "heroic_fantasy"
+edition = "7th edition"
+gm = "Game Master"
+publisher = "Eldritch Chronicles Publishing"
+
+complexity = 2
+progression = 1
+narrative = 4
+combat = 2
+exploration = 1
+balance = 1
+versatility = 3
+customization = 5
+
+similar = ['G3dGmKuw', 'EGU79yRT', 'TXftYZh8']

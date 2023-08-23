@@ -1,0 +1,18 @@
+title = "Darkmoon Insurgency"
+description = "Navigate airships, unravel clockwork mysteries, and explore a realm where the boundaries between science and fantasy blur, offering a unique blend of retro-futuristic wonder."
+family = "Fate"
+genre = "steampunk"
+edition = "4th edition"
+gm = "Shared GM"
+publisher = "Eldritch Chronicles Publishing"
+
+complexity = 2
+progression = 5
+narrative = 5
+combat = 4
+exploration = 5
+balance = 2
+versatility = 5
+customization = 2
+
+similar = ['PHDEdKY5', 'hLCUarc8', 'dKMTMll8']

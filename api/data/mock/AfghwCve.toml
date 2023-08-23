@@ -1,0 +1,18 @@
+title = "Epic Tales"
+description = "Saddle up for a wild ride into the untamed frontier, navigate dusty trails, engage in high-stakes showdowns, and immerse yourself in a world of rugged landscapes and moral ambiguity"
+family = "BRP"
+genre = "western"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Nebula Quest Publishing"
+
+complexity = 2
+progression = 3
+narrative = 4
+combat = 5
+exploration = 2
+balance = 3
+versatility = 3
+customization = 5
+
+similar = ['S83JXFE2', 'eagnzGCi', 'TXftYZh8']

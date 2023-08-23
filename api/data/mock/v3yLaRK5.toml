@@ -1,0 +1,18 @@
+title = "Aetheria of Stardust"
+description = "Immerse yourself in a world where mythical creatures roam and epic battles unfold, as you wield both blade and spell to leave an indelible mark on a tapestry of grand fantasy."
+family = "OSR"
+genre = "heroic_fantasy"
+edition = "8th edition"
+gm = "Game Master"
+publisher = "Mages & Monoliths"
+
+complexity = 1
+progression = 3
+narrative = 2
+combat = 3
+exploration = 5
+balance = 1
+versatility = 5
+customization = 4
+
+similar = ['LtG6GWCH', 'NS5m7ifY', 'A6VXweRU']

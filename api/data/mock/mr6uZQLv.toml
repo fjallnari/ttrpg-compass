@@ -1,0 +1,18 @@
+title = "Runners of Mythos"
+description = "Customize your colossal war machine, engage in futuristic conflicts, and navigate a world where technology and tactics collide in the ultimate showdown of metal and might."
+family = "D6"
+genre = "mechs"
+edition = "5th edition"
+gm = "Game Master"
+publisher = "Eldritch Chronicles Publishing"
+
+complexity = 3
+progression = 3
+narrative = 2
+combat = 1
+exploration = 1
+balance = 5
+versatility = 4
+customization = 2
+
+similar = ['XpCjkSD0', 'WQM0rH9L', 'TsxMQkN6']

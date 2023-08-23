@@ -1,0 +1,18 @@
+title = "Odyssey of the Cosmos"
+description = "Carve your path as a hero of unparalleled valor, battling ancient evils and mastering eldritch arts in a realm where swords and spells intertwine."
+family = "Warhammer"
+genre = "sword_&_sorcery"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Steam Craft Studios"
+
+complexity = 3
+progression = 4
+narrative = 5
+combat = 2
+exploration = 2
+balance = 3
+versatility = 2
+customization = 2
+
+similar = ['QSzlxTPS', 'dfW2pCHU', 'qbXe4hRO']

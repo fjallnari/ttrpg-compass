@@ -1,0 +1,18 @@
+title = "Song of Stardust"
+description = "Navigate a society shaped by genetic manipulation and ethical dilemmas. Explore the intricate interplay between organic life and synthetic advancement as science takes a bold step into uncharted territory."
+family = "OSR"
+genre = "biopunk"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Arcane Scribe Studios"
+
+complexity = 1
+progression = 5
+narrative = 5
+combat = 2
+exploration = 2
+balance = 1
+versatility = 4
+customization = 1
+
+similar = ['DEYaco9a', '88LshfkQ', 'qnid04Zq']

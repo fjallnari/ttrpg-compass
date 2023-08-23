@@ -1,0 +1,18 @@
+title = "Solarpulse"
+description = "Saddle up for a wild ride into the untamed frontier, navigate dusty trails, engage in high-stakes showdowns, and immerse yourself in a world of rugged landscapes and moral ambiguity"
+family = "Fudge"
+genre = "western"
+edition = "8th edition"
+gm = "Game Master"
+publisher = "Timewarp Studios"
+
+complexity = 2
+progression = 1
+narrative = 3
+combat = 5
+exploration = 1
+balance = 1
+versatility = 2
+customization = 5
+
+similar = ['c2LQC8L6', 'AfghwCve', 'PInJeIud']

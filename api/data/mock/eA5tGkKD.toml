@@ -1,0 +1,18 @@
+title = "Quest of the Eons"
+description = "Navigate through a brutal and unforgiving landscape, where grim circumstances and harsh realities paint a stark backdrop for the stories of flawed characters and the harsh struggles they face."
+family = "OSR"
+genre = "grimdark"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Mythic Forge Games"
+
+complexity = 2
+progression = 5
+narrative = 1
+combat = 4
+exploration = 4
+balance = 5
+versatility = 3
+customization = 5
+
+similar = ['49rFhw3L', 'jlv7dbDW', 'XVuYrdyR']

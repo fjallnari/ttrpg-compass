@@ -1,0 +1,18 @@
+title = "Steamtech"
+description = "Customize your colossal war machine, engage in futuristic conflicts, and navigate a world where technology and tactics collide in the ultimate showdown of metal and might."
+family = "Shadowrun"
+genre = "mechs"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Technomancy Tales"
+
+complexity = 3
+progression = 4
+narrative = 3
+combat = 4
+exploration = 5
+balance = 4
+versatility = 5
+customization = 2
+
+similar = ['PHDEdKY5', 'ASD4ytb7', 'tIAxy17O']

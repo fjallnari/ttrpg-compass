@@ -1,0 +1,18 @@
+title = "Silkpulse"
+description = "Saddle up for a wild ride into the untamed frontier, navigate dusty trails, engage in high-stakes showdowns, and immerse yourself in a world of rugged landscapes and moral ambiguity"
+family = "Shadowrun"
+genre = "western"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Timewarp Studios"
+
+complexity = 2
+progression = 5
+narrative = 1
+combat = 2
+exploration = 5
+balance = 4
+versatility = 2
+customization = 5
+
+similar = ['eagnzGCi', 'xuwQ976d', 'pPLy9Sop']

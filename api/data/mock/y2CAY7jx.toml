@@ -1,0 +1,18 @@
+title = "Voyager's Runners"
+description = "Traverse dimly lit alleys, decipher cryptic codes, and delve into the unknown as you navigate a world shrouded in obscurity and rife with hidden truths."
+family = "PbtA"
+genre = "obscure"
+edition = "5th edition"
+gm = "Game Master"
+publisher = "Arcane Scribe Studios"
+
+complexity = 5
+progression = 1
+narrative = 1
+combat = 1
+exploration = 3
+balance = 4
+versatility = 3
+customization = 3
+
+similar = ['q4YTqtdl', 'JNoV9ZK9', 'vq3C0xLH']

@@ -4,7 +4,7 @@
 	import ScrollButton from "$lib/ScrollButton.svelte";
 	import type TTRPGSystem from "../interfaces/TTRPGSystem";
 	import CardPageSetter from "$lib/CardPageSetter.svelte";
-	import { cursor, foundSystems, selectedSystem } from "../stores";
+	import { cursor, foundSystems, selectedSystem, serverURL } from "../stores";
 	import { onMount } from "svelte";
 	import Icon from "@iconify/svelte";
 	import type Filters from "../interfaces/Filters";
@@ -39,7 +39,7 @@
     }
 
     const loadMore = async () => {
-        const res = await fetch(`http://localhost:5000/api/systems/all/${$cursor}`);
+        const res = await fetch(`${$serverURL}/api/systems/all/${$cursor}`);
         let data = await res.json();
        
         cursor.set(data.cursor);

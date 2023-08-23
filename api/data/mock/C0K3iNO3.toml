@@ -1,0 +1,18 @@
+title = "Incursion of Nevermore"
+description = "Navigate through a brutal and unforgiving landscape, where grim circumstances and harsh realities paint a stark backdrop for the stories of flawed characters and the harsh struggles they face."
+family = "Cypher System"
+genre = "grimdark"
+edition = "8th edition"
+gm = "GM-less/Solo"
+publisher = "Technomancy Tales"
+
+complexity = 1
+progression = 1
+narrative = 1
+combat = 3
+exploration = 3
+balance = 2
+versatility = 2
+customization = 4
+
+similar = ['9LfJdU3b', '6HyAKXoq', '6cvk7Fcp']

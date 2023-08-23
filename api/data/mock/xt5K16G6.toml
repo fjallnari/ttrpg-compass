@@ -1,0 +1,18 @@
+title = "Arcwalker"
+description = "Plunder riches, uphold honor, and immerse yourself in a world of Viking sagas, where bravery and valor shape the course of history."
+family = "GURPS"
+genre = "viking"
+edition = "7th edition"
+gm = "Game Master"
+publisher = "Wicked Fate Publishing"
+
+complexity = 1
+progression = 2
+narrative = 5
+combat = 2
+exploration = 4
+balance = 4
+versatility = 2
+customization = 2
+
+similar = ['Kf0795DZ', 'VvLhuIul', 'YJF9oBzK']

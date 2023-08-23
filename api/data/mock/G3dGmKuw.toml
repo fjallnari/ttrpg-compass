@@ -1,0 +1,18 @@
+title = "Terra Horizons"
+description = "Immerse yourself in a world where mythical creatures roam and epic battles unfold, as you wield both blade and spell to leave an indelible mark on a tapestry of grand fantasy."
+family = "Fudge"
+genre = "heroic_fantasy"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Dragon Tome Press"
+
+complexity = 1
+progression = 1
+narrative = 4
+combat = 2
+exploration = 4
+balance = 3
+versatility = 2
+customization = 5
+
+similar = ['c2LQC8L6', 'KCo41Gu7', 'XTKNxOhi']

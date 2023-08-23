@@ -1,0 +1,18 @@
+title = "Stardrift Odyssey"
+description = "Customize your colossal war machine, engage in futuristic conflicts, and navigate a world where technology and tactics collide in the ultimate showdown of metal and might."
+family = "PbtA"
+genre = "mechs"
+edition = "5th edition"
+gm = "Game Master"
+publisher = "Etherbound Entertainment"
+
+complexity = 1
+progression = 5
+narrative = 4
+combat = 1
+exploration = 3
+balance = 1
+versatility = 4
+customization = 3
+
+similar = ['uiCU4Sed', 'Ajq75c7F', 'd2fO5ruV']

@@ -1,0 +1,18 @@
+title = "Runners of Starlight"
+description = "Traverse dimly lit alleys, decipher cryptic codes, and delve into the unknown as you navigate a world shrouded in obscurity and rife with hidden truths."
+family = "PbtA"
+genre = "obscure"
+edition = "1st edition"
+gm = "GM-less/Solo"
+publisher = "Arcane Scribe Studios"
+
+complexity = 4
+progression = 4
+narrative = 1
+combat = 2
+exploration = 4
+balance = 4
+versatility = 4
+customization = 2
+
+similar = ['y2CAY7jx', 'JNoV9ZK9', 'B68808Db']

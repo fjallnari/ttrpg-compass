@@ -1,0 +1,18 @@
+title = "Loreforge"
+description = "Traverse dimly lit alleys, decipher cryptic codes, and delve into the unknown as you navigate a world shrouded in obscurity and rife with hidden truths."
+family = "Fate"
+genre = "obscure"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Mythic Forge Games"
+
+complexity = 4
+progression = 3
+narrative = 5
+combat = 2
+exploration = 1
+balance = 2
+versatility = 4
+customization = 2
+
+similar = ['y58xoglr', 'nHGDJZfy', 'J1IP5R3Q']

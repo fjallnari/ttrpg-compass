@@ -1,0 +1,18 @@
+title = "Silkdrift"
+description = "Embark on an epic odyssey through a realm where gods and legends walk among mortals, weaving a tapestry of grand myths, ancient prophecies and heroic quests."
+family = "Warhammer"
+genre = "mythic_fantasy"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Mages & Monoliths"
+
+complexity = 2
+progression = 4
+narrative = 1
+combat = 5
+exploration = 3
+balance = 1
+versatility = 5
+customization = 2
+
+similar = ['ehyEqVVO', 'faD7DX0k', 'G5UBJuWh']

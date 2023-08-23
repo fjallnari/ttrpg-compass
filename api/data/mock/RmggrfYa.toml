@@ -1,0 +1,18 @@
+title = "Dystopian Legends"
+description = "Plunder riches, uphold honor, and immerse yourself in a world of Viking sagas, where bravery and valor shape the course of history."
+family = "Warhammer"
+genre = "viking"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Shadowrealm RPGs"
+
+complexity = 1
+progression = 1
+narrative = 5
+combat = 5
+exploration = 1
+balance = 5
+versatility = 4
+customization = 4
+
+similar = ['ESKm1dTz', '6TayQBQ0', 'faD7DX0k']

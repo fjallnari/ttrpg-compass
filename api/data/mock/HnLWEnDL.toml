@@ -1,0 +1,18 @@
+title = "Stellar Darkness"
+description = "Confront unspeakable horrors, unravel eerie mysteries, and test the limits of your courage as you traverse a realm where fear and the unknown reign supreme."
+family = "BRP"
+genre = "horror"
+edition = "8th edition"
+gm = "GM-less/Solo"
+publisher = "Technomancy Tales"
+
+complexity = 5
+progression = 5
+narrative = 1
+combat = 4
+exploration = 3
+balance = 3
+versatility = 1
+customization = 1
+
+similar = ['u13wwU63', 'QhnWjG7j', 'aKWDUe8A']

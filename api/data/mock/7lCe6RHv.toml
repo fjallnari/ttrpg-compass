@@ -1,0 +1,18 @@
+title = "Dawn of Lumina"
+description = "Carve your path as a hero of unparalleled valor, battling ancient evils and mastering eldritch arts in a realm where swords and spells intertwine."
+family = "GURPS"
+genre = "sword_&_sorcery"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Dreamweaver Publishing"
+
+complexity = 2
+progression = 3
+narrative = 1
+combat = 1
+exploration = 5
+balance = 3
+versatility = 4
+customization = 2
+
+similar = ['xjRBVWjE', 'SyEda9Vw', 'VN2toIz1']

@@ -1,0 +1,18 @@
+title = "Mystic Dawn"
+description = "Navigate airships, unravel clockwork mysteries, and explore a realm where the boundaries between science and fantasy blur, offering a unique blend of retro-futuristic wonder."
+family = "Shadowrun"
+genre = "steampunk"
+edition = "8th edition"
+gm = "Game Master"
+publisher = "Arcane Scribe Studios"
+
+complexity = 3
+progression = 1
+narrative = 2
+combat = 5
+exploration = 4
+balance = 2
+versatility = 1
+customization = 1
+
+similar = ['dKMTMll8', 'ItIKrcH5', 'byix4dQ0']

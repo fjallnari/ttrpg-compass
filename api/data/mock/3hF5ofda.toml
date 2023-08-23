@@ -1,0 +1,18 @@
+title = "Ashen Grove"
+description = "Navigate desolate wastelands, encounter ruthless factions, and forge alliances amidst the remnants of society as you navigate the challenges of a post-apocalyptic landscape."
+family = "Fate"
+genre = "postapocalyptic"
+edition = "2nd edition"
+gm = "Shared GM"
+publisher = "Wicked Fate Publishing"
+
+complexity = 2
+progression = 1
+narrative = 5
+combat = 4
+exploration = 1
+balance = 2
+versatility = 4
+customization = 1
+
+similar = ['AkYj9qrx', 'iQPDWE58', 'OYHVmKfA']

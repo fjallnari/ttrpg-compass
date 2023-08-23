@@ -1,0 +1,18 @@
+title = "Terra Dusk"
+description = "Explore the events, cultures, and challenges of a bygone age, as you shape the destinies of characters against the backdrop of history's pages."
+family = "Shadowrun"
+genre = "historical"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Timewarp Studios"
+
+complexity = 3
+progression = 4
+narrative = 3
+combat = 2
+exploration = 1
+balance = 3
+versatility = 4
+customization = 1
+
+similar = ['E8OiSAZF', 'Ig5yZmPj', 't8uq20nD']

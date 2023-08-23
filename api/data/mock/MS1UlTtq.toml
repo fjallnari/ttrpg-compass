@@ -1,0 +1,18 @@
+title = "Silkpulse"
+description = "Step into a realm where twisted creatures and sinister sorcery intertwine, as players navigate a treacherous journey through moral ambiguity and haunting landscapes."
+family = "GUMSHOE"
+genre = "dark_fantasy"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Mythic Forge Games"
+
+complexity = 5
+progression = 3
+narrative = 1
+combat = 3
+exploration = 3
+balance = 1
+versatility = 5
+customization = 2
+
+similar = ['Awv0MaJ9', 'n7MTW28k', 'VCC4QYCY']

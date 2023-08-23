@@ -1,0 +1,18 @@
+title = "Soulwalker"
+description = "Customize your colossal war machine, engage in futuristic conflicts, and navigate a world where technology and tactics collide in the ultimate showdown of metal and might."
+family = "OSR"
+genre = "mechs"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Technomancy Tales"
+
+complexity = 3
+progression = 2
+narrative = 2
+combat = 3
+exploration = 4
+balance = 4
+versatility = 3
+customization = 5
+
+similar = ['Ga37tJ7p', 'XqSaNYG0', '49rFhw3L']

@@ -1,0 +1,18 @@
+title = "Pixelbinder"
+description = "Traverse dimly lit alleys, decipher cryptic codes, and delve into the unknown as you navigate a world shrouded in obscurity and rife with hidden truths."
+family = "NSR"
+genre = "obscure"
+edition = "7th edition"
+gm = "Game Master"
+publisher = "Etherbound Entertainment"
+
+complexity = 4
+progression = 2
+narrative = 1
+combat = 4
+exploration = 2
+balance = 3
+versatility = 2
+customization = 5
+
+similar = ['LRIqQkyu', 'bmbTtBXu', 'wyt5Q4mW']

@@ -1,0 +1,18 @@
+title = "Ascendancy of the Stars"
+description = "Navigate through sprawling star systems, engage in political intrigue, and shape the destiny of entire galaxies as you immerse yourself in a space opera of limitless possibilities."
+family = "Fate"
+genre = "space_opera"
+edition = "8th edition"
+gm = "Game Master"
+publisher = "Wyldwood Ventures"
+
+complexity = 2
+progression = 5
+narrative = 5
+combat = 5
+exploration = 1
+balance = 4
+versatility = 2
+customization = 4
+
+similar = ['LEEzAExM', 'EmtVahox', 'uyy9c4eB']

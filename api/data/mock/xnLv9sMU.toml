@@ -1,0 +1,18 @@
+title = "Nevertech"
+description = "Collaborate to restore the planet's balance, harness eco-friendly technologies, and immerse yourself in a world where the triumph of human ingenuity nurtures a brighter, interconnected future."
+family = "BRP"
+genre = "solarpunk"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Nebula Quest Publishing"
+
+complexity = 1
+progression = 3
+narrative = 4
+combat = 4
+exploration = 2
+balance = 5
+versatility = 2
+customization = 1
+
+similar = ['dy60HSrT', '7W1NBXPn', 'h6PF6qSK']

@@ -1,0 +1,18 @@
+title = "Empire of Astraeus"
+description = "Carve your path as a hero of unparalleled valor, battling ancient evils and mastering eldritch arts in a realm where swords and spells intertwine."
+family = "Shadowrun"
+genre = "sword_&_sorcery"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Mages & Monoliths"
+
+complexity = 1
+progression = 1
+narrative = 3
+combat = 2
+exploration = 2
+balance = 2
+versatility = 5
+customization = 4
+
+similar = ['wxo6ZKA7', 'NuEU0QYs', 'BbSrzsF5']

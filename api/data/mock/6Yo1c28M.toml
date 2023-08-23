@@ -1,0 +1,18 @@
+title = "Starwalker"
+description = "Navigate airships, unravel clockwork mysteries, and explore a realm where the boundaries between science and fantasy blur, offering a unique blend of retro-futuristic wonder."
+family = "PbtA"
+genre = "steampunk"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Celestial Table Games"
+
+complexity = 3
+progression = 1
+narrative = 5
+combat = 5
+exploration = 2
+balance = 1
+versatility = 4
+customization = 3
+
+similar = ['N8v5PIxZ', 'dKMTMll8', 'eEembaGr']

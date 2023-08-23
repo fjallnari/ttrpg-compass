@@ -1,0 +1,18 @@
+title = "Synthdrift"
+description = "Navigate airships, unravel clockwork mysteries, and explore a realm where the boundaries between science and fantasy blur, offering a unique blend of retro-futuristic wonder."
+family = "NSR"
+genre = "steampunk"
+edition = "5th edition"
+gm = "Game Master"
+publisher = "Enchanted Realms Publishing"
+
+complexity = 1
+progression = 2
+narrative = 5
+combat = 1
+exploration = 2
+balance = 5
+versatility = 3
+customization = 1
+
+similar = ['m10qxDTb', 'Z3lnbK2b', '5wlpqwjj']

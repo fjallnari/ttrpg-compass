@@ -1,0 +1,18 @@
+title = "Realmseeker"
+description = "Confront unspeakable horrors, unravel eerie mysteries, and test the limits of your courage as you traverse a realm where fear and the unknown reign supreme."
+family = "Indie"
+genre = "horror"
+edition = "7th edition"
+gm = "Game Master"
+publisher = "Arcane Scribe Studios"
+
+complexity = 3
+progression = 2
+narrative = 2
+combat = 3
+exploration = 5
+balance = 5
+versatility = 3
+customization = 4
+
+similar = ['gzek4vKY', 'HBnKlVLg', '1o0RuSok']

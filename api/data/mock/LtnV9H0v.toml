@@ -1,0 +1,18 @@
+title = "Elemental Shadow"
+description = "Navigate airships, unravel clockwork mysteries, and explore a realm where the boundaries between science and fantasy blur, offering a unique blend of retro-futuristic wonder."
+family = "GUMSHOE"
+genre = "steampunk"
+edition = "7th edition"
+gm = "Game Master"
+publisher = "Wyldwood Ventures"
+
+complexity = 4
+progression = 5
+narrative = 5
+combat = 4
+exploration = 1
+balance = 3
+versatility = 5
+customization = 5
+
+similar = ['MUNkBoFh', 'oDM5BNw6', '6Jf3Wetx']

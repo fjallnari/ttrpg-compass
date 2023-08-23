@@ -1,0 +1,18 @@
+title = "Lorewave"
+description = "Customize your colossal war machine, engage in futuristic conflicts, and navigate a world where technology and tactics collide in the ultimate showdown of metal and might."
+family = "D6"
+genre = "mechs"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Wicked Fate Publishing"
+
+complexity = 5
+progression = 5
+narrative = 1
+combat = 5
+exploration = 2
+balance = 4
+versatility = 4
+customization = 3
+
+similar = ['mr6uZQLv', '4xkhte7k', 'xTP2ehDG']

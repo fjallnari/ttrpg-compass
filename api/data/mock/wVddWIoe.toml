@@ -1,0 +1,18 @@
+title = "Neurobinder"
+description = "Navigate through sprawling star systems, engage in political intrigue, and shape the destiny of entire galaxies as you immerse yourself in a space opera of limitless possibilities."
+family = "PbtA"
+genre = "space_opera"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Mythic Forge Games"
+
+complexity = 1
+progression = 5
+narrative = 4
+combat = 2
+exploration = 5
+balance = 3
+versatility = 5
+customization = 1
+
+similar = ['Ajq75c7F', 'njBP50eI', 'zSgo7qgu']

@@ -1,0 +1,18 @@
+title = "Journeys of Eldoria"
+description = "Step into a realm where twisted creatures and sinister sorcery intertwine, as players navigate a treacherous journey through moral ambiguity and haunting landscapes."
+family = "Indie"
+genre = "dark_fantasy"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Etherbound Entertainment"
+
+complexity = 5
+progression = 1
+narrative = 3
+combat = 5
+exploration = 5
+balance = 2
+versatility = 4
+customization = 2
+
+similar = ['OGS6HhRi', 'hPFApEkW', 'oGxWL2lY']

@@ -1,0 +1,18 @@
+title = "Grove of Mythos"
+description = "Carve your path as a hero of unparalleled valor, battling ancient evils and mastering eldritch arts in a realm where swords and spells intertwine."
+family = "NSR"
+genre = "sword_&_sorcery"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Steam Craft Studios"
+
+complexity = 2
+progression = 3
+narrative = 5
+combat = 5
+exploration = 5
+balance = 4
+versatility = 4
+customization = 5
+
+similar = ['gUtxgktO', 'bDoBbMrp', 'MWRBfPB2']

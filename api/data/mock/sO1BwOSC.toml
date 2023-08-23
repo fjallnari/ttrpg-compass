@@ -1,0 +1,18 @@
+title = "Nuclear Elysium"
+description = "Navigate a society shaped by genetic manipulation and ethical dilemmas. Explore the intricate interplay between organic life and synthetic advancement as science takes a bold step into uncharted territory."
+family = "GURPS"
+genre = "biopunk"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Mages & Monoliths"
+
+complexity = 2
+progression = 1
+narrative = 5
+combat = 1
+exploration = 5
+balance = 1
+versatility = 4
+customization = 1
+
+similar = ['hmiZKxuE', 'qnid04Zq', 'y3GbVekI']

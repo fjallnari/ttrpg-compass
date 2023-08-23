@@ -1,0 +1,18 @@
+title = "Mythica Light"
+description = "Navigate desolate wastelands, encounter ruthless factions, and forge alliances amidst the remnants of society as you navigate the challenges of a post-apocalyptic landscape."
+family = "D20"
+genre = "postapocalyptic"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Dragon Tome Press"
+
+complexity = 1
+progression = 2
+narrative = 1
+combat = 5
+exploration = 5
+balance = 1
+versatility = 2
+customization = 5
+
+similar = ['rLHsjqzq', '18j9gChK', '0LtLlLCu']

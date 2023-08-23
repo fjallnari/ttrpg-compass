@@ -1,0 +1,18 @@
+title = "Ascendancy of Evermore"
+description = "Plunder riches, uphold honor, and immerse yourself in a world of Viking sagas, where bravery and valor shape the course of history."
+family = "Fate"
+genre = "viking"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Arcane Scribe Studios"
+
+complexity = 3
+progression = 3
+narrative = 2
+combat = 2
+exploration = 1
+balance = 5
+versatility = 4
+customization = 5
+
+similar = ['Q3tsEcN8', 'lW8L6VpD', 'jJnXqSkf']

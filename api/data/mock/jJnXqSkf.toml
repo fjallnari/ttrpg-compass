@@ -1,0 +1,18 @@
+title = "Pixeltech"
+description = "Traverse dimly lit alleys, decipher cryptic codes, and delve into the unknown as you navigate a world shrouded in obscurity and rife with hidden truths."
+family = "Fate"
+genre = "obscure"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Etherbound Entertainment"
+
+complexity = 2
+progression = 3
+narrative = 1
+combat = 1
+exploration = 3
+balance = 5
+versatility = 2
+customization = 5
+
+similar = ['6TayQBQ0', 'VN2toIz1', 'MQJ0bNTx']

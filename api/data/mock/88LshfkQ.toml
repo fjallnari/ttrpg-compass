@@ -1,0 +1,18 @@
+title = "Matrix of the Aether"
+description = "Navigate a society shaped by genetic manipulation and ethical dilemmas. Explore the intricate interplay between organic life and synthetic advancement as science takes a bold step into uncharted territory."
+family = "Fudge"
+genre = "biopunk"
+edition = "2nd edition"
+gm = "GM-less/Solo"
+publisher = "Arcane Scribe Studios"
+
+complexity = 2
+progression = 5
+narrative = 5
+combat = 1
+exploration = 1
+balance = 1
+versatility = 3
+customization = 1
+
+similar = ['uauBz7bX', 'jUx7Xo8L', 'eb1BFMZx']

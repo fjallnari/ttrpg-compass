@@ -1,0 +1,18 @@
+title = "Lorestrider"
+description = "Navigate desolate wastelands, encounter ruthless factions, and forge alliances amidst the remnants of society as you navigate the challenges of a post-apocalyptic landscape."
+family = "Fate"
+genre = "postapocalyptic"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Arcane Scribe Studios"
+
+complexity = 1
+progression = 1
+narrative = 5
+combat = 5
+exploration = 2
+balance = 3
+versatility = 2
+customization = 2
+
+similar = ['3hF5ofda', 'iQPDWE58', 'VuHMV7b3']

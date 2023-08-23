@@ -1,0 +1,18 @@
+title = "Clockdyne"
+description = "Unravel the secrets of the paranormal, harness arcane powers, and explore the depths of the unseen as you journey through a tapestry of supernatural wonders."
+family = "GURPS"
+genre = "supernatural"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Wicked Fate Publishing"
+
+complexity = 2
+progression = 1
+narrative = 4
+combat = 5
+exploration = 5
+balance = 2
+versatility = 3
+customization = 4
+
+similar = ['6wNbxWR4', 'iuozE1Wg', 'VtaTiacn']

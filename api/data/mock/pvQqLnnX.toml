@@ -1,0 +1,18 @@
+title = "Clockwave"
+description = "Confront unspeakable horrors, unravel eerie mysteries, and test the limits of your courage as you traverse a realm where fear and the unknown reign supreme."
+family = "D&D"
+genre = "horror"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Celestial Table Games"
+
+complexity = 4
+progression = 2
+narrative = 2
+combat = 2
+exploration = 4
+balance = 1
+versatility = 4
+customization = 4
+
+similar = ['mJCM0sVU', 'DIAnGK3u', 'l99C5ORW']

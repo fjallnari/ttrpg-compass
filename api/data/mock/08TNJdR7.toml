@@ -1,0 +1,18 @@
+title = "Stardrift Outriders"
+description = "Saddle up for a wild ride into the untamed frontier, navigate dusty trails, engage in high-stakes showdowns, and immerse yourself in a world of rugged landscapes and moral ambiguity"
+family = "Cypher System"
+genre = "western"
+edition = "7th edition"
+gm = "Game Master"
+publisher = "Eldritch Chronicles Publishing"
+
+complexity = 2
+progression = 5
+narrative = 5
+combat = 1
+exploration = 5
+balance = 5
+versatility = 4
+customization = 3
+
+similar = ['UDY5lfT0', 'tkkLkv9s', 'yfG8PyQh']

@@ -1,0 +1,18 @@
+title = "Lorefall"
+description = "Confront unspeakable horrors, unravel eerie mysteries, and test the limits of your courage as you traverse a realm where fear and the unknown reign supreme."
+family = "Fate"
+genre = "horror"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Nebula Quest Publishing"
+
+complexity = 4
+progression = 3
+narrative = 2
+combat = 5
+exploration = 3
+balance = 4
+versatility = 3
+customization = 1
+
+similar = ['ebVqNxAq', 'QhnWjG7j', 'tgg7iK68']

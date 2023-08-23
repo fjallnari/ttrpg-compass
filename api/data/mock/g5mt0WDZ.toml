@@ -1,0 +1,18 @@
+title = "Grove of Eldoria"
+description = "Step into a realm where twisted creatures and sinister sorcery intertwine, as players navigate a treacherous journey through moral ambiguity and haunting landscapes."
+family = "PbtA"
+genre = "dark_fantasy"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Arcane Scribe Studios"
+
+complexity = 4
+progression = 1
+narrative = 4
+combat = 1
+exploration = 3
+balance = 5
+versatility = 5
+customization = 2
+
+similar = ['VCC4QYCY', 'LtFh8XWP', 'wPkgEu7L']

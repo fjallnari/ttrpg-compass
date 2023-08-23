@@ -1,0 +1,18 @@
+title = "Utopia of Astraeus"
+description = "Saddle up for a wild ride into the untamed frontier, navigate dusty trails, engage in high-stakes showdowns, and immerse yourself in a world of rugged landscapes and moral ambiguity"
+family = "Cypher System"
+genre = "western"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Crystal Dice Creations"
+
+complexity = 5
+progression = 1
+narrative = 4
+combat = 1
+exploration = 4
+balance = 5
+versatility = 4
+customization = 4
+
+similar = ['08TNJdR7', 'jo4TiLHh', 'pPLy9Sop']

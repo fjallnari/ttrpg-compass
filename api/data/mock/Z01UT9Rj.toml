@@ -1,0 +1,18 @@
+title = "Ashenstrider"
+description = "Leap into a world of extraordinary powers and heroic feats, where masked vigilantes and caped crusaders protect the innocent and battle villains"
+family = "D20"
+genre = "superhero"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Mages & Monoliths"
+
+complexity = 3
+progression = 5
+narrative = 1
+combat = 3
+exploration = 2
+balance = 2
+versatility = 2
+customization = 1
+
+similar = ['HfpFuCVj', '2xUIJLDw', 'Jg7NyM3Z']

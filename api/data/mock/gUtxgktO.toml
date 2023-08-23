@@ -1,0 +1,18 @@
+title = "Eclipse Outrunners"
+description = "Carve your path as a hero of unparalleled valor, battling ancient evils and mastering eldritch arts in a realm where swords and spells intertwine."
+family = "NSR"
+genre = "sword_&_sorcery"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Shadowrealm RPGs"
+
+complexity = 4
+progression = 4
+narrative = 2
+combat = 4
+exploration = 2
+balance = 5
+versatility = 1
+customization = 5
+
+similar = ['MWRBfPB2', 'UufdCo1V', 'kqErPGAU']

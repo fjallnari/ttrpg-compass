@@ -1,0 +1,18 @@
+title = "Clockdrift"
+description = "Plunder riches, uphold honor, and immerse yourself in a world of Viking sagas, where bravery and valor shape the course of history."
+family = "Fate"
+genre = "viking"
+edition = "8th edition"
+gm = "Game Master"
+publisher = "Celestial Table Games"
+
+complexity = 4
+progression = 1
+narrative = 1
+combat = 4
+exploration = 4
+balance = 5
+versatility = 1
+customization = 2
+
+similar = ['ebVqNxAq', '6TayQBQ0', 'VxLPzQw0']

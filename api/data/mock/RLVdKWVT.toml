@@ -1,0 +1,18 @@
+title = "Celestial Grove"
+description = "Leap into a world of extraordinary powers and heroic feats, where masked vigilantes and caped crusaders protect the innocent and battle villains"
+family = "GUMSHOE"
+genre = "superhero"
+edition = "7th edition"
+gm = "Game Master"
+publisher = "Celestial Table Games"
+
+complexity = 1
+progression = 4
+narrative = 2
+combat = 5
+exploration = 2
+balance = 1
+versatility = 4
+customization = 1
+
+similar = ['n7MTW28k', 'KzIVkvB8', 'Z01UT9Rj']

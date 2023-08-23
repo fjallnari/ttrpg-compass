@@ -1,0 +1,18 @@
+title = "Terra Terra"
+description = "Traverse dimly lit alleys, decipher cryptic codes, and delve into the unknown as you navigate a world shrouded in obscurity and rife with hidden truths."
+family = "D6"
+genre = "obscure"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Grimoire Guild Games"
+
+complexity = 5
+progression = 1
+narrative = 3
+combat = 5
+exploration = 3
+balance = 5
+versatility = 4
+customization = 5
+
+similar = ['JNoV9ZK9', '37rwCArC', '4xkhte7k']

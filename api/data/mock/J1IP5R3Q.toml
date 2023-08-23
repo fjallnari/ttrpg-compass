@@ -1,0 +1,18 @@
+title = "Ruinwave"
+description = "Traverse dimly lit alleys, decipher cryptic codes, and delve into the unknown as you navigate a world shrouded in obscurity and rife with hidden truths."
+family = "OSR"
+genre = "obscure"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Nebula Quest Publishing"
+
+complexity = 3
+progression = 2
+narrative = 4
+combat = 2
+exploration = 3
+balance = 3
+versatility = 5
+customization = 1
+
+similar = ['ZZtmobXW', 'UFdqih6N', 'p4iJjdLo']

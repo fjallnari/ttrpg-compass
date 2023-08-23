@@ -1,0 +1,18 @@
+title = "Neurotech"
+description = "Navigate airships, unravel clockwork mysteries, and explore a realm where the boundaries between science and fantasy blur, offering a unique blend of retro-futuristic wonder."
+family = "Cypher System"
+genre = "steampunk"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Timewarp Studios"
+
+complexity = 5
+progression = 1
+narrative = 4
+combat = 3
+exploration = 3
+balance = 1
+versatility = 2
+customization = 5
+
+similar = ['hh87ilLS', 'zlOv5TeQ', '6Yo1c28M']

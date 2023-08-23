@@ -1,0 +1,18 @@
+title = "Arcane Genesis"
+description = "Plunder riches, uphold honor, and immerse yourself in a world of Viking sagas, where bravery and valor shape the course of history."
+family = "OSR"
+genre = "viking"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Mages & Monoliths"
+
+complexity = 1
+progression = 2
+narrative = 4
+combat = 3
+exploration = 5
+balance = 4
+versatility = 2
+customization = 2
+
+similar = ['xt5K16G6', 'XVuYrdyR', 'nZWWNysg']

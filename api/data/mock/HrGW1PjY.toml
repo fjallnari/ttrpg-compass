@@ -1,0 +1,18 @@
+title = "Realmbinder"
+description = "Collaborate to restore the planet's balance, harness eco-friendly technologies, and immerse yourself in a world where the triumph of human ingenuity nurtures a brighter, interconnected future."
+family = "GUMSHOE"
+genre = "solarpunk"
+edition = "4th edition"
+gm = "GM-less/Solo"
+publisher = "Dragon Tome Press"
+
+complexity = 1
+progression = 5
+narrative = 5
+combat = 2
+exploration = 2
+balance = 1
+versatility = 3
+customization = 4
+
+similar = ['MUNkBoFh', 'OjhFh6CH', 'dy60HSrT']

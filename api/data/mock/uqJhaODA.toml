@@ -1,0 +1,18 @@
+title = "Riftward"
+description = "Navigate through sprawling star systems, engage in political intrigue, and shape the destiny of entire galaxies as you immerse yourself in a space opera of limitless possibilities."
+family = "OSR"
+genre = "space_opera"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Nebula Quest Publishing"
+
+complexity = 2
+progression = 2
+narrative = 2
+combat = 4
+exploration = 1
+balance = 5
+versatility = 4
+customization = 1
+
+similar = ['NS5m7ifY', 'A6VXweRU', 'LtG6GWCH']

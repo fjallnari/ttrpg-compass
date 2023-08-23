@@ -1,0 +1,18 @@
+title = "Arcpulse"
+description = "Confront ancient cosmic entities, grapple with existential terror, and navigate a universe that defies reason, as you explore the fragile nature of sanity in the face of unfathomable cosmic forces."
+family = "GURPS"
+genre = "cosmic_horror"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Starfall Adventures"
+
+complexity = 4
+progression = 5
+narrative = 3
+combat = 5
+exploration = 2
+balance = 1
+versatility = 4
+customization = 2
+
+similar = ['MUNkBoFh', 'd2fO5ruV', 'ubfNtdw3']

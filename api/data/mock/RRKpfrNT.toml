@@ -1,0 +1,18 @@
+title = "Darkmoon Revolution"
+description = "Navigate a society shaped by genetic manipulation and ethical dilemmas. Explore the intricate interplay between organic life and synthetic advancement as science takes a bold step into uncharted territory."
+family = "D&D"
+genre = "biopunk"
+edition = "7th edition"
+gm = "Game Master"
+publisher = "Mages & Monoliths"
+
+complexity = 2
+progression = 2
+narrative = 3
+combat = 4
+exploration = 4
+balance = 4
+versatility = 3
+customization = 2
+
+similar = ['B6y4boZO', 'VuHMV7b3', '1o0RuSok']

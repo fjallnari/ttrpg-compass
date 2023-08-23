@@ -1,0 +1,18 @@
+title = "Soulbreaker"
+description = "Confront ancient cosmic entities, grapple with existential terror, and navigate a universe that defies reason, as you explore the fragile nature of sanity in the face of unfathomable cosmic forces."
+family = "PbtA"
+genre = "cosmic_horror"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Shadowrealm RPGs"
+
+complexity = 4
+progression = 2
+narrative = 1
+combat = 3
+exploration = 2
+balance = 5
+versatility = 1
+customization = 4
+
+similar = ['aNf3B0a0', 'd2fO5ruV', 'lvYeg7iU']

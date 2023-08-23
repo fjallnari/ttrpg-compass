@@ -1,0 +1,18 @@
+title = "Forgotten Utopia"
+description = "Traverse dimly lit alleys, decipher cryptic codes, and delve into the unknown as you navigate a world shrouded in obscurity and rife with hidden truths."
+family = "Shadowrun"
+genre = "obscure"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Dreamweaver Publishing"
+
+complexity = 5
+progression = 1
+narrative = 2
+combat = 5
+exploration = 1
+balance = 2
+versatility = 1
+customization = 3
+
+similar = ['kqErPGAU', 'Bjxk6pfR', 'rp4r2XrR']

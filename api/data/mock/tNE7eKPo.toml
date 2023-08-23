@@ -1,0 +1,18 @@
+title = "Sunlit Outriders"
+description = "Navigate through a brutal and unforgiving landscape, where grim circumstances and harsh realities paint a stark backdrop for the stories of flawed characters and the harsh struggles they face."
+family = "GUMSHOE"
+genre = "grimdark"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Timewarp Studios"
+
+complexity = 5
+progression = 2
+narrative = 5
+combat = 3
+exploration = 5
+balance = 3
+versatility = 5
+customization = 4
+
+similar = ['XABPTtOn', 'ND5oEob5', 'Jn1TKUd4']

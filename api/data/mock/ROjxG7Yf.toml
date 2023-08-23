@@ -1,0 +1,18 @@
+title = "Eldritch Voyages"
+description = "Uncover corporate conspiracies, harness cutting-edge cybernetics, and carve out your existence in a world where high-tech dreams collide with gritty reality."
+family = "Warhammer"
+genre = "cyberpunk"
+edition = "7th edition"
+gm = "Game Master"
+publisher = "Nebula Quest Publishing"
+
+complexity = 4
+progression = 5
+narrative = 1
+combat = 5
+exploration = 4
+balance = 3
+versatility = 2
+customization = 2
+
+similar = ['GmWW7j62', 'vZe1xpNt', '2xUIJLDw']

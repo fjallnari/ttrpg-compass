@@ -1,0 +1,18 @@
+title = "Eco Matrix"
+description = "Navigate futuristic worlds, encounter alien civilizations, and unravel the mysteries of the universe as you forge your path amidst the stars and beyond."
+family = "BRP"
+genre = "science_fiction"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Technomancy Tales"
+
+complexity = 1
+progression = 1
+narrative = 2
+combat = 4
+exploration = 2
+balance = 1
+versatility = 1
+customization = 2
+
+similar = ['sb94gLFv', 'gsM35lDs', 'Wh4tkdOo']

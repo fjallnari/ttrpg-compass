@@ -1,0 +1,18 @@
+title = "Synthpulse"
+description = "Saddle up for a wild ride into the untamed frontier, navigate dusty trails, engage in high-stakes showdowns, and immerse yourself in a world of rugged landscapes and moral ambiguity"
+family = "BRP"
+genre = "western"
+edition = "8th edition"
+gm = "Game Master"
+publisher = "Solarflare RPGs"
+
+complexity = 5
+progression = 4
+narrative = 1
+combat = 5
+exploration = 1
+balance = 2
+versatility = 4
+customization = 5
+
+similar = ['AfghwCve', 'ffsWJ9ma', 'z6iEnAq3']

@@ -1,0 +1,18 @@
+title = "Eternity of Eldoria"
+description = "Saddle up for a wild ride into the untamed frontier, navigate dusty trails, engage in high-stakes showdowns, and immerse yourself in a world of rugged landscapes and moral ambiguity"
+family = "Shadowrun"
+genre = "western"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Technomancy Tales"
+
+complexity = 1
+progression = 4
+narrative = 2
+combat = 5
+exploration = 3
+balance = 3
+versatility = 4
+customization = 4
+
+similar = ['kWdxYeM5', 'pqPr7lil', 'pPLy9Sop']

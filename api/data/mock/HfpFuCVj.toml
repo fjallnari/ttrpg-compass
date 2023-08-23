@@ -1,0 +1,18 @@
+title = "Celestial Song"
+description = "Traverse dimly lit alleys, decipher cryptic codes, and delve into the unknown as you navigate a world shrouded in obscurity and rife with hidden truths."
+family = "D20"
+genre = "obscure"
+edition = "5th edition"
+gm = "Game Master"
+publisher = "Timewarp Studios"
+
+complexity = 4
+progression = 4
+narrative = 1
+combat = 2
+exploration = 1
+balance = 3
+versatility = 3
+customization = 1
+
+similar = ['Z01UT9Rj', 'q4YTqtdl', 'Jg7NyM3Z']

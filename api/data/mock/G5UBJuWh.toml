@@ -1,0 +1,18 @@
+title = "Ruinfall"
+description = "Embark on an epic odyssey through a realm where gods and legends walk among mortals, weaving a tapestry of grand myths, ancient prophecies and heroic quests."
+family = "D&D"
+genre = "mythic_fantasy"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Timewarp Studios"
+
+complexity = 3
+progression = 5
+narrative = 1
+combat = 3
+exploration = 3
+balance = 1
+versatility = 2
+customization = 2
+
+similar = ['ehyEqVVO', 'ubfNtdw3', 'E8OiSAZF']

@@ -1,0 +1,18 @@
+title = "Haven of the Void"
+description = "Leap into a world of extraordinary powers and heroic feats, where masked vigilantes and caped crusaders protect the innocent and battle villains"
+family = "Cypher System"
+genre = "superhero"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Arcane Scribe Studios"
+
+complexity = 5
+progression = 2
+narrative = 5
+combat = 1
+exploration = 4
+balance = 2
+versatility = 4
+customization = 1
+
+similar = ['jo4TiLHh', 'p4iJjdLo', 'swoBUnff']

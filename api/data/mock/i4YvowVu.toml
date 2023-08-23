@@ -1,0 +1,18 @@
+title = "Empire of Starlight"
+description = "Traverse ghostly plains, confront paranormal outlaws, and embrace the unsettling blend of frontier grit and otherworldly strangeness that defines the Weird West."
+family = "Warhammer"
+genre = "weird_west"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Enchanted Realms Publishing"
+
+complexity = 1
+progression = 5
+narrative = 1
+combat = 2
+exploration = 2
+balance = 1
+versatility = 1
+customization = 2
+
+similar = ['xVmfMcBJ', 'ZMdJkJRq', '77364UgW']

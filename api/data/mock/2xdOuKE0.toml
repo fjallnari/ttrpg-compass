@@ -1,0 +1,18 @@
+title = "Journeys of the Void"
+description = "Unravel the secrets of the paranormal, harness arcane powers, and explore the depths of the unseen as you journey through a tapestry of supernatural wonders."
+family = "GUMSHOE"
+genre = "supernatural"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Wyldwood Ventures"
+
+complexity = 2
+progression = 4
+narrative = 1
+combat = 3
+exploration = 2
+balance = 3
+versatility = 1
+customization = 4
+
+similar = ['WfopsmFA', 'NuEU0QYs', '9Sz4BOnd']

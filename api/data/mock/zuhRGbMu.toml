@@ -1,0 +1,18 @@
+title = "Voyager's Light"
+description = "Navigate through sprawling star systems, engage in political intrigue, and shape the destiny of entire galaxies as you immerse yourself in a space opera of limitless possibilities."
+family = "Savage Worlds"
+genre = "space_opera"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Enchanted Realms Publishing"
+
+complexity = 3
+progression = 2
+narrative = 1
+combat = 2
+exploration = 4
+balance = 5
+versatility = 3
+customization = 2
+
+similar = ['njBP50eI', 'GrEnEmh6', 'xwTq4zbj']

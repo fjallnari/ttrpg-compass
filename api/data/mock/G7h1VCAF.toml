@@ -1,0 +1,18 @@
+title = "Solarwalker"
+description = "Carve your path as a hero of unparalleled valor, battling ancient evils and mastering eldritch arts in a realm where swords and spells intertwine."
+family = "Savage Worlds"
+genre = "sword_&_sorcery"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Mythic Forge Games"
+
+complexity = 1
+progression = 5
+narrative = 4
+combat = 4
+exploration = 2
+balance = 4
+versatility = 3
+customization = 5
+
+similar = ['v3qWwz9Z', '1RadiIgm', 'dfW2pCHU']

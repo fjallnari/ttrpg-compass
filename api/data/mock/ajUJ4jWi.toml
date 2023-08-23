@@ -1,0 +1,18 @@
+title = "Eco Elysium"
+description = "Immerse yourself in a world where mythical creatures roam and epic battles unfold, as you wield both blade and spell to leave an indelible mark on a tapestry of grand fantasy."
+family = "D6"
+genre = "heroic_fantasy"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Timewarp Studios"
+
+complexity = 1
+progression = 5
+narrative = 4
+combat = 4
+exploration = 4
+balance = 1
+versatility = 4
+customization = 2
+
+similar = ['k6uL2pqr', 'xVmfMcBJ', 'v3yLaRK5']

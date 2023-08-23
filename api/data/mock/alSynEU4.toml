@@ -1,0 +1,18 @@
+title = "Voyager's Dawn"
+description = "Navigate desolate wastelands, encounter ruthless factions, and forge alliances amidst the remnants of society as you navigate the challenges of a post-apocalyptic landscape."
+family = "Indie"
+genre = "postapocalyptic"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Technomancy Tales"
+
+complexity = 3
+progression = 1
+narrative = 3
+combat = 3
+exploration = 3
+balance = 3
+versatility = 2
+customization = 3
+
+similar = ['l99C5ORW', 'OYHVmKfA', '1o0RuSok']

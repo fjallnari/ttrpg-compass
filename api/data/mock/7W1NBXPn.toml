@@ -1,0 +1,18 @@
+title = "Everweaver"
+description = "Collaborate to restore the planet's balance, harness eco-friendly technologies, and immerse yourself in a world where the triumph of human ingenuity nurtures a brighter, interconnected future."
+family = "BRP"
+genre = "solarpunk"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Steam Craft Studios"
+
+complexity = 2
+progression = 1
+narrative = 4
+combat = 1
+exploration = 5
+balance = 3
+versatility = 4
+customization = 2
+
+similar = ['dy60HSrT', 'bsTGufc8', 'xnLv9sMU']

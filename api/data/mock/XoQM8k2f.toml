@@ -1,0 +1,18 @@
+title = "Biowind"
+description = "Navigate desolate wastelands, encounter ruthless factions, and forge alliances amidst the remnants of society as you navigate the challenges of a post-apocalyptic landscape."
+family = "BRP"
+genre = "postapocalyptic"
+edition = "7th edition"
+gm = "Shared GM"
+publisher = "Celestial Table Games"
+
+complexity = 5
+progression = 1
+narrative = 1
+combat = 2
+exploration = 4
+balance = 2
+versatility = 4
+customization = 5
+
+similar = ['dE4d0BUO', 'Xoq0MfHs', 'gsM35lDs']

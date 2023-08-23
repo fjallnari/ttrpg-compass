@@ -1,0 +1,18 @@
+title = "Soulfall"
+description = "Saddle up for a wild ride into the untamed frontier, navigate dusty trails, engage in high-stakes showdowns, and immerse yourself in a world of rugged landscapes and moral ambiguity"
+family = "D20"
+genre = "western"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Mages & Monoliths"
+
+complexity = 2
+progression = 5
+narrative = 1
+combat = 3
+exploration = 5
+balance = 1
+versatility = 1
+customization = 4
+
+similar = ['18j9gChK', 'kWdxYeM5', 'nnRhzUce']

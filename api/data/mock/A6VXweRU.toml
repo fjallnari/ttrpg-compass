@@ -1,0 +1,18 @@
+title = "Eldritch Dusk"
+description = "Navigate through sprawling star systems, engage in political intrigue, and shape the destiny of entire galaxies as you immerse yourself in a space opera of limitless possibilities."
+family = "OSR"
+genre = "space_opera"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Timewarp Studios"
+
+complexity = 2
+progression = 4
+narrative = 4
+combat = 4
+exploration = 3
+balance = 1
+versatility = 5
+customization = 4
+
+similar = ['NS5m7ifY', 'JhXLF8ug', 'uqJhaODA']

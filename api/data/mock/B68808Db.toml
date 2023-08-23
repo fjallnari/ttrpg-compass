@@ -1,0 +1,18 @@
+title = "Revolution of the Void"
+description = "Traverse dimly lit alleys, decipher cryptic codes, and delve into the unknown as you navigate a world shrouded in obscurity and rife with hidden truths."
+family = "PbtA"
+genre = "obscure"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Shadowrealm RPGs"
+
+complexity = 1
+progression = 2
+narrative = 1
+combat = 4
+exploration = 5
+balance = 2
+versatility = 5
+customization = 1
+
+similar = ['q4YTqtdl', 'JNoV9ZK9', 'xYAj6f90']

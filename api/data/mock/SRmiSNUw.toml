@@ -1,0 +1,18 @@
+title = "Astral Incursion"
+description = "Traverse ghostly plains, confront paranormal outlaws, and embrace the unsettling blend of frontier grit and otherworldly strangeness that defines the Weird West."
+family = "Fate"
+genre = "weird_west"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Grimoire Guild Games"
+
+complexity = 3
+progression = 5
+narrative = 5
+combat = 1
+exploration = 4
+balance = 3
+versatility = 2
+customization = 2
+
+similar = ['GJ3iugaW', 'tgg7iK68', 'y58xoglr']

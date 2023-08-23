@@ -1,0 +1,18 @@
+title = "Enchanted Odyssey"
+description = "Customize your colossal war machine, engage in futuristic conflicts, and navigate a world where technology and tactics collide in the ultimate showdown of metal and might."
+family = "OSR"
+genre = "mechs"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Wicked Fate Publishing"
+
+complexity = 3
+progression = 1
+narrative = 3
+combat = 4
+exploration = 2
+balance = 3
+versatility = 2
+customization = 2
+
+similar = ['mgH1vitI', 'XVuYrdyR', 'Ga37tJ7p']

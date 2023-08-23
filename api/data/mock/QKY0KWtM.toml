@@ -1,0 +1,18 @@
+title = "Stardrift Song"
+description = "Navigate desolate wastelands, encounter ruthless factions, and forge alliances amidst the remnants of society as you navigate the challenges of a post-apocalyptic landscape."
+family = "BRP"
+genre = "postapocalyptic"
+edition = "8th edition"
+gm = "Game Master"
+publisher = "Timewarp Studios"
+
+complexity = 3
+progression = 3
+narrative = 5
+combat = 2
+exploration = 4
+balance = 4
+versatility = 5
+customization = 1
+
+similar = ['iQPDWE58', '7W1NBXPn', 'Xoq0MfHs']

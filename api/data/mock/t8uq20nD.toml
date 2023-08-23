@@ -1,0 +1,18 @@
+title = "Steamseeker"
+description = "Explore the events, cultures, and challenges of a bygone age, as you shape the destinies of characters against the backdrop of history's pages."
+family = "Savage Worlds"
+genre = "historical"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Enchanted Realms Publishing"
+
+complexity = 1
+progression = 4
+narrative = 4
+combat = 2
+exploration = 1
+balance = 3
+versatility = 1
+customization = 2
+
+similar = ['eb1BFMZx', 'rECZljKB', 'yqA3VY3h']

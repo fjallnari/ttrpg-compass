@@ -1,0 +1,18 @@
+title = "Expanse of Gaia"
+description = "Embark on an epic odyssey through a realm where gods and legends walk among mortals, weaving a tapestry of grand myths, ancient prophecies and heroic quests."
+family = "D6"
+genre = "mythic_fantasy"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Starfall Adventures"
+
+complexity = 5
+progression = 3
+narrative = 4
+combat = 1
+exploration = 1
+balance = 2
+versatility = 4
+customization = 2
+
+similar = ['wr5ACYOP', 'wDPdNqdG', 'nBnPbJii']

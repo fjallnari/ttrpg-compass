@@ -1,0 +1,18 @@
+title = "Eco Dusk"
+description = "Navigate through a brutal and unforgiving landscape, where grim circumstances and harsh realities paint a stark backdrop for the stories of flawed characters and the harsh struggles they face."
+family = "BRP"
+genre = "grimdark"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Nebula Quest Publishing"
+
+complexity = 5
+progression = 1
+narrative = 5
+combat = 2
+exploration = 4
+balance = 1
+versatility = 4
+customization = 4
+
+similar = ['tNE7eKPo', 'spSgCgtH', 'iuozE1Wg']

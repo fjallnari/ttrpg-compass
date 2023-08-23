@@ -1,0 +1,18 @@
+title = "Terra of Eldoria"
+description = "Embark on an epic odyssey through a realm where gods and legends walk among mortals, weaving a tapestry of grand myths, ancient prophecies and heroic quests."
+family = "Savage Worlds"
+genre = "mythic_fantasy"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Dreamweaver Publishing"
+
+complexity = 5
+progression = 3
+narrative = 3
+combat = 4
+exploration = 2
+balance = 1
+versatility = 5
+customization = 1
+
+similar = ['EKBRGImn', 'dp3CFu0M', 'K6zaCd3D']

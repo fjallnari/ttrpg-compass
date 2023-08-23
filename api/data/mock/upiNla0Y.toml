@@ -1,0 +1,18 @@
+title = "Chronicles of the Abyss"
+description = "Collaborate to restore the planet's balance, harness eco-friendly technologies, and immerse yourself in a world where the triumph of human ingenuity nurtures a brighter, interconnected future."
+family = "GURPS"
+genre = "solarpunk"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Wicked Fate Publishing"
+
+complexity = 5
+progression = 1
+narrative = 4
+combat = 3
+exploration = 2
+balance = 3
+versatility = 3
+customization = 1
+
+similar = ['YJF9oBzK', 'y3GbVekI', 'cxfIzQZt']

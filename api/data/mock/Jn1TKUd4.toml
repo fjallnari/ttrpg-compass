@@ -1,0 +1,18 @@
+title = "Genesis of Yesteryear"
+description = "Hoist the Jolly Roger and set sail on treacherous seas as a swashbuckling buccaneer, seeking riches, adventure, and the thrill of the open ocean."
+family = "GUMSHOE"
+genre = "pirates"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Wicked Fate Publishing"
+
+complexity = 5
+progression = 1
+narrative = 4
+combat = 5
+exploration = 2
+balance = 3
+versatility = 5
+customization = 5
+
+similar = ['iJ2q2yZy', 'tNE7eKPo', 'Ev2aOwL3']

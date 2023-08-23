@@ -1,0 +1,18 @@
+title = "Shadow of Avendel"
+description = "Customize your colossal war machine, engage in futuristic conflicts, and navigate a world where technology and tactics collide in the ultimate showdown of metal and might."
+family = "Cypher System"
+genre = "mechs"
+edition = "5th edition"
+gm = "Game Master"
+publisher = "Mages & Monoliths"
+
+complexity = 4
+progression = 5
+narrative = 1
+combat = 1
+exploration = 2
+balance = 5
+versatility = 3
+customization = 3
+
+similar = ['mr6uZQLv', 'HV69ZbBO', 'kF0vXp8m']

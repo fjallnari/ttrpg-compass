@@ -1,0 +1,18 @@
+title = "Light of Eldarune"
+description = "Navigate airships, unravel clockwork mysteries, and explore a realm where the boundaries between science and fantasy blur, offering a unique blend of retro-futuristic wonder."
+family = "D&D"
+genre = "steampunk"
+edition = "8th edition"
+gm = "Game Master"
+publisher = "Nebula Quest Publishing"
+
+complexity = 4
+progression = 1
+narrative = 1
+combat = 4
+exploration = 2
+balance = 3
+versatility = 3
+customization = 1
+
+similar = ['rp4r2XrR', 'OYHVmKfA', 'RRKpfrNT']

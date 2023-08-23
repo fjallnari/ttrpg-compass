@@ -1,0 +1,18 @@
+title = "Eldritch Quest"
+description = "Navigate desolate wastelands, encounter ruthless factions, and forge alliances amidst the remnants of society as you navigate the challenges of a post-apocalyptic landscape."
+family = "OSR"
+genre = "postapocalyptic"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Steam Craft Studios"
+
+complexity = 3
+progression = 3
+narrative = 3
+combat = 5
+exploration = 2
+balance = 1
+versatility = 5
+customization = 1
+
+similar = ['E4exeMSY', 'OYHVmKfA', '3hF5ofda']

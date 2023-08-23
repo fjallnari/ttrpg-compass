@@ -1,0 +1,18 @@
+title = "Runners of the Cosmos"
+description = "Carve your path as a hero of unparalleled valor, battling ancient evils and mastering eldritch arts in a realm where swords and spells intertwine."
+family = "Warhammer"
+genre = "sword_&_sorcery"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Arcane Scribe Studios"
+
+complexity = 4
+progression = 4
+narrative = 2
+combat = 2
+exploration = 5
+balance = 2
+versatility = 1
+customization = 5
+
+similar = ['dfW2pCHU', 'n6CiW3Rw', 'aGyntzcf']

@@ -1,0 +1,18 @@
+title = "Silkweave"
+description = "Carve your path as a hero of unparalleled valor, battling ancient evils and mastering eldritch arts in a realm where swords and spells intertwine."
+family = "OSR"
+genre = "sword_&_sorcery"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Mythic Forge Games"
+
+complexity = 4
+progression = 4
+narrative = 2
+combat = 2
+exploration = 4
+balance = 5
+versatility = 5
+customization = 4
+
+similar = ['dfW2pCHU', 'FOCBN0VE', 'mgH1vitI']

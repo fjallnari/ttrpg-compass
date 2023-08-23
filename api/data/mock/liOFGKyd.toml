@@ -1,0 +1,18 @@
+title = "Stardrift Runners"
+description = "Traverse ghostly plains, confront paranormal outlaws, and embrace the unsettling blend of frontier grit and otherworldly strangeness that defines the Weird West."
+family = "Indie"
+genre = "weird_west"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Timewarp Studios"
+
+complexity = 1
+progression = 1
+narrative = 4
+combat = 1
+exploration = 2
+balance = 4
+versatility = 1
+customization = 2
+
+similar = ['5wlpqwjj', 'o8vDv3MG', 'KCo41Gu7']

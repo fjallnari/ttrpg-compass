@@ -1,0 +1,18 @@
+title = "Soulwalker"
+description = "Navigate desolate wastelands, encounter ruthless factions, and forge alliances amidst the remnants of society as you navigate the challenges of a post-apocalyptic landscape."
+family = "D&D"
+genre = "postapocalyptic"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Technomancy Tales"
+
+complexity = 3
+progression = 2
+narrative = 4
+combat = 3
+exploration = 3
+balance = 2
+versatility = 3
+customization = 4
+
+similar = ['OYHVmKfA', 'alSynEU4', 'pvQqLnnX']

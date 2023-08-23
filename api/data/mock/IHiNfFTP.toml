@@ -1,0 +1,18 @@
+title = "Elemental Song"
+description = "Leap into a world of extraordinary powers and heroic feats, where masked vigilantes and caped crusaders protect the innocent and battle villains"
+family = "Shadowrun"
+genre = "superhero"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Steam Craft Studios"
+
+complexity = 2
+progression = 3
+narrative = 3
+combat = 1
+exploration = 5
+balance = 1
+versatility = 4
+customization = 3
+
+similar = ['BbSrzsF5', 'd4sCFof8', 'zU98u99U']

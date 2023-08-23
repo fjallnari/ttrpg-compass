@@ -1,0 +1,18 @@
+title = "Worldtech"
+description = "Embark on an epic odyssey through a realm where gods and legends walk among mortals, weaving a tapestry of grand myths, ancient prophecies and heroic quests."
+family = "D6"
+genre = "mythic_fantasy"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Dreamweaver Publishing"
+
+complexity = 1
+progression = 3
+narrative = 4
+combat = 5
+exploration = 5
+balance = 4
+versatility = 1
+customization = 1
+
+similar = ['37rwCArC', 'wDPdNqdG', 'VtaTiacn']

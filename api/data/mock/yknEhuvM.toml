@@ -1,0 +1,18 @@
+title = "Neverdyne"
+description = "Step into a realm where twisted creatures and sinister sorcery intertwine, as players navigate a treacherous journey through moral ambiguity and haunting landscapes."
+family = "GURPS"
+genre = "dark_fantasy"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Etherbound Entertainment"
+
+complexity = 5
+progression = 3
+narrative = 3
+combat = 4
+exploration = 5
+balance = 5
+versatility = 1
+customization = 2
+
+similar = ['5Md12ncs', 'OGS6HhRi', 'QYDiDtiY']

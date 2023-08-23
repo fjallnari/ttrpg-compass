@@ -1,0 +1,18 @@
+title = "Vitabreaker"
+description = "Confront ancient cosmic entities, grapple with existential terror, and navigate a universe that defies reason, as you explore the fragile nature of sanity in the face of unfathomable cosmic forces."
+family = "Warhammer"
+genre = "cosmic_horror"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Wicked Fate Publishing"
+
+complexity = 3
+progression = 3
+narrative = 4
+combat = 3
+exploration = 1
+balance = 2
+versatility = 2
+customization = 1
+
+similar = ['xVmfMcBJ', 'n6CiW3Rw', 'eoiVlKrj']

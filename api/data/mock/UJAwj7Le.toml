@@ -1,0 +1,18 @@
+title = "Pixelfall"
+description = "Navigate futuristic worlds, encounter alien civilizations, and unravel the mysteries of the universe as you forge your path amidst the stars and beyond."
+family = "D6"
+genre = "science_fiction"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Starfall Adventures"
+
+complexity = 2
+progression = 4
+narrative = 1
+combat = 4
+exploration = 1
+balance = 3
+versatility = 4
+customization = 2
+
+similar = ['eOqPnI8d', '7wKOGjX7', 'k6uL2pqr']

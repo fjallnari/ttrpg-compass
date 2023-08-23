@@ -1,0 +1,18 @@
+title = "Empire of the Abyss"
+description = "Customize your colossal war machine, engage in futuristic conflicts, and navigate a world where technology and tactics collide in the ultimate showdown of metal and might."
+family = "GURPS"
+genre = "mechs"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Arcane Scribe Studios"
+
+complexity = 2
+progression = 4
+narrative = 4
+combat = 4
+exploration = 2
+balance = 3
+versatility = 1
+customization = 2
+
+similar = ['YJF9oBzK', 'XqSaNYG0', 'qnid04Zq']

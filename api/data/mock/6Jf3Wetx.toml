@@ -1,0 +1,18 @@
+title = "Chainward"
+description = "Confront unspeakable horrors, unravel eerie mysteries, and test the limits of your courage as you traverse a realm where fear and the unknown reign supreme."
+family = "GUMSHOE"
+genre = "horror"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Celestial Table Games"
+
+complexity = 2
+progression = 2
+narrative = 5
+combat = 2
+exploration = 2
+balance = 4
+versatility = 5
+customization = 5
+
+similar = ['9vlB2jzc', 'XABPTtOn', 'hWg6O9NM']

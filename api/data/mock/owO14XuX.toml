@@ -1,0 +1,18 @@
+title = "Bioweaver"
+description = "Step into a realm where twisted creatures and sinister sorcery intertwine, as players navigate a treacherous journey through moral ambiguity and haunting landscapes."
+family = "Shadowrun"
+genre = "dark_fantasy"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Wyldwood Ventures"
+
+complexity = 1
+progression = 4
+narrative = 3
+combat = 4
+exploration = 4
+balance = 2
+versatility = 1
+customization = 5
+
+similar = ['m2qNfTg4', 'eagnzGCi', 'kWdxYeM5']

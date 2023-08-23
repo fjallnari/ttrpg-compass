@@ -1,0 +1,18 @@
+title = "Clockwalker"
+description = "Confront unspeakable horrors, unravel eerie mysteries, and test the limits of your courage as you traverse a realm where fear and the unknown reign supreme."
+family = "NSR"
+genre = "horror"
+edition = "8th edition"
+gm = "Game Master"
+publisher = "Nebula Quest Publishing"
+
+complexity = 4
+progression = 3
+narrative = 3
+combat = 5
+exploration = 4
+balance = 2
+versatility = 2
+customization = 5
+
+similar = ['RzqJ8W2r', 'OkdB0Ngr', '6habjrjj']

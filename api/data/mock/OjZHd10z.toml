@@ -1,0 +1,18 @@
+title = "Silkweaver"
+description = "Traverse ghostly plains, confront paranormal outlaws, and embrace the unsettling blend of frontier grit and otherworldly strangeness that defines the Weird West."
+family = "Fudge"
+genre = "weird_west"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Eldritch Chronicles Publishing"
+
+complexity = 5
+progression = 5
+narrative = 4
+combat = 3
+exploration = 3
+balance = 1
+versatility = 1
+customization = 3
+
+similar = ['RhpTkCkZ', 'jUx7Xo8L', '77364UgW']

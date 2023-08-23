@@ -3,7 +3,7 @@
 	import type TTRPGSystem from "../interfaces/TTRPGSystem";
 	import Autocomplete from "./Autocomplete.svelte";
 	import { slide } from "svelte/transition";
-	import { foundSystems, selectedSystem } from "../stores";
+	import { foundSystems, selectedSystem, serverURL } from "../stores";
 	import FilterSelect from "./FilterSelect.svelte";
 	import type Filters from "../interfaces/Filters";
 
@@ -13,7 +13,7 @@
     export let suggestion: string = "";
     export let filters: Filters;
 
-    const api = 'http://localhost:5000/api/systems/search';
+    const api = `${$serverURL}/api/systems/search`;
 
     let filtersMenuActive = false;
 
@@ -22,7 +22,7 @@
         const sanitizedSearchValue = searchValue === "" ? "*" : searchValue.replace(' ', '_');
         const sanitizedFamily = filters.family === "*" ? "*" : filters.family.replace(' ', '_');
         const res = await fetch(`${api}/title:${sanitizedSearchValue}/genre:${filters.genre}/family:${sanitizedFamily}`);
-
+        
         if (res.status === 404) {
             //console.log('no systems found');
             //foundSystems.set([]);

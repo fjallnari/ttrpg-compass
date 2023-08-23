@@ -1,0 +1,18 @@
+title = "Quest of Lumina"
+description = "Confront ancient cosmic entities, grapple with existential terror, and navigate a universe that defies reason, as you explore the fragile nature of sanity in the face of unfathomable cosmic forces."
+family = "Indie"
+genre = "cosmic_horror"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Enchanted Realms Publishing"
+
+complexity = 4
+progression = 5
+narrative = 5
+combat = 1
+exploration = 1
+balance = 2
+versatility = 5
+customization = 1
+
+similar = ['sSLuZjp3', '43nJ6Hrg', '7f8LWZmO']

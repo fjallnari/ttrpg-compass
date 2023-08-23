@@ -1,0 +1,18 @@
+title = "Clockfall"
+description = "Navigate desolate wastelands, encounter ruthless factions, and forge alliances amidst the remnants of society as you navigate the challenges of a post-apocalyptic landscape."
+family = "Fudge"
+genre = "postapocalyptic"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Eldritch Chronicles Publishing"
+
+complexity = 5
+progression = 2
+narrative = 1
+combat = 5
+exploration = 3
+balance = 5
+versatility = 1
+customization = 1
+
+similar = ['QQYQo6Xj', '9dhNV8WQ', 'alSynEU4']

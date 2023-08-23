@@ -1,0 +1,18 @@
+title = "Tales of the Empyrean"
+description = "Traverse ghostly plains, confront paranormal outlaws, and embrace the unsettling blend of frontier grit and otherworldly strangeness that defines the Weird West."
+family = "Fudge"
+genre = "weird_west"
+edition = "1st edition"
+gm = "Shared GM"
+publisher = "Nebula Quest Publishing"
+
+complexity = 2
+progression = 4
+narrative = 2
+combat = 5
+exploration = 1
+balance = 1
+versatility = 3
+customization = 1
+
+similar = ['77364UgW', 'OjZHd10z', 'VR20M4wu']

@@ -1,0 +1,18 @@
+title = "Sunlit Protocol"
+description = "Confront ancient cosmic entities, grapple with existential terror, and navigate a universe that defies reason, as you explore the fragile nature of sanity in the face of unfathomable cosmic forces."
+family = "D20"
+genre = "cosmic_horror"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Starfall Adventures"
+
+complexity = 2
+progression = 5
+narrative = 5
+combat = 1
+exploration = 1
+balance = 2
+versatility = 3
+customization = 3
+
+similar = ['eoiVlKrj', 'y80VBJab', 'Jg7NyM3Z']

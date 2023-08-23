@@ -1,0 +1,18 @@
+title = "Light of Elara"
+description = "Navigate a society shaped by genetic manipulation and ethical dilemmas. Explore the intricate interplay between organic life and synthetic advancement as science takes a bold step into uncharted territory."
+family = "Fudge"
+genre = "biopunk"
+edition = "5th edition"
+gm = "Game Master"
+publisher = "Technomancy Tales"
+
+complexity = 2
+progression = 5
+narrative = 1
+combat = 3
+exploration = 4
+balance = 4
+versatility = 2
+customization = 4
+
+similar = ['q8S9X9mp', 'jUx7Xo8L', 'eAH0AK7Z']

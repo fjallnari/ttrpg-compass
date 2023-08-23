@@ -1,0 +1,18 @@
+title = "Starwalker"
+description = "Saddle up for a wild ride into the untamed frontier, navigate dusty trails, engage in high-stakes showdowns, and immerse yourself in a world of rugged landscapes and moral ambiguity"
+family = "GUMSHOE"
+genre = "western"
+edition = "8th edition"
+gm = "Game Master"
+publisher = "Etherbound Entertainment"
+
+complexity = 1
+progression = 3
+narrative = 5
+combat = 5
+exploration = 4
+balance = 2
+versatility = 3
+customization = 1
+
+similar = ['WOMH5lXm', 'RLVdKWVT', 'cnh5gqZj']

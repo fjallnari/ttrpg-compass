@@ -1,0 +1,18 @@
+title = "Enigma Realms"
+description = "Navigate airships, unravel clockwork mysteries, and explore a realm where the boundaries between science and fantasy blur, offering a unique blend of retro-futuristic wonder."
+family = "Warhammer"
+genre = "steampunk"
+edition = "8th edition"
+gm = "Game Master"
+publisher = "Wicked Fate Publishing"
+
+complexity = 2
+progression = 5
+narrative = 1
+combat = 3
+exploration = 3
+balance = 5
+versatility = 1
+customization = 4
+
+similar = ['sHD1IGkq', 'faD7DX0k', 'ROjxG7Yf']

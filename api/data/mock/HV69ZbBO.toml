@@ -1,0 +1,18 @@
+title = "Lush Legends"
+description = "Navigate futuristic worlds, encounter alien civilizations, and unravel the mysteries of the universe as you forge your path amidst the stars and beyond."
+family = "Cypher System"
+genre = "science_fiction"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Mythic Forge Games"
+
+complexity = 4
+progression = 4
+narrative = 2
+combat = 2
+exploration = 3
+balance = 3
+versatility = 1
+customization = 3
+
+similar = ['plLrOoxU', 'kF0vXp8m', 'UrYe7blw']

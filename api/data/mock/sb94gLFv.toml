@@ -1,0 +1,18 @@
+title = "Quest of the Aether"
+description = "Navigate futuristic worlds, encounter alien civilizations, and unravel the mysteries of the universe as you forge your path amidst the stars and beyond."
+family = "BRP"
+genre = "science_fiction"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Wicked Fate Publishing"
+
+complexity = 1
+progression = 1
+narrative = 1
+combat = 2
+exploration = 5
+balance = 2
+versatility = 3
+customization = 3
+
+similar = ['gsM35lDs', 'zrbTE7bt', 'Wh4tkdOo']

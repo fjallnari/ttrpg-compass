@@ -1,0 +1,18 @@
+title = "Journeys of the Void"
+description = "Step into a realm where twisted creatures and sinister sorcery intertwine, as players navigate a treacherous journey through moral ambiguity and haunting landscapes."
+family = "OSR"
+genre = "dark_fantasy"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Grimoire Guild Games"
+
+complexity = 5
+progression = 4
+narrative = 5
+combat = 4
+exploration = 3
+balance = 5
+versatility = 4
+customization = 1
+
+similar = ['oGxWL2lY', 'hPFApEkW', 'OGS6HhRi']

@@ -4,7 +4,7 @@
     import StellarChart from "./StellarChart.svelte";
     import StellarIcons from "./StellarIcons.svelte";
     import { ASPECTS, int2roman } from "../util/util.ts"
-	import { foundSystems, selectedSystem } from "../stores.ts";
+	import { foundSystems, selectedSystem, serverURL } from "../stores.ts";
 	import type Filters from "../interfaces/Filters.ts";
 
     export let system: TTRPGSystem;
@@ -14,10 +14,8 @@
 
     let trackedMetric = '' as keyof TTRPGSystem;
 
-    const api = 'http://localhost:5000/api/systems/similar';
-
     const getSimilarSystems = async () => {
-        const res = await fetch(`${api}/${system.Id}`);
+        const res = await fetch(`${$serverURL}/api/systems/similar/${system.Id}`);
         
         if (res.status === 404) {
             return;

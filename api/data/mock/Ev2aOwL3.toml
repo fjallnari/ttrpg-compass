@@ -1,0 +1,18 @@
+title = "Eternity of Eldoria"
+description = "Plunder riches, uphold honor, and immerse yourself in a world of Viking sagas, where bravery and valor shape the course of history."
+family = "GUMSHOE"
+genre = "viking"
+edition = "5th edition"
+gm = "Game Master"
+publisher = "Nebula Quest Publishing"
+
+complexity = 4
+progression = 1
+narrative = 1
+combat = 4
+exploration = 2
+balance = 3
+versatility = 4
+customization = 3
+
+similar = ['9vlB2jzc', 'EGU79yRT', 'MS1UlTtq']

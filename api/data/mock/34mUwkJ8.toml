@@ -1,0 +1,18 @@
+title = "Arcmaker"
+description = "Unravel the secrets of the paranormal, harness arcane powers, and explore the depths of the unseen as you journey through a tapestry of supernatural wonders."
+family = "OSR"
+genre = "supernatural"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Celestial Table Games"
+
+complexity = 5
+progression = 5
+narrative = 3
+combat = 4
+exploration = 2
+balance = 1
+versatility = 1
+customization = 5
+
+similar = ['9Sz4BOnd', 'wyDD4k1X', 'FOCBN0VE']

@@ -1,0 +1,18 @@
+title = "Silkforge"
+description = "Embark on an epic odyssey through a realm where gods and legends walk among mortals, weaving a tapestry of grand myths, ancient prophecies and heroic quests."
+family = "NSR"
+genre = "mythic_fantasy"
+edition = "5th edition"
+gm = "Game Master"
+publisher = "Etherbound Entertainment"
+
+complexity = 5
+progression = 2
+narrative = 2
+combat = 4
+exploration = 4
+balance = 1
+versatility = 2
+customization = 2
+
+similar = ['aNMr9vyW', 'hkIUHZkC', '40qW3mdk']

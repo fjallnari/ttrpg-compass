@@ -1,0 +1,18 @@
+title = "Rustland Dawn"
+description = "Leap into a world of extraordinary powers and heroic feats, where masked vigilantes and caped crusaders protect the innocent and battle villains"
+family = "NSR"
+genre = "superhero"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Mages & Monoliths"
+
+complexity = 1
+progression = 1
+narrative = 5
+combat = 3
+exploration = 1
+balance = 3
+versatility = 4
+customization = 2
+
+similar = ['QhGmOR3Y', 'bmbTtBXu', 'rXhcvst9']

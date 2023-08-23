@@ -1,0 +1,18 @@
+title = "Realms of the Stars"
+description = "Carve your path as a hero of unparalleled valor, battling ancient evils and mastering eldritch arts in a realm where swords and spells intertwine."
+family = "PbtA"
+genre = "sword_&_sorcery"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Arcane Scribe Studios"
+
+complexity = 4
+progression = 3
+narrative = 5
+combat = 1
+exploration = 2
+balance = 2
+versatility = 1
+customization = 5
+
+similar = ['vq3C0xLH', '25fXMfjN', 'aGyntzcf']

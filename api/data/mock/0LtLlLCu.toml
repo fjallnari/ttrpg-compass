@@ -1,0 +1,18 @@
+title = "Enchanted Terra"
+description = "Unravel the secrets of the paranormal, harness arcane powers, and explore the depths of the unseen as you journey through a tapestry of supernatural wonders."
+family = "Shadowrun"
+genre = "supernatural"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Wicked Fate Publishing"
+
+complexity = 2
+progression = 1
+narrative = 1
+combat = 5
+exploration = 5
+balance = 1
+versatility = 1
+customization = 5
+
+similar = ['NuEU0QYs', 'l03TJTvs', 'Z40iI1n3']

@@ -1,0 +1,18 @@
+title = "Elemental Mystica"
+description = "Customize your colossal war machine, engage in futuristic conflicts, and navigate a world where technology and tactics collide in the ultimate showdown of metal and might."
+family = "Indie"
+genre = "mechs"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Starfall Adventures"
+
+complexity = 2
+progression = 2
+narrative = 4
+combat = 3
+exploration = 1
+balance = 2
+versatility = 2
+customization = 5
+
+similar = ['RH6znD6L', '7O2RcQHL', '7Ge2NOCh']

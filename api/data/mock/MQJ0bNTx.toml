@@ -1,0 +1,18 @@
+title = "Incursion of the Void"
+description = "Traverse dimly lit alleys, decipher cryptic codes, and delve into the unknown as you navigate a world shrouded in obscurity and rife with hidden truths."
+family = "Fate"
+genre = "obscure"
+edition = "5th edition"
+gm = "Game Master"
+publisher = "Dragon Tome Press"
+
+complexity = 1
+progression = 1
+narrative = 1
+combat = 5
+exploration = 1
+balance = 1
+versatility = 3
+customization = 5
+
+similar = ['jJnXqSkf', 'FRMN0NjI', 'kqErPGAU']

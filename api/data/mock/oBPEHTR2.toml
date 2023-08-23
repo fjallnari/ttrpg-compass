@@ -1,0 +1,18 @@
+title = "Neurowind"
+description = "Plunder riches, uphold honor, and immerse yourself in a world of Viking sagas, where bravery and valor shape the course of history."
+family = "D6"
+genre = "viking"
+edition = "7th edition"
+gm = "Game Master"
+publisher = "Celestial Table Games"
+
+complexity = 3
+progression = 2
+narrative = 3
+combat = 1
+exploration = 3
+balance = 1
+versatility = 5
+customization = 3
+
+similar = ['nBnPbJii', 'k6uL2pqr', '74ru9laD']

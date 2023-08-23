@@ -1,0 +1,18 @@
+title = "Prophecy of the Eons"
+description = "Plunder riches, uphold honor, and immerse yourself in a world of Viking sagas, where bravery and valor shape the course of history."
+family = "Shadowrun"
+genre = "viking"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Starfall Adventures"
+
+complexity = 5
+progression = 1
+narrative = 1
+combat = 1
+exploration = 4
+balance = 3
+versatility = 3
+customization = 3
+
+similar = ['tIAxy17O', 'GqV1Kkvw', 'wxo6ZKA7']

@@ -42,7 +42,7 @@ type SimilarSystem struct {
 func setupDBClient() (*redis.Client, context.Context) {
 	ctx := context.Background()
 	client := redis.NewClient(&redis.Options{
-		Addr:     "localhost:6379",
+		Addr:     "172.17.0.2:6379",
 		Password: "", // no password set
 		DB:       0,  // use default DB
 	})
@@ -118,16 +118,14 @@ func rebuildDB(client *redis.Client, ctx context.Context, dataDir string) {
 	}
 	fmt.Printf("Loaded %d systems\n", len(entries))
 
-	// dbClient.Do(ctx, "FT.DROPINDEX", "idx:systems")
+	//dbClient.Do(ctx, "FT.DROPINDEX", "idx:systems")
 
-	//! needs to be run manually for now
-	// docker exec -it redis-stack redis-cli
-	// FT.CREATE idx:systems ON HASH PREFIX 1 system: SCHEMA title TEXT NOSTEM genre TEXT family TEXT
-
-	//res, err := dbClient.Do(ctx, "FT.CREATE", "idx:systems", "ON HASH", "PREFIX 1 system:", "SCHEMA title TEXT").Result()
+	// _, err = dbClient.Do(ctx, "FT.CREATE", "idx:systems", "ON HASH", "PREFIX 1 system:", "SCHEMA title TEXT NOSTEM genre TEXT family TEXT").Result()
 	// if err != nil {
 	// 	panic(err)
 	// }
 
-	//fmt.Printf("Created index: %s\n", "idx:systems")
+	//! needs to be run manually - panic: Unknown argument `ON HASH`
+	// docker exec -it redis-stack redis-cli
+	// FT.CREATE idx:systems ON HASH PREFIX 1 system: SCHEMA title TEXT NOSTEM genre TEXT family TEXT
 }

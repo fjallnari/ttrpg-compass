@@ -1,0 +1,18 @@
+title = "Sunlit Aetheria"
+description = "Saddle up for a wild ride into the untamed frontier, navigate dusty trails, engage in high-stakes showdowns, and immerse yourself in a world of rugged landscapes and moral ambiguity"
+family = "D&D"
+genre = "western"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Arcane Scribe Studios"
+
+complexity = 3
+progression = 4
+narrative = 4
+combat = 3
+exploration = 2
+balance = 2
+versatility = 2
+customization = 2
+
+similar = ['0bWxu9ZH', 'y58xoglr', 'YyEVK3mF']

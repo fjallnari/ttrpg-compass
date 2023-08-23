@@ -1,0 +1,18 @@
+title = "Everwind"
+description = "Step into a realm where twisted creatures and sinister sorcery intertwine, as players navigate a treacherous journey through moral ambiguity and haunting landscapes."
+family = "PbtA"
+genre = "dark_fantasy"
+edition = "8th edition"
+gm = "Game Master"
+publisher = "Mages & Monoliths"
+
+complexity = 2
+progression = 3
+narrative = 1
+combat = 2
+exploration = 3
+balance = 1
+versatility = 5
+customization = 3
+
+similar = ['d2fO5ruV', 'LYdEJp1U', 'dk37mnr3']

@@ -1,0 +1,18 @@
+title = "Steammaker"
+description = "Confront unspeakable horrors, unravel eerie mysteries, and test the limits of your courage as you traverse a realm where fear and the unknown reign supreme."
+family = "GURPS"
+genre = "horror"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Arcane Scribe Studios"
+
+complexity = 3
+progression = 2
+narrative = 5
+combat = 3
+exploration = 2
+balance = 2
+versatility = 4
+customization = 2
+
+similar = ['s18QEAGa', '9vlB2jzc', 'I1Hqi59u']

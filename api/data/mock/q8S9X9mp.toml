@@ -1,0 +1,18 @@
+title = "Odyssey of the Stars"
+description = "Navigate a society shaped by genetic manipulation and ethical dilemmas. Explore the intricate interplay between organic life and synthetic advancement as science takes a bold step into uncharted territory."
+family = "Fudge"
+genre = "biopunk"
+edition = "8th edition"
+gm = "Game Master"
+publisher = "Mages & Monoliths"
+
+complexity = 4
+progression = 5
+narrative = 4
+combat = 1
+exploration = 5
+balance = 5
+versatility = 2
+customization = 4
+
+similar = ['iBw6L79f', 'jUx7Xo8L', 'uyy9c4eB']

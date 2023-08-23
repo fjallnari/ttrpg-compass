@@ -1,0 +1,18 @@
+title = "Neurobound"
+description = "Customize your colossal war machine, engage in futuristic conflicts, and navigate a world where technology and tactics collide in the ultimate showdown of metal and might."
+family = "OSR"
+genre = "mechs"
+edition = "8th edition"
+gm = "Game Master"
+publisher = "Mages & Monoliths"
+
+complexity = 3
+progression = 2
+narrative = 1
+combat = 3
+exploration = 5
+balance = 1
+versatility = 2
+customization = 5
+
+similar = ['mgH1vitI', 'XqSaNYG0', '7O2RcQHL']

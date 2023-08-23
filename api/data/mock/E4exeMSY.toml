@@ -1,0 +1,18 @@
+title = "Mystic Mystica"
+description = "Navigate desolate wastelands, encounter ruthless factions, and forge alliances amidst the remnants of society as you navigate the challenges of a post-apocalyptic landscape."
+family = "OSR"
+genre = "postapocalyptic"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Mythic Forge Games"
+
+complexity = 1
+progression = 3
+narrative = 1
+combat = 3
+exploration = 3
+balance = 4
+versatility = 4
+customization = 4
+
+similar = ['os4pSpE3', 'mgH1vitI', '49rFhw3L']

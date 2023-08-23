@@ -1,0 +1,18 @@
+title = "Cosmic Genesis"
+description = "Uncover hidden truths, decipher cryptic clues, and immerse yourself in a realm where the thrill of solving mysteries takes center stage."
+family = "Warhammer"
+genre = "mystery"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Etherbound Entertainment"
+
+complexity = 1
+progression = 5
+narrative = 1
+combat = 1
+exploration = 5
+balance = 1
+versatility = 3
+customization = 3
+
+similar = ['d4sCFof8', 'ZqATRjV4', 'QSzlxTPS']

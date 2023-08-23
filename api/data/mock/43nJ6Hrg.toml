@@ -1,0 +1,18 @@
+title = "Elysium of the Empyrean"
+description = "Leap into a world of extraordinary powers and heroic feats, where masked vigilantes and caped crusaders protect the innocent and battle villains"
+family = "Indie"
+genre = "superhero"
+edition = "7th edition"
+gm = "Game Master"
+publisher = "Celestial Table Games"
+
+complexity = 5
+progression = 4
+narrative = 4
+combat = 2
+exploration = 1
+balance = 1
+versatility = 3
+customization = 2
+
+similar = ['n7MTW28k', 'jBVNdr89', 'y80VBJab']

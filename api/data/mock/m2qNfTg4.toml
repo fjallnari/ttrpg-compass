@@ -1,0 +1,18 @@
+title = "Voyages of Eldarune"
+description = "Plunder riches, uphold honor, and immerse yourself in a world of Viking sagas, where bravery and valor shape the course of history."
+family = "Shadowrun"
+genre = "viking"
+edition = "8th edition"
+gm = "Shared GM"
+publisher = "Technomancy Tales"
+
+complexity = 2
+progression = 5
+narrative = 2
+combat = 5
+exploration = 4
+balance = 1
+versatility = 1
+customization = 4
+
+similar = ['owO14XuX', 'GqV1Kkvw', 'eagnzGCi']

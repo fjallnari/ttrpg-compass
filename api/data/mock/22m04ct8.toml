@@ -1,0 +1,18 @@
+title = "Mythica Voyages"
+description = "Embark on an epic odyssey through a realm where gods and legends walk among mortals, weaving a tapestry of grand myths, ancient prophecies and heroic quests."
+family = "PbtA"
+genre = "mythic_fantasy"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Arcane Scribe Studios"
+
+complexity = 5
+progression = 1
+narrative = 5
+combat = 2
+exploration = 3
+balance = 4
+versatility = 1
+customization = 1
+
+similar = ['m0XnTzo6', 'RL98bq1V', 'Bm6gEtOU']

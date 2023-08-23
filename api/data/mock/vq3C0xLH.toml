@@ -1,0 +1,18 @@
+title = "Starforge"
+description = "Carve your path as a hero of unparalleled valor, battling ancient evils and mastering eldritch arts in a realm where swords and spells intertwine."
+family = "PbtA"
+genre = "sword_&_sorcery"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Enchanted Realms Publishing"
+
+complexity = 4
+progression = 2
+narrative = 1
+combat = 2
+exploration = 3
+balance = 2
+versatility = 4
+customization = 4
+
+similar = ['8j4g7Mbp', 'aNf3B0a0', 'VCC4QYCY']

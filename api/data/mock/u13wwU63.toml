@@ -1,0 +1,18 @@
+title = "Arcbound"
+description = "Confront unspeakable horrors, unravel eerie mysteries, and test the limits of your courage as you traverse a realm where fear and the unknown reign supreme."
+family = "BRP"
+genre = "horror"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Crystal Dice Creations"
+
+complexity = 2
+progression = 5
+narrative = 4
+combat = 1
+exploration = 2
+balance = 3
+versatility = 3
+customization = 1
+
+similar = ['HnLWEnDL', 'yqA3VY3h', 'byGu82Qg']

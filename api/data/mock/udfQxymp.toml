@@ -1,0 +1,18 @@
+title = "Chronicles of the Eternals"
+description = "Uncover hidden truths, decipher cryptic clues, and immerse yourself in a realm where the thrill of solving mysteries takes center stage."
+family = "Fudge"
+genre = "mystery"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Enchanted Realms Publishing"
+
+complexity = 2
+progression = 5
+narrative = 3
+combat = 2
+exploration = 5
+balance = 5
+versatility = 1
+customization = 1
+
+similar = ['AZFufcBz', 't9wdogcF', 'mZimrfGW']

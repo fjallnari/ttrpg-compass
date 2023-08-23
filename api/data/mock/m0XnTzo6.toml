@@ -1,0 +1,18 @@
+title = "Stardrift Revolution"
+description = "Embark on an epic odyssey through a realm where gods and legends walk among mortals, weaving a tapestry of grand myths, ancient prophecies and heroic quests."
+family = "PbtA"
+genre = "mythic_fantasy"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Celestial Table Games"
+
+complexity = 2
+progression = 4
+narrative = 4
+combat = 2
+exploration = 2
+balance = 5
+versatility = 3
+customization = 4
+
+similar = ['22m04ct8', 'Xk3jc9ZC', '7Ge2NOCh']

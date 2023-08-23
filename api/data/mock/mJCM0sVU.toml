@@ -1,0 +1,18 @@
+title = "Eclipse Aurora"
+description = "Explore the events, cultures, and challenges of a bygone age, as you shape the destinies of characters against the backdrop of history's pages."
+family = "D&D"
+genre = "historical"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Solarflare RPGs"
+
+complexity = 5
+progression = 2
+narrative = 1
+combat = 1
+exploration = 5
+balance = 2
+versatility = 4
+customization = 4
+
+similar = ['E8OiSAZF', 'pvQqLnnX', 'ZBNyxxKe']

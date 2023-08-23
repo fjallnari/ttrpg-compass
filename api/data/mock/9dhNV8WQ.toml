@@ -1,0 +1,18 @@
+title = "Solardrift"
+description = "Confront ancient cosmic entities, grapple with existential terror, and navigate a universe that defies reason, as you explore the fragile nature of sanity in the face of unfathomable cosmic forces."
+family = "Fudge"
+genre = "cosmic_horror"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Etherbound Entertainment"
+
+complexity = 5
+progression = 2
+narrative = 2
+combat = 5
+exploration = 5
+balance = 2
+versatility = 2
+customization = 3
+
+similar = ['DBRDDuw2', 'jUx7Xo8L', '6wNbxWR4']

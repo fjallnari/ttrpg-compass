@@ -1,0 +1,18 @@
+title = "Pixeldrift"
+description = "Confront unspeakable horrors, unravel eerie mysteries, and test the limits of your courage as you traverse a realm where fear and the unknown reign supreme."
+family = "BRP"
+genre = "horror"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Starfall Adventures"
+
+complexity = 4
+progression = 1
+narrative = 2
+combat = 4
+exploration = 2
+balance = 4
+versatility = 4
+customization = 3
+
+similar = ['QhnWjG7j', 'TsxMQkN6', 'HnLWEnDL']

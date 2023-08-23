@@ -1,0 +1,18 @@
+title = "Aetheria of the Empyrean"
+description = "Leap into a world of extraordinary powers and heroic feats, where masked vigilantes and caped crusaders protect the innocent and battle villains"
+family = "BRP"
+genre = "superhero"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Steam Craft Studios"
+
+complexity = 5
+progression = 3
+narrative = 2
+combat = 3
+exploration = 1
+balance = 3
+versatility = 1
+customization = 5
+
+similar = ['bmbTtBXu', 'dE4d0BUO', 'Xoq0MfHs']

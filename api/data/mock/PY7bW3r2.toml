@@ -1,0 +1,18 @@
+title = "Ashen Runners"
+description = "Plunder riches, uphold honor, and immerse yourself in a world of Viking sagas, where bravery and valor shape the course of history."
+family = "D&D"
+genre = "viking"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Steam Craft Studios"
+
+complexity = 1
+progression = 2
+narrative = 3
+combat = 2
+exploration = 2
+balance = 2
+versatility = 1
+customization = 1
+
+similar = ['cnh5gqZj', 'GU9wM4rc', 'xt5K16G6']

@@ -1,0 +1,18 @@
+title = "Sunlit Twilight"
+description = "Immerse yourself in a world where mythical creatures roam and epic battles unfold, as you wield both blade and spell to leave an indelible mark on a tapestry of grand fantasy."
+family = "D20"
+genre = "heroic_fantasy"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Mages & Monoliths"
+
+complexity = 2
+progression = 2
+narrative = 5
+combat = 4
+exploration = 1
+balance = 3
+versatility = 1
+customization = 2
+
+similar = ['pQaA87GP', 'UnQS80a1', 'qNoJIGmZ']

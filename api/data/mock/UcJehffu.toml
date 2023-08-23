@@ -1,0 +1,18 @@
+title = "Neverdyne"
+description = "Leap into a world of extraordinary powers and heroic feats, where masked vigilantes and caped crusaders protect the innocent and battle villains"
+family = "NSR"
+genre = "superhero"
+edition = "8th edition"
+gm = "Game Master"
+publisher = "Dragon Tome Press"
+
+complexity = 5
+progression = 5
+narrative = 1
+combat = 1
+exploration = 1
+balance = 4
+versatility = 4
+customization = 3
+
+similar = ['A1xAkWe1', 'bmbTtBXu', 'KzIVkvB8']

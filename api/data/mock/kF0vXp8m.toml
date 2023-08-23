@@ -1,0 +1,18 @@
+title = "Dominion of the Celestials"
+description = "Carve your path as a hero of unparalleled valor, battling ancient evils and mastering eldritch arts in a realm where swords and spells intertwine."
+family = "Cypher System"
+genre = "sword_&_sorcery"
+edition = "4th edition"
+gm = "GM-less/Solo"
+publisher = "Shadowrealm RPGs"
+
+complexity = 3
+progression = 5
+narrative = 2
+combat = 3
+exploration = 3
+balance = 4
+versatility = 2
+customization = 1
+
+similar = ['GmWW7j62', 'HV69ZbBO', 'pQaA87GP']

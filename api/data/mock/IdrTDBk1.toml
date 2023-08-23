@@ -1,0 +1,18 @@
+title = "Riftbound"
+description = "Customize your colossal war machine, engage in futuristic conflicts, and navigate a world where technology and tactics collide in the ultimate showdown of metal and might."
+family = "BRP"
+genre = "mechs"
+edition = "7th edition"
+gm = "Game Master"
+publisher = "Wyldwood Ventures"
+
+complexity = 4
+progression = 1
+narrative = 5
+combat = 2
+exploration = 2
+balance = 3
+versatility = 1
+customization = 4
+
+similar = ['Xoq0MfHs', 'QoRGeJTK', 'OiN7cJMU']

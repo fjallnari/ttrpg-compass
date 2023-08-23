@@ -1,0 +1,18 @@
+title = "Ascendancy of the Void"
+description = "Uncover hidden truths, decipher cryptic clues, and immerse yourself in a realm where the thrill of solving mysteries takes center stage."
+family = "D20"
+genre = "mystery"
+edition = "8th edition"
+gm = "Game Master"
+publisher = "Starfall Adventures"
+
+complexity = 2
+progression = 2
+narrative = 1
+combat = 5
+exploration = 5
+balance = 5
+versatility = 1
+customization = 2
+
+similar = ['AZFufcBz', '18j9gChK', 'mZimrfGW']

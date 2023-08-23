@@ -1,0 +1,18 @@
+title = "Soulborne"
+description = "Saddle up for a wild ride into the untamed frontier, navigate dusty trails, engage in high-stakes showdowns, and immerse yourself in a world of rugged landscapes and moral ambiguity"
+family = "PbtA"
+genre = "western"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Mythic Forge Games"
+
+complexity = 2
+progression = 4
+narrative = 3
+combat = 1
+exploration = 5
+balance = 1
+versatility = 5
+customization = 3
+
+similar = ['Ajq75c7F', 'lvYeg7iU', '1a2VwOoI']

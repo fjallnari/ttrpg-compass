@@ -1,0 +1,18 @@
+title = "Mythpulse"
+description = "Navigate through a brutal and unforgiving landscape, where grim circumstances and harsh realities paint a stark backdrop for the stories of flawed characters and the harsh struggles they face."
+family = "Shadowrun"
+genre = "grimdark"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Technomancy Tales"
+
+complexity = 4
+progression = 2
+narrative = 1
+combat = 5
+exploration = 5
+balance = 4
+versatility = 5
+customization = 1
+
+similar = ['vfkkBv5M', 'tIAxy17O', 'l03TJTvs']

@@ -1,0 +1,18 @@
+title = "Voyager's Dawn"
+description = "Uncover corporate conspiracies, harness cutting-edge cybernetics, and carve out your existence in a world where high-tech dreams collide with gritty reality."
+family = "Shadowrun"
+genre = "cyberpunk"
+edition = "4th edition"
+gm = "GM-less/Solo"
+publisher = "Starfall Adventures"
+
+complexity = 2
+progression = 2
+narrative = 5
+combat = 1
+exploration = 4
+balance = 2
+versatility = 3
+customization = 3
+
+similar = ['IHiNfFTP', 'iyogbTEX', 'byix4dQ0']

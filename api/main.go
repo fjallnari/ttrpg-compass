@@ -57,10 +57,10 @@ func main() {
 
 	defer dbClient.Close()
 
-	rebuildDB(dbClient, dbCtx, "../data/mock/")
+	rebuildDB(dbClient, dbCtx, "data/mock/")
 
 	app.Use(cors.New(cors.Config{
-		AllowOrigins: "http://localhost:5173",
+		AllowOrigins: "http://localhost:5173, http://localhost:3000",
 		AllowHeaders: "Origin, Content-Type, Accept",
 	}))
 
@@ -86,7 +86,7 @@ func main() {
 		return c.JSON(system)
 	})
 
-	app.Static("/", "../client/dist")
+	//app.Static("/", "../client/build")
 
-	app.Listen(":5000")
+	app.Listen(":5001")
 }

@@ -1,0 +1,18 @@
+title = "Prophecy of the Void"
+description = "Traverse dimly lit alleys, decipher cryptic codes, and delve into the unknown as you navigate a world shrouded in obscurity and rife with hidden truths."
+family = "PbtA"
+genre = "obscure"
+edition = "7th edition"
+gm = "Shared GM"
+publisher = "Grimoire Guild Games"
+
+complexity = 5
+progression = 2
+narrative = 3
+combat = 5
+exploration = 5
+balance = 4
+versatility = 3
+customization = 4
+
+similar = ['q4YTqtdl', 'y2CAY7jx', 'ykxx14Yr']

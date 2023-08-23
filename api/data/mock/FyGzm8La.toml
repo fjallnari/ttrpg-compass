@@ -1,0 +1,18 @@
+title = "Light of the Aether"
+description = "Confront ancient cosmic entities, grapple with existential terror, and navigate a universe that defies reason, as you explore the fragile nature of sanity in the face of unfathomable cosmic forces."
+family = "Indie"
+genre = "cosmic_horror"
+edition = "5th edition"
+gm = "Game Master"
+publisher = "Celestial Table Games"
+
+complexity = 2
+progression = 5
+narrative = 1
+combat = 1
+exploration = 2
+balance = 5
+versatility = 2
+customization = 3
+
+similar = ['tK7Hk554', 'sSLuZjp3', 'y80VBJab']

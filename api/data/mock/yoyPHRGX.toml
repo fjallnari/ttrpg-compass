@@ -1,0 +1,18 @@
+title = "Terra Horizons"
+description = "Confront unspeakable horrors, unravel eerie mysteries, and test the limits of your courage as you traverse a realm where fear and the unknown reign supreme."
+family = "D20"
+genre = "horror"
+edition = "4th edition"
+gm = "Game Master"
+publisher = "Shadowrealm RPGs"
+
+complexity = 1
+progression = 4
+narrative = 5
+combat = 5
+exploration = 4
+balance = 1
+versatility = 4
+customization = 1
+
+similar = ['y3GbVekI', 'yqA3VY3h', 'Ez9LfOCS']

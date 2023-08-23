@@ -1,0 +1,18 @@
+title = "Worldforge"
+description = "Leap into a world of extraordinary powers and heroic feats, where masked vigilantes and caped crusaders protect the innocent and battle villains"
+family = "BRP"
+genre = "superhero"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Eldritch Chronicles Publishing"
+
+complexity = 1
+progression = 4
+narrative = 5
+combat = 3
+exploration = 5
+balance = 2
+versatility = 5
+customization = 5
+
+similar = ['IHiNfFTP', 'iuozE1Wg', 'GZeX9Vu5']

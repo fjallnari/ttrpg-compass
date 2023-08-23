@@ -1,0 +1,18 @@
+title = "Light of Stardust"
+description = "Leap into a world of extraordinary powers and heroic feats, where masked vigilantes and caped crusaders protect the innocent and battle villains"
+family = "GURPS"
+genre = "superhero"
+edition = "7th edition"
+gm = "Game Master"
+publisher = "Shadowrealm RPGs"
+
+complexity = 1
+progression = 1
+narrative = 1
+combat = 1
+exploration = 5
+balance = 5
+versatility = 4
+customization = 3
+
+similar = ['TXaE6rrG', '7lCe6RHv', 'VN2toIz1']

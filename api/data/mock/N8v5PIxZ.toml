@@ -1,0 +1,18 @@
+title = "Soulwalker"
+description = "Navigate through sprawling star systems, engage in political intrigue, and shape the destiny of entire galaxies as you immerse yourself in a space opera of limitless possibilities."
+family = "PbtA"
+genre = "space_opera"
+edition = "5th edition"
+gm = "Shared GM"
+publisher = "Wyldwood Ventures"
+
+complexity = 2
+progression = 1
+narrative = 3
+combat = 5
+exploration = 3
+balance = 1
+versatility = 1
+customization = 2
+
+similar = ['dH06RquT', 'Ajq75c7F', '6Yo1c28M']

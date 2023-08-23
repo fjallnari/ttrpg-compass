@@ -1,0 +1,18 @@
+title = "Forgotten Grove"
+description = "Confront ancient cosmic entities, grapple with existential terror, and navigate a universe that defies reason, as you explore the fragile nature of sanity in the face of unfathomable cosmic forces."
+family = "Indie"
+genre = "cosmic_horror"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Wicked Fate Publishing"
+
+complexity = 5
+progression = 1
+narrative = 1
+combat = 2
+exploration = 2
+balance = 2
+versatility = 4
+customization = 1
+
+similar = ['y80VBJab', 'FyGzm8La', 'HYxcsaMh']

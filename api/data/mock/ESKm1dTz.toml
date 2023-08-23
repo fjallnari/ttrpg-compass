@@ -1,0 +1,18 @@
+title = "Elemental Exodus"
+description = "Traverse dimly lit alleys, decipher cryptic codes, and delve into the unknown as you navigate a world shrouded in obscurity and rife with hidden truths."
+family = "Warhammer"
+genre = "obscure"
+edition = "1st edition"
+gm = "Game Master"
+publisher = "Steam Craft Studios"
+
+complexity = 2
+progression = 2
+narrative = 3
+combat = 2
+exploration = 4
+balance = 5
+versatility = 5
+customization = 3
+
+similar = ['nrgmYRtJ', 'fjqHsY6d', 'J1IP5R3Q']

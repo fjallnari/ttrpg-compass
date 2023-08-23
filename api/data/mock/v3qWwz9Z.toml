@@ -1,0 +1,18 @@
+title = "Ascendancy of Gaia"
+description = "Carve your path as a hero of unparalleled valor, battling ancient evils and mastering eldritch arts in a realm where swords and spells intertwine."
+family = "D6"
+genre = "sword_&_sorcery"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Timewarp Studios"
+
+complexity = 2
+progression = 5
+narrative = 5
+combat = 2
+exploration = 3
+balance = 4
+versatility = 4
+customization = 4
+
+similar = ['aGyntzcf', 'DmsmOuq1', 'G7h1VCAF']

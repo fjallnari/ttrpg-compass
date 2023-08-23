@@ -1,0 +1,18 @@
+title = "Runewave"
+description = "Traverse ghostly plains, confront paranormal outlaws, and embrace the unsettling blend of frontier grit and otherworldly strangeness that defines the Weird West."
+family = "Fate"
+genre = "weird_west"
+edition = "5th edition"
+gm = "GM-less/Solo"
+publisher = "Shadowrealm RPGs"
+
+complexity = 3
+progression = 2
+narrative = 2
+combat = 5
+exploration = 4
+balance = 5
+versatility = 1
+customization = 2
+
+similar = ['tgg7iK68', 'Q3tsEcN8', 'QYDiDtiY']

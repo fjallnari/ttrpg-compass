@@ -1,0 +1,18 @@
+title = "Realmbinder"
+description = "Explore the events, cultures, and challenges of a bygone age, as you shape the destinies of characters against the backdrop of history's pages."
+family = "Cypher System"
+genre = "historical"
+edition = "2nd edition"
+gm = "Game Master"
+publisher = "Mages & Monoliths"
+
+complexity = 2
+progression = 3
+narrative = 1
+combat = 2
+exploration = 4
+balance = 2
+versatility = 3
+customization = 2
+
+similar = ['dk37mnr3', '9mTW9bpI', 'hh87ilLS']

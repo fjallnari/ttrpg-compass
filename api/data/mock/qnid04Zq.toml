@@ -1,0 +1,18 @@
+title = "Loredrift"
+description = "Navigate a society shaped by genetic manipulation and ethical dilemmas. Explore the intricate interplay between organic life and synthetic advancement as science takes a bold step into uncharted territory."
+family = "GURPS"
+genre = "biopunk"
+edition = "5th edition"
+gm = "Game Master"
+publisher = "Wyldwood Ventures"
+
+complexity = 2
+progression = 5
+narrative = 5
+combat = 3
+exploration = 3
+balance = 2
+versatility = 3
+customization = 4
+
+similar = ['sO1BwOSC', 'rAn9Pbtr', 's18QEAGa']

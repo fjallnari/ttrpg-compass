@@ -1,0 +1,18 @@
+title = "Silkwind"
+description = "Embark on an epic odyssey through a realm where gods and legends walk among mortals, weaving a tapestry of grand myths, ancient prophecies and heroic quests."
+family = "GURPS"
+genre = "mythic_fantasy"
+edition = "8th edition"
+gm = "Game Master"
+publisher = "Solarflare RPGs"
+
+complexity = 5
+progression = 1
+narrative = 3
+combat = 1
+exploration = 4
+balance = 2
+versatility = 2
+customization = 5
+
+similar = ['VtaTiacn', 'VN2toIz1', 'tIAxy17O']

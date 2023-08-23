@@ -1,0 +1,18 @@
+title = "Utopia of Eldoria"
+description = "Plunder riches, uphold honor, and immerse yourself in a world of Viking sagas, where bravery and valor shape the course of history."
+family = "GURPS"
+genre = "viking"
+edition = "3rd edition"
+gm = "Game Master"
+publisher = "Mages & Monoliths"
+
+complexity = 4
+progression = 3
+narrative = 5
+combat = 2
+exploration = 3
+balance = 4
+versatility = 5
+customization = 4
+
+similar = ['xt5K16G6', 's18QEAGa', 'y3GbVekI']

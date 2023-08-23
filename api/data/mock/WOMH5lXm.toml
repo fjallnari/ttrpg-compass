@@ -1,0 +1,18 @@
+title = "Exodus of the Void"
+description = "Traverse dimly lit alleys, decipher cryptic codes, and delve into the unknown as you navigate a world shrouded in obscurity and rife with hidden truths."
+family = "GUMSHOE"
+genre = "obscure"
+edition = "6th edition"
+gm = "Game Master"
+publisher = "Shadowrealm RPGs"
+
+complexity = 1
+progression = 3
+narrative = 5
+combat = 4
+exploration = 4
+balance = 2
+versatility = 2
+customization = 1
+
+similar = ['O8Bmx93h', '9AIVm1n2', 'RLVdKWVT']
