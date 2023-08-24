@@ -9,6 +9,8 @@
 	import Icon from "@iconify/svelte";
 	import type Filters from "../interfaces/Filters";
 
+    export let data;
+
     let cardPage: number = 0;
 	let topElem: HTMLImageElement;
 	let y: number = 0;
@@ -49,6 +51,9 @@
     }
 
     onMount(async () => {
+        if (data.API_URL) {
+            serverURL.set(data.API_URL);
+        }
         systems = await loadMore();
     })
 
