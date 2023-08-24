@@ -60,7 +60,7 @@ func main() {
 	rebuildDB(dbClient, dbCtx, "data/mock/")
 
 	app.Use(cors.New(cors.Config{
-		AllowOrigins: "http://localhost:5173, http://localhost:3000",
+		AllowOrigins: "http://localhost:5173, http://localhost:3000, https://localhost:51809",
 		AllowHeaders: "Origin, Content-Type, Accept",
 	}))
 
@@ -88,5 +88,5 @@ func main() {
 
 	//app.Static("/", "../client/build")
 
-	app.Listen(":5001")
+	app.Listen(":5000")
 }
