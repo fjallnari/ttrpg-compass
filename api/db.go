@@ -44,9 +44,16 @@ func setupDBClient() (*redis.Client, context.Context) {
 	ctx := context.Background()
 	client := redis.NewClient(&redis.Options{
 		Addr:     os.Getenv("REDIS_URL"),
-		Password: "", // no password set
-		DB:       0,  // use default DB
+		Password: os.Getenv("REDIS_PASS"), // no password set
+		DB:       0,                       // use default DB
 	})
+
+	/* 	opt, err := redis.ParseURL(os.Getenv("REDIS_URL"))
+	   	if err != nil {
+	   		panic(err)
+	   	} */
+
+	//client := redis.NewClient(opt)
 
 	return client, ctx
 }
