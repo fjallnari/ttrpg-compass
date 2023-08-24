@@ -3,7 +3,6 @@ package main
 import (
 	"context"
 	"fmt"
-	"log"
 	"os"
 	"path/filepath"
 	"strings"
@@ -55,10 +54,7 @@ func setupDBClient() (*redis.Client, context.Context) {
 // Rebuilds the database from the data directory
 // Might want to add selective rebuild
 func rebuildDB(client *redis.Client, ctx context.Context, dataDir string) {
-	err := godotenv.Load()
-	if err != nil {
-		log.Fatal("Error loading .env file")
-	}
+	godotenv.Load()
 
 	fmt.Printf("Building DB...\n")
 	var system TTRPGSystem
