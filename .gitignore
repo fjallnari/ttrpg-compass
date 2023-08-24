@@ -6,3 +6,5 @@
 /api/api
 
 __pycache__
+
+.env

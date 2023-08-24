@@ -3,10 +3,12 @@ package main
 import (
 	"context"
 	"fmt"
+	"log"
 	"os"
 	"path/filepath"
 	"strings"
 
+	"github.com/joho/godotenv"
 	"github.com/pelletier/go-toml/v2"
 	"github.com/redis/go-redis/v9"
 )
@@ -42,7 +44,7 @@ type SimilarSystem struct {
 func setupDBClient() (*redis.Client, context.Context) {
 	ctx := context.Background()
 	client := redis.NewClient(&redis.Options{
-		Addr:     "172.17.0.2:6379",
+		Addr:     os.Getenv("REDIS_URL"),
 		Password: "", // no password set
 		DB:       0,  // use default DB
 	})
@@ -53,6 +55,11 @@ func setupDBClient() (*redis.Client, context.Context) {
 // Rebuilds the database from the data directory
 // Might want to add selective rebuild
 func rebuildDB(client *redis.Client, ctx context.Context, dataDir string) {
+	err := godotenv.Load()
+	if err != nil {
+		log.Fatal("Error loading .env file")
+	}
+
 	fmt.Printf("Building DB...\n")
 	var system TTRPGSystem
 	entries, err := os.ReadDir(dataDir)
