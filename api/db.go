@@ -7,7 +7,6 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/joho/godotenv"
 	"github.com/pelletier/go-toml/v2"
 	"github.com/redis/go-redis/v9"
 )
@@ -61,8 +60,6 @@ func setupDBClient() (*redis.Client, context.Context) {
 // Rebuilds the database from the data directory
 // Might want to add selective rebuild
 func rebuildDB(client *redis.Client, ctx context.Context, dataDir string) {
-	godotenv.Load()
-
 	fmt.Printf("Building DB...\n")
 	var system TTRPGSystem
 	entries, err := os.ReadDir(dataDir)

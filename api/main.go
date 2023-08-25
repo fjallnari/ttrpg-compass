@@ -2,9 +2,11 @@ package main
 
 import (
 	"context"
+	"os"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
+	"github.com/joho/godotenv"
 	"github.com/redis/go-redis/v9"
 )
 
@@ -51,6 +53,7 @@ func getTitlesOnly(systems []TTRPGSystem) []string {
 }
 
 func main() {
+	godotenv.Load()
 	app := fiber.New()
 
 	dbClient, dbCtx = setupDBClient()
@@ -60,7 +63,7 @@ func main() {
 	rebuildDB(dbClient, dbCtx, "data/mock/")
 
 	app.Use(cors.New(cors.Config{
-		AllowOrigins: "http://localhost:5173, http://localhost:3000, https://localhost:51809",
+		AllowOrigins: "http://localhost:5173, http://localhost:3000, " + os.Getenv("CLIENT_URL"),
 		AllowHeaders: "Origin, Content-Type, Accept",
 	}))
 
