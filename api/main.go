@@ -2,10 +2,13 @@ package main
 
 import (
 	"context"
+	"log"
 	"os"
+	"time"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
+	"github.com/gofiber/fiber/v2/middleware/timeout"
 	"github.com/joho/godotenv"
 	"github.com/redis/go-redis/v9"
 )
@@ -58,7 +61,7 @@ func main() {
 
 	dbClient, dbCtx = setupDBClient()
 
-	defer dbClient.Close()
+	//defer dbClient.Close()
 
 	rebuildDB(dbClient, dbCtx, "data/mock/")
 
@@ -73,7 +76,9 @@ func main() {
 		return c.SendString(c.Params("title") + c.Params("genre") + c.Params("family"))
 	})
 
-	app.Get("/api/systems/search/title::title/genre::genre/family::family", searchHandler)
+	app.Get("/api/systems/search/title::title/genre::genre/family::family",
+		timeout.NewWithContext(searchHandler, 60*time.Second),
+	)
 
 	app.Get("/api/systems/similar/:id", func(c *fiber.Ctx) error {
 		similarSystems := getSimilarSystems(c.Params("id"))
@@ -95,5 +100,5 @@ func main() {
 
 	//app.Static("/", "../client/build")
 
-	app.Listen(":5000")
+	log.Fatal(app.Listen(":5000"))
 }
