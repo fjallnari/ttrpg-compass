@@ -15,20 +15,14 @@ func searchHandler(c *fiber.Ctx) error {
 
 	if c.Params("title") != "*" {
 		titleFilter = fmt.Sprintf("@title:%s*", strings.ReplaceAll(c.Params("title"), "_", " "))
-		c.SendString(titleFilter)
-		return c.SendStatus(418)
 	}
 
 	if c.Params("genre") != "*" {
 		genreFilter = fmt.Sprintf(" @genre:%s", c.Params("genre"))
-		c.SendString(genreFilter)
-		return c.SendStatus(418)
 	}
 
 	if c.Params("family") != "*" {
 		familyFilter = fmt.Sprintf(" @family:%s", strings.ReplaceAll(c.Params("family"), "_", " "))
-		c.SendString(familyFilter)
-		return c.SendStatus(418)
 	}
 
 	res, err := dbClient.Do(dbCtx, "FT.SEARCH", "idx:systems", fmt.Sprintf("%s%s%s", titleFilter, genreFilter, familyFilter), "NOCONTENT").Result()
@@ -39,6 +33,11 @@ func searchHandler(c *fiber.Ctx) error {
 	}
 
 	foundSystems := res.([]interface{})[1:]
+
+	if len(foundSystems) == 0 {
+		c.SendString("no systems found")
+		return c.SendStatus(404)
+	}
 
 	for _, systemKey := range foundSystems {
 		var system TTRPGSystem
