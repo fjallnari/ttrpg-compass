@@ -26,10 +26,9 @@ func searchHandler(c *fiber.Ctx) error {
 	}
 
 	res, err := dbClient.Do(dbCtx, "FT.SEARCH", "idx:systems", fmt.Sprintf("%s%s%s", titleFilter, genreFilter, familyFilter), "NOCONTENT").Result()
-	fmt.Println(res)
 
 	if err != nil {
-		fmt.Println(err)
+		c.SendString(fmt.Sprintf("%s", err))
 		return c.SendStatus(404)
 	}
 
@@ -38,8 +37,8 @@ func searchHandler(c *fiber.Ctx) error {
 	for _, systemKey := range foundSystems {
 		var system TTRPGSystem
 		if err := dbClient.HGetAll(dbCtx, fmt.Sprintf("%s", systemKey)).Scan(&system); err != nil {
-			fmt.Println(err)
-			panic(err)
+			c.SendString(fmt.Sprintf("%s", systemKey))
+			return c.SendStatus(500)
 		}
 
 		system.Id = strings.Split(fmt.Sprintf("%s", systemKey), ":")[1]
