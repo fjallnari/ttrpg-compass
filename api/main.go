@@ -69,6 +69,10 @@ func main() {
 
 	app.Get("/api/systems/all/:cursor", systemsHandler)
 
+	app.Get("/api/test/test::test", func(c *fiber.Ctx) error {
+		return c.SendString(c.Params("test"))
+	})
+
 	app.Get("/api/systems/search/title::title/genre::genre/family::family", searchHandler)
 
 	app.Get("/api/systems/similar/:id", func(c *fiber.Ctx) error {
