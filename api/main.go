@@ -2,13 +2,13 @@ package main
 
 import (
 	"context"
+	"fmt"
 	"log"
 	"os"
-	"time"
+	"strings"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
-	"github.com/gofiber/fiber/v2/middleware/timeout"
 	"github.com/joho/godotenv"
 	"github.com/redis/go-redis/v9"
 )
@@ -73,12 +73,32 @@ func main() {
 	app.Get("/api/systems/all/:cursor", systemsHandler)
 
 	app.Get("/api/test/title::title/genre::genre/family::family", func(c *fiber.Ctx) error {
-		return c.SendString(c.Params("title") + c.Params("genre") + c.Params("family"))
+		titleFilter := ""
+		genreFilter := ""
+		familyFilter := ""
+		if c.Params("title") != "*" {
+			titleFilter = fmt.Sprintf("@title:%s*", strings.ReplaceAll(c.Params("title"), "_", " "))
+		}
+
+		if c.Params("genre") != "*" {
+			genreFilter = fmt.Sprintf(" @genre:%s", c.Params("genre"))
+		}
+
+		if c.Params("family") != "*" {
+			familyFilter = fmt.Sprintf(" @family:%s", strings.ReplaceAll(c.Params("family"), "_", " "))
+		}
+
+		res, err := dbClient.Do(dbCtx, "FT.SEARCH", "idx:systems", fmt.Sprintf("%s%s%s", titleFilter, genreFilter, familyFilter), "NOCONTENT").Result()
+
+		if err != nil {
+			c.SendString(fmt.Sprintf("%s", err))
+			return c.SendStatus(404)
+		}
+
+		return c.SendString(fmt.Sprintf("%s", res))
 	})
 
-	app.Get("/api/systems/search/title::title/genre::genre/family::family",
-		timeout.NewWithContext(searchHandler, 60*time.Second),
-	)
+	app.Get("/api/systems/search/title::title/genre::genre/family::family", searchHandler)
 
 	app.Get("/api/systems/similar/:id", func(c *fiber.Ctx) error {
 		similarSystems := getSimilarSystems(c.Params("id"))
