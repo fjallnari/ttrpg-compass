@@ -13,15 +13,12 @@
     export let suggestion: string = "";
     export let filters: Filters;
 
-    const api = `${$serverURL}/api/systems/search`;
-
     let filtersMenuActive = false;
-
 
     const searchSystems = async () => {
         const sanitizedSearchValue = searchValue === "" ? "*" : searchValue.replace(' ', '_');
         const sanitizedFamily = filters.family === "*" ? "*" : filters.family.replace(' ', '_');
-        const res = await fetch(`${api}/title:${sanitizedSearchValue}/genre:${filters.genre}/family:${sanitizedFamily}`);
+        const res = await fetch(`${$serverURL}/api/systems/search/title:${sanitizedSearchValue}/genre:${filters.genre}/family:${sanitizedFamily}`);
         
         if (res.status === 404) {
             //console.log('no systems found');
