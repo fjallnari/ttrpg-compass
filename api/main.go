@@ -91,8 +91,7 @@ func main() {
 		res, err := dbClient.Do(dbCtx, "FT.SEARCH", "idx:systems", fmt.Sprintf("%s%s%s", titleFilter, genreFilter, familyFilter), "NOCONTENT").Result()
 
 		if err != nil {
-			c.SendString(fmt.Sprintf("%s", err))
-			return c.SendStatus(404)
+			return c.Status(404).SendString(fmt.Sprintf("%s", err))
 		}
 
 		return c.SendString(fmt.Sprintf("%s", res))
