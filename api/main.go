@@ -55,6 +55,17 @@ func getTitlesOnly(systems []TTRPGSystem) []string {
 	return titles
 }
 
+func searchSystems(c chan []interface{}, titleFilter string, genreFilter string, familyFilter string) {
+	res, err := dbClient.Do(dbCtx, "FT.SEARCH", "idx:systems", fmt.Sprintf("%s%s%s", titleFilter, genreFilter, familyFilter), "NOCONTENT").Result()
+
+	if err != nil {
+		fmt.Println(err)
+		c <- nil
+	}
+
+	c <- res.([]interface{})[1:]
+}
+
 func main() {
 	godotenv.Load()
 	app := fiber.New()
@@ -76,6 +87,7 @@ func main() {
 		titleFilter := ""
 		genreFilter := ""
 		familyFilter := ""
+
 		if c.Params("title") != "*" {
 			titleFilter = fmt.Sprintf("@title:%s*", strings.ReplaceAll(c.Params("title"), "_", " "))
 		}
@@ -88,13 +100,15 @@ func main() {
 			familyFilter = fmt.Sprintf(" @family:%s", strings.ReplaceAll(c.Params("family"), "_", " "))
 		}
 
-		res, err := dbClient.Do(dbCtx, "FT.SEARCH", "idx:systems", fmt.Sprintf("%s%s%s", titleFilter, genreFilter, familyFilter), "NOCONTENT").Result()
+		channel := make(chan []interface{})
+		go searchSystems(channel, titleFilter, genreFilter, familyFilter)
+		foundSystems := <-channel
 
-		if err != nil {
-			return c.Status(404).SendString(fmt.Sprintf("%s", err))
+		if len(foundSystems) == 0 {
+			return c.SendStatus(404)
 		}
 
-		return c.SendString(fmt.Sprintf("%s", res))
+		return c.SendString(fmt.Sprintf("%s", foundSystems))
 	})
 
 	app.Get("/api/systems/search/title::title/genre::genre/family::family", searchHandler)
