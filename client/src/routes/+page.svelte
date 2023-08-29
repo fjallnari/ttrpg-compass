@@ -51,7 +51,6 @@
     }
 
     onMount(async () => {
-        console.log(data.API_URL);
         if (data.API_URL) {
             serverURL.set(data.API_URL);
         }

@@ -2,10 +2,8 @@ package main
 
 import (
 	"context"
-	"fmt"
 	"log"
 	"os"
-	"strings"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
@@ -15,17 +13,6 @@ import (
 
 var dbClient *redis.Client
 var dbCtx context.Context
-
-func getSystem(res chan TTRPGSystem, systemId string) {
-	var system TTRPGSystem
-
-	// Scan all fields into the model.
-	if err := dbClient.HGetAll(dbCtx, systemId).Scan(&system); err != nil {
-		panic(err)
-	}
-
-	res <- system
-}
 
 func getSimilarSystems(systemId string) []TTRPGSystem {
 	var system TTRPGSystem
@@ -55,24 +42,13 @@ func getTitlesOnly(systems []TTRPGSystem) []string {
 	return titles
 }
 
-func searchSystems(c chan []interface{}, titleFilter string, genreFilter string, familyFilter string) {
-	res, err := dbClient.Do(dbCtx, "FT.SEARCH", "idx:systems", fmt.Sprintf("%s%s%s", titleFilter, genreFilter, familyFilter), "NOCONTENT").Result()
-
-	if err != nil {
-		fmt.Println(err)
-		c <- nil
-	}
-
-	c <- res.([]interface{})[1:]
-}
-
 func main() {
 	godotenv.Load()
 	app := fiber.New()
 
 	dbClient, dbCtx = setupDBClient()
 
-	//defer dbClient.Close()
+	defer dbClient.Close()
 
 	rebuildDB(dbClient, dbCtx, "data/mock/")
 
@@ -82,34 +58,6 @@ func main() {
 	}))
 
 	app.Get("/api/systems/all/:cursor", systemsHandler)
-
-	app.Get("/api/test/title::title/genre::genre/family::family", func(c *fiber.Ctx) error {
-		titleFilter := ""
-		genreFilter := ""
-		familyFilter := ""
-
-		if c.Params("title") != "*" {
-			titleFilter = fmt.Sprintf("@title:%s*", strings.ReplaceAll(c.Params("title"), "_", " "))
-		}
-
-		if c.Params("genre") != "*" {
-			genreFilter = fmt.Sprintf(" @genre:%s", c.Params("genre"))
-		}
-
-		if c.Params("family") != "*" {
-			familyFilter = fmt.Sprintf(" @family:%s", strings.ReplaceAll(c.Params("family"), "_", " "))
-		}
-
-		channel := make(chan []interface{})
-		go searchSystems(channel, titleFilter, genreFilter, familyFilter)
-		foundSystems := <-channel
-
-		if len(foundSystems) == 0 {
-			return c.SendStatus(404)
-		}
-
-		return c.SendString(fmt.Sprintf("%s", foundSystems))
-	})
 
 	app.Get("/api/systems/search/title::title/genre::genre/family::family", searchHandler)
 
@@ -121,14 +69,6 @@ func main() {
 		}
 
 		return c.JSON(similarSystems)
-	})
-
-	app.Get("/api/system/:system", func(c *fiber.Ctx) error {
-		responseChannel := make(chan TTRPGSystem)
-		go getSystem(responseChannel, c.Params("system"))
-		system := <-responseChannel
-
-		return c.JSON(system)
 	})
 
 	//app.Static("/", "../client/build")

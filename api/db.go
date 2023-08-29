@@ -47,13 +47,6 @@ func setupDBClient() (*redis.Client, context.Context) {
 		DB:       0,                       // use default DB
 	})
 
-	/* 	opt, err := redis.ParseURL(os.Getenv("REDIS_URL"))
-	   	if err != nil {
-	   		panic(err)
-	   	} */
-
-	//client := redis.NewClient(opt)
-
 	return client, ctx
 }
 
@@ -117,9 +110,6 @@ func rebuildDB(client *redis.Client, ctx context.Context, dataDir string) {
 			client.SAdd(ctx, "genres", strings.ToLower(system.Genre))
 			client.SAdd(ctx, "families", strings.ToLower(system.Family))
 
-			// if err != nil {
-			// 	panic(err)
-			// }
 			fmt.Printf("%s	\033[32mOK\033[0m\n", system.Title)
 		}
 	}

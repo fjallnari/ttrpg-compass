@@ -21,8 +21,6 @@
         const res = await fetch(`${$serverURL}/api/systems/search/title:${sanitizedSearchValue}/genre:${filters.genre}/family:${sanitizedFamily}`);
         
         if (res.status === 404) {
-            //console.log('no systems found');
-            //foundSystems.set([]);
             return;
         }
 

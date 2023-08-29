@@ -20,30 +20,21 @@ func systemsHandler(c *fiber.Ctx) error {
 		if err != nil {
 			panic(err)
 		}
-		// fmt.Printf("Cursor: %s\n", c.Params("cursor"))
 	}
 
 	keys, cursor, err = dbClient.Scan(dbCtx, cursor, "system:*", 20).Result()
-
-	// fmt.Printf("Cursor: %d\n", cursor)
-	// fmt.Printf("Keys length: %d\n", len(keys))
 
 	if err != nil {
 		panic(err)
 	}
 
 	for _, key := range keys {
-		// fmt.Printf("Key: %s\n", key)
 		if err := dbClient.HGetAll(dbCtx, key).Scan(&system); err != nil {
 			panic(err)
 		}
 
 		system.Id = strings.Split(key, ":")[1]
 		system.Similar = getTitlesOnly(getSimilarSystems(system.Id))
-
-		// for i, similar := range similarSet {
-		// 	similarSet[i] = dbClient.Get(dbCtx, "similar:"+similar).Val()
-		// }
 
 		systems = append(systems, system)
 	}
