@@ -28,7 +28,7 @@
     };
 
     // trigger loadMore() when user scrolls to bottom
-    $: if (y !== 0 && y >= cardsHeight - 800 && !loadingMore && $cursor !== 0) {
+    $: if (y !== 0 && y >= cardsHeight - 800 && !loadingMore && $cursor !== 0 && !$selectedSystem) {
         loadingMore = true;
 
         loadMore().then(async (newSystems) => {
