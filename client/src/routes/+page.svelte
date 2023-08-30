@@ -77,6 +77,9 @@
 <svelte:window bind:scrollY={y} />
 
 <main class="flex flex-col flex-wrap justify-center items-center w-11/12 p-6 m-auto">
+    <!-- <button class="absolute right-8 top-8 text-eggshell">
+        <Icon icon="mdi:help-rhombus" class="text-2xl active:text-goldenrod" />
+    </button> -->
     <div class="flex flex-col justify-center items-center w-full gap-8 relative">
         <img src="/favicon_bgless.svg" class="w-48" alt="compass" bind:this={topElem}>
         <Search bind:searchValue bind:filters {genres} {families} />

@@ -21,6 +21,7 @@
         const res = await fetch(`${$serverURL}/api/systems/search/title:${sanitizedSearchValue}/genre:${filters.genre}/family:${sanitizedFamily}`);
         
         if (res.status === 404) {
+            suggestion = '';
             return;
         }
 
