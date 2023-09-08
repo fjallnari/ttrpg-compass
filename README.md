@@ -1,5 +1,7 @@
 # TTRPG Compass
-Web-based tool to view and compare various TTRPG systems (currently uses generated mock data). 
+Web-based tool to view and compare various TTRPG systems (currently uses generated mock data).
+
+![Similarity view](similarity_showcase.png)
 
 Key features
 ------------
