@@ -2,7 +2,7 @@ FROM node:20
 
 WORKDIR /app
 
-RUN npm install -g pnpm
+RUN npm install -g pnpm@8.5.1
 
 COPY package*.json ./pnpm-lock.yaml ./
 
