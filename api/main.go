@@ -48,9 +48,16 @@ func main() {
 
 	dbClient, dbCtx = setupDBClient()
 
+	_, err := dbClient.Ping(dbCtx).Result() // Test connection
+	if err != nil {
+		log.Fatal(err)
+	}
+
 	defer dbClient.Close()
 
-	rebuildDB(dbClient, dbCtx, "data/mock/")
+	if os.Getenv("REBUILD_DB") == "true" {
+		rebuildDB(dbClient, dbCtx, "data/mock/")
+	}
 
 	app.Use(cors.New(cors.Config{
 		AllowOrigins: "http://localhost:5173, http://localhost:3000, " + os.Getenv("CLIENT_URL"),

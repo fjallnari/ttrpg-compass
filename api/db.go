@@ -41,13 +41,16 @@ type SimilarSystem struct {
 
 func setupDBClient() (*redis.Client, context.Context) {
 	ctx := context.Background()
-	client := redis.NewClient(&redis.Options{
-		Addr:     os.Getenv("REDIS_URL"),
-		Password: os.Getenv("REDIS_PASS"), // no password set
-		DB:       0,                       // use default DB
-	})
 
-	return client, ctx
+	opts, err := redis.ParseURL(os.Getenv("REDIS_URL"))
+
+	if err != nil {
+		panic(err)
+	}
+
+	fmt.Printf("Setting up the DB client\n")
+
+	return redis.NewClient(opts), ctx
 }
 
 // Rebuilds the database from the data directory
