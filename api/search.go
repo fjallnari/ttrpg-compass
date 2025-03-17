@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v3"
 )
 
-func searchHandler(c *fiber.Ctx) error {
+func searchHandler(c fiber.Ctx) error {
 	var systems []TTRPGSystem = make([]TTRPGSystem, 0)
 	titleFilter := ""
 	genreFilter := ""
@@ -26,9 +26,6 @@ func searchHandler(c *fiber.Ctx) error {
 	}
 
 	res, err := dbClient.Do(dbCtx, "FT.SEARCH", "idx:systems", fmt.Sprintf("%s%s%s", titleFilter, genreFilter, familyFilter), "NOCONTENT").Result()
-
-	fmt.Printf("Searching for: %s%s%s\n", titleFilter, genreFilter, familyFilter)
-	fmt.Printf("Res: %s | %s\n", res, err)
 
 	if err != nil {
 		c.SendString(fmt.Sprintf("%s", err))

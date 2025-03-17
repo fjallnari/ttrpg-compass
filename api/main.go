@@ -5,8 +5,9 @@ import (
 	"log"
 	"os"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/middleware/cors"
+	"github.com/gofiber/fiber/v3"
+	"github.com/gofiber/fiber/v3/middleware/cors"
+	"github.com/gofiber/fiber/v3/middleware/logger"
 	"github.com/joho/godotenv"
 	"github.com/redis/go-redis/v9"
 )
@@ -60,15 +61,19 @@ func main() {
 	}
 
 	app.Use(cors.New(cors.Config{
-		AllowOrigins: "http://localhost:5173, http://localhost:3000, " + os.Getenv("CLIENT_URL"),
-		AllowHeaders: "Origin, Content-Type, Accept",
+		AllowOrigins: []string{"http://localhost:5173", "http://localhost:3000", os.Getenv("CLIENT_URL")},
+		AllowHeaders: []string{"Origin", "Content-Type", "Accept"},
+	}))
+
+	app.Use(logger.New(logger.Config{
+		Format: "[${ip}]:${port} ${status} - ${method} ${path}\n",
 	}))
 
 	app.Get("/api/systems/all/:cursor", systemsHandler)
 
 	app.Get("/api/systems/search/title::title/genre::genre/family::family", searchHandler)
 
-	app.Get("/api/systems/similar/:id", func(c *fiber.Ctx) error {
+	app.Get("/api/systems/similar/:id", func(c fiber.Ctx) error {
 		similarSystems := getSimilarSystems(c.Params("id"))
 
 		for i, system := range similarSystems {
@@ -77,8 +82,6 @@ func main() {
 
 		return c.JSON(similarSystems)
 	})
-
-	//app.Static("/", "../client/build")
 
 	log.Fatal(app.Listen(":5000"))
 }

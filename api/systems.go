@@ -4,10 +4,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v3"
 )
 
-func systemsHandler(c *fiber.Ctx) error {
+func systemsHandler(c fiber.Ctx) error {
 	var system TTRPGSystem
 	var cursor uint64 = 0
 	var err error
